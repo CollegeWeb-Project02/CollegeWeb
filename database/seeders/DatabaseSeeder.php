@@ -94,46 +94,79 @@ class DatabaseSeeder extends Seeder
         DB::table('major')->insert([
             [
                 'id' => 1,
-                'major_name' => 'Information Technology',
+                'major_name' => 'Web Design',
                 'unit_id' => 1
             ],
             [
                 'id' => 2,
-                'major_name' => 'Business Administration',
+                'major_name' => 'Development',
                 'unit_id' => 1
             ],
             [
                 'id' => 3,
-                'major_name' => 'Automotive Engineering',
+                'major_name' => 'Game Design',
+                'unit_id' => 1
+            ],
+            [
+                'id' => 4,
+                'major_name' => 'App Design',
                 'unit_id' => 3
-            ]
+            ],
+            [
+                'id' => 5,
+                'major_name' => 'Marketing',
+                'unit_id' => 2
+            ],
+            [
+                'id' => 3,
+                'major_name' => 'Research',
+                'unit_id' => 3
+            ],
+            [
+                'id' => 3,
+                'major_name' => 'Content Writing',
+                'unit_id' => 3
+            ],
+            [
+                'id' => 3,
+                'major_name' => 'SEO',
+                'unit_id' => 2
+            ],
         ]);
 
         DB::table('major_image')->insert([
             [
                 'major_id' => 1,
-                'image' => 'major-1.jfif'
-            ],
-            [
-                'major_id' => 1,
-                'image' => 'major-2.jfif'
+                'image' => 'cat-1.jpg'
             ],
             [
                 'major_id' => 2,
-                'image' => 'major-3.jfif'
-            ],
-            [
-                'major_id' => 2,
-                'image' => 'major-4.jfif'
+                'image' => 'cat-2.jpg'
             ],
             [
                 'major_id' => 3,
-                'image' => 'major-5.jfif'
+                'image' => 'cat-3.jpg'
             ],
             [
-                'major_id' => 3,
-                'image' => 'major-6.jfif'
-            ]
+                'major_id' => 4,
+                'image' => 'cat-4.jpg'
+            ],
+            [
+                'major_id' => 5,
+                'image' => 'cat-5.jpg'
+            ],
+            [
+                'major_id' => 6,
+                'image' => 'cat-6.jpg'
+            ],
+            [
+                'major_id' => 7,
+                'image' => 'cat-7.jpg'
+            ],
+            [
+                'major_id' => 8,
+                'image' => 'cat-8.jpg'
+            ],
         ]);
 
         DB::table('unit')->insert([
