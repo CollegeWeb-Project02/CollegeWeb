@@ -13,15 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('unit', function (Blueprint $table) {
+        Schema::table('blog', function (Blueprint $table) {
             $table->id();
 
-            $table->integer('register_id');
-            $table->integer('major_id');
-            $table->string('unit_name');
-            $table->integer('point1');
-            $table->integer('point2');
-            $table->integer('point3');
+            $table->integer('user_id');
+            $table->string('tittle');
+            $table->string('subtitle');
+            $table->string('content');
+            $table->string('image');
+            $table->string('category');
 
             $table->timestamps();
         });
@@ -34,6 +34,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('unit');
+        Schema::table('blog', function (Blueprint $table) {
+            //
+        });
     }
 };

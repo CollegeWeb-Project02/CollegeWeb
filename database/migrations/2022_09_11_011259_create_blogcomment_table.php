@@ -13,11 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('class', function (Blueprint $table) {
+        Schema::table('blogcomment', function (Blueprint $table) {
             $table->id();
 
-            $table->string('class_name');
-            $table->integer('major_id');
+            $table->integer('user_id');
+            $table->integer('blog_id');
+            $table->string('email');
+            $table->string('name');
+            $table->string('message');
 
             $table->timestamps();
         });
@@ -30,6 +33,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('class');
+        Schema::table('blogcomment', function (Blueprint $table) {
+            //
+        });
     }
 };

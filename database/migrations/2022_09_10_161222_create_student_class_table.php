@@ -13,15 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('unit', function (Blueprint $table) {
+        Schema::create('student_class', function (Blueprint $table) {
             $table->id();
 
-            $table->integer('register_id');
+            $table->string('class_name');
             $table->integer('major_id');
-            $table->string('unit_name');
-            $table->integer('point1');
-            $table->integer('point2');
-            $table->integer('point3');
 
             $table->timestamps();
         });
@@ -34,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('unit');
+        Schema::dropIfExists('student_class');
     }
 };

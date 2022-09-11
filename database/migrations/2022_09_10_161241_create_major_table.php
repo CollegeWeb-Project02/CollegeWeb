@@ -18,6 +18,7 @@ return new class extends Migration
 
             $table->string('major_name');
             $table->integer('unit_id');
+            $table->integer('student_class_id');
 
             $table->timestamps();
         });

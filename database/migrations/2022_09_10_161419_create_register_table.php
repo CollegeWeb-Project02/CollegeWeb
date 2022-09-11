@@ -18,6 +18,8 @@ return new class extends Migration
 
             $table->integer('major_id');
             $table->integer('unit_id');
+            $table->integer('student_register_id');
+            $table->integer('status_id');
             $table->integer('point1');
             $table->integer('point2');
             $table->integer('point3');
