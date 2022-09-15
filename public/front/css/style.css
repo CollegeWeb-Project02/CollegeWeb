@@ -9988,7 +9988,7 @@ div.course-register-form form {
 div.course-register-form form input:focus {
     border: 1px solid #ebebeb !important;
 }
-div.related-course img {
+div.course-sidebar-right img {
     max-width: 10% !important;
 }
 div.course-register-item {
