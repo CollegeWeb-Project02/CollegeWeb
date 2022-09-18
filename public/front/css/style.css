@@ -9990,3 +9990,42 @@ h6,
 }
 
 
+
+/* Course details */
+div.course-register-form div.col-lg-6, div.course-register-form div.col-lg-12 {
+    margin-bottom: 20px !important;
+}
+div.course-register-form form label{
+    display: inline-block;
+    color: white;
+}
+div.course-register-form form input{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+    height: 44px;
+}
+div.course-register-form form textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ebebeb;
+    height:80px;
+}
+div.course-register-form button {
+    max-width: 60%;
+    margin: 0 auto;
+}
+div.course-register-form form {
+    max-width: 90%;
+    margin: 0 auto;
+}
+div.course-register-form form input:focus {
+    border: 1px solid #ebebeb !important;
+}
+div.course-sidebar-right img {
+    max-width: 10% !important;
+}
+div.course-register-item {
+    margin-bottom: 1.5em;
+}
+
