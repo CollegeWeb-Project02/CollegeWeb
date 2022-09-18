@@ -9956,3 +9956,37 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+.nav-link{
+    display: block;
+    position: relative;
+}
+
+.nav-link:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-top: 3px solid #FF6600;
+    transition: .25s;
+    height: 100%;
+    top: 2.8em;
+}
+
+.nav-link:hover:before{
+    width: 70%;
+}
+
+.navbar-left .nav-link:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-top: 3px solid #FF6600;
+    transition: .25s;
+    height: 100%;
+    top: 2.4em;
+}
+.navbar-left .nav-link:hover:before{
+    width: 85%;
+}
+
+

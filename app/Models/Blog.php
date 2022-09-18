@@ -9,11 +9,15 @@ class Blog extends Model
 {
     use HasFactory;
 
-    protected $table = 'blogs';
+    protected $table = 'blog';
     protected $primaryKey = 'id';
     protected $guarded = [];
 
-    public function blogComment(){
-        return $this->hasMany(BlogComment::class, 'blog_id', 'id');
+    public function comment(){
+        return $this->hasMany(Comment::class, 'blog_id', 'id');
+    }
+
+    public function course(){
+        return $this->belongsTo(Course::class, 'course_id', 'id');
     }
 }

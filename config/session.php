@@ -53,8 +53,8 @@ return [
     | Session File Location
     |--------------------------------------------------------------------------
     |
-    | When using the native session driver, we need a location where session
-    | files may be stored. A default has been set for you but a different
+    | When using the native session driver, we need Teacher location where session
+    | files may be stored. A default has been set for you but Teacher different
     | location may be specified. This is only needed for file sessions.
     |
     */
@@ -66,9 +66,9 @@ return [
     | Session Database Connection
     |--------------------------------------------------------------------------
     |
-    | When using the "database" or "redis" session drivers, you may specify a
+    | When using the "database" or "redis" session drivers, you may specify Teacher
     | connection that should be used to manage these sessions. This should
-    | correspond to a connection in your database configuration options.
+    | correspond to Teacher connection in your database configuration options.
     |
     */
 
@@ -80,7 +80,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | When using the "database" session driver, you may specify the table we
-    | should use to manage the sessions. Of course, a sensible default is
+    | should use to manage the sessions. Of course, Teacher sensible default is
     | provided for you; however, you are free to change this as needed.
     |
     */
@@ -93,7 +93,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | While using one of the framework's cache driven session backends you may
-    | list a cache store that should be used for these sessions. This value
+    | list Teacher cache store that should be used for these sessions. This value
     | must match with one of the application's configured cache "stores".
     |
     | Affects: "apc", "dynamodb", "memcached", "redis"
@@ -109,7 +109,7 @@ return [
     |
     | Some session drivers must manually sweep their storage location to get
     | rid of old sessions from storage. Here are the chances that it will
-    | happen on a given request. By default, the odds are 2 out of 100.
+    | happen on Teacher given request. By default, the odds are 2 out of 100.
     |
     */
 
@@ -120,8 +120,8 @@ return [
     | Session Cookie Name
     |--------------------------------------------------------------------------
     |
-    | Here you may change the name of the cookie used to identify a session
-    | instance by ID. The name specified here will get used every time a
+    | Here you may change the name of the cookie used to identify Teacher session
+    | instance by ID. The name specified here will get used every time Teacher
     | new session cookie is created by the framework for every driver.
     |
     */
@@ -149,7 +149,7 @@ return [
     | Session Cookie Domain
     |--------------------------------------------------------------------------
     |
-    | Here you may change the domain of the cookie used to identify a session
+    | Here you may change the domain of the cookie used to identify Teacher session
     | in your application. This will determine which domains the cookie is
     | available to in your application. A sensible default has been set.
     |
@@ -163,7 +163,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | By setting this option to true, session cookies will only be sent back
-    | to the server if the browser has a HTTPS connection. This will keep
+    | to the server if the browser has Teacher HTTPS connection. This will keep
     | the cookie from being sent to you when it can't be done securely.
     |
     */
@@ -190,7 +190,7 @@ return [
     |
     | This option determines how your cookies behave when cross-site requests
     | take place, and can be used to mitigate CSRF attacks. By default, we
-    | will set this value to "lax" since this is a secure default value.
+    | will set this value to "lax" since this is Teacher secure default value.
     |
     | Supported: "lax", "strict", "none", null
     |

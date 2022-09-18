@@ -1,6 +1,6 @@
 @extends('front.layout.master-breadcrumb')
 
-@section('title', 'Teacher')
+@section('title', 'Comment')
 
 @section('body')
     <!-- Team Start -->

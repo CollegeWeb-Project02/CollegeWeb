@@ -44,7 +44,7 @@
                             sadipscing gubergren erat.</p>
                     </div>
 
-                    <!-- Comment List -->
+                    <!-- Teacher List -->
                     <div class="mb-5">
                         <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">3 Comments</h3>
                         <div class="media mb-4">
@@ -83,7 +83,7 @@
                         </div>
                     </div>
 
-                    <!-- Comment Form -->
+                    <!-- Teacher Form -->
                     <div class="bg-secondary rounded p-5">
                         <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Leave a comment</h3>
                         <form>

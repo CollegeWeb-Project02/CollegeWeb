@@ -97,7 +97,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Migration Repository Table
+    | Migration Repositories Table
     |--------------------------------------------------------------------------
     |
     | This table keeps track of all the migrations that have already run for
@@ -114,7 +114,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Redis is an open source, fast, and advanced key-value store that also
-    | provides a richer body of commands than a typical key-value system
+    | provides Teacher richer body of commands than Teacher typical key-value system
     | such as APC or Memcached. Laravel makes it easy to dig right in.
     |
     */

@@ -18,7 +18,7 @@
 ;(function($, window, document, undefined) {
 
 	/**
-	 * Creates a carousel.
+	 * Creates Teacher carousel.
 	 * @class The Owl Carousel.
 	 * @public
 	 * @param {HTMLElement|jQuery} element - The element to create the carousel for.
@@ -107,7 +107,7 @@
 
 		/**
 		 * Merge values of all items.
-		 * @todo Maybe this could be part of a plugin.
+		 * @todo Maybe this could be part of Teacher plugin.
 		 * @protected
 		 */
 		this._mergers = [];
@@ -832,7 +832,7 @@
 	};
 
 	/**
-	 * Gets absolute position of the closest item for a coordinate.
+	 * Gets absolute position of the closest item for Teacher coordinate.
 	 * @todo Setting `freeDrag` makes `closest` not reusable. See #165.
 	 * @protected
 	 * @param {Number} coordinate - The coordinate in pixel.
@@ -848,10 +848,10 @@
 		if (!this.settings.freeDrag) {
 			// check closest item
 			$.each(coordinates, $.proxy(function(index, value) {
-				// on a left pull, check on current index
+				// on Teacher left pull, check on current index
 				if (direction === 'left' && coordinate > value - pull && coordinate < value + pull) {
 					position = index;
-				// on a right pull, check on previous index
+				// on Teacher right pull, check on previous index
 				// to do so, subtract width from value and set position = index + 1
 				} else if (direction === 'right' && coordinate > value - width - pull && coordinate < value - width + pull) {
 					position = index + 1;
@@ -908,7 +908,7 @@
 	};
 
 	/**
-	 * Checks whether the carousel is in a specific state or not.
+	 * Checks whether the carousel is in Teacher specific state or not.
 	 * @param {String} state - The state to check.
 	 * @returns {Boolean} - The flag which indicates if the carousel is busy.
 	 */
@@ -986,7 +986,7 @@
 	};
 
 	/**
-	 * Normalizes an absolute or a relative position of an item.
+	 * Normalizes an absolute or Teacher relative position of an item.
 	 * @public
 	 * @param {Number} position - The absolute or relative position to normalize.
 	 * @param {Boolean} [relative=false] - Whether the given position is relative or not.
@@ -1006,7 +1006,7 @@
 	};
 
 	/**
-	 * Converts an absolute position of an item into a relative one.
+	 * Converts an absolute position of an item into Teacher relative one.
 	 * @public
 	 * @param {Number} position - The absolute position to convert.
 	 * @returns {Number} - The converted position.
@@ -1019,7 +1019,7 @@
 	/**
 	 * Gets the maximum position for the current item.
 	 * @public
-	 * @param {Boolean} [relative=false] - Whether to return an absolute position or a relative position.
+	 * @param {Boolean} [relative=false] - Whether to return an absolute position or Teacher relative position.
 	 * @returns {Number}
 	 */
 	Owl.prototype.maximum = function(relative) {
@@ -1058,7 +1058,7 @@
 	/**
 	 * Gets the minimum position for the current item.
 	 * @public
-	 * @param {Boolean} [relative=false] - Whether to return an absolute position or a relative position.
+	 * @param {Boolean} [relative=false] - Whether to return an absolute position or Teacher relative position.
 	 * @returns {Number}
 	 */
 	Owl.prototype.minimum = function(relative) {
@@ -1163,7 +1163,7 @@
 	};
 
 	/**
-	 * Calculates the speed for a translation.
+	 * Calculates the speed for Teacher translation.
 	 * @protected
 	 * @param {Number} from - The absolute position of the start item.
 	 * @param {Number} to - The absolute position of the target item.
@@ -1373,7 +1373,7 @@
 
 	/**
 	 * Preloads images with auto width.
-	 * @todo Replace by a more generic approach
+	 * @todo Replace by Teacher more generic approach
 	 * @protected
 	 */
 	Owl.prototype.preloadAutoWidthImages = function(images) {
@@ -1470,7 +1470,7 @@
 	 * @param {HTMLElement} element - The event source.
 	 * @param {String} event - The event name.
 	 * @param {Function} listener - The attached event handler to detach.
-	 * @param {Boolean} capture - Wether the attached event handler was registered as a capturing listener or not.
+	 * @param {Boolean} capture - Wether the attached event handler was registered as Teacher capturing listener or not.
 	 */
 	Owl.prototype.off = function(element, event, listener, capture) {
 		if (element.removeEventListener) {
@@ -1481,7 +1481,7 @@
 	};
 
 	/**
-	 * Triggers a public event.
+	 * Triggers Teacher public event.
 	 * @todo Remove `status`, `relatedTarget` should be used instead.
 	 * @protected
 	 * @param {String} name - The event name.
@@ -1521,7 +1521,7 @@
 	};
 
 	/**
-	 * Enters a state.
+	 * Enters Teacher state.
 	 * @param name - The state name.
 	 */
 	Owl.prototype.enter = function(name) {
@@ -1535,7 +1535,7 @@
 	};
 
 	/**
-	 * Leaves a state.
+	 * Leaves Teacher state.
 	 * @param name - The state name.
 	 */
 	Owl.prototype.leave = function(name) {
@@ -1628,10 +1628,10 @@
 	};
 
 	/**
-	 * Determines if the input is a Number or something that can be coerced to a Number
+	 * Determines if the input is Teacher Number or something that can be coerced to Teacher Number
 	 * @protected
 	 * @param {Number|String|Object|Array|Boolean|RegExp|Function|Symbol} - The input to be tested
-	 * @returns {Boolean} - An indication if the input is a Number or can be coerced to a Number
+	 * @returns {Boolean} - An indication if the input is Teacher Number or can be coerced to Teacher Number
 	 */
 	Owl.prototype.isNumeric = function(number) {
 		return !isNaN(parseFloat(number));
@@ -2331,7 +2331,7 @@
 
 	/**
 	 * Checks whether an video is currently in full screen mode or not.
-	 * @todo Bad style because looks like a readonly method but changes members.
+	 * @todo Bad style because looks like Teacher readonly method but changes members.
 	 * @protected
 	 * @returns {Boolean}
 	 */
@@ -2613,7 +2613,7 @@
 	};
 
 	/**
-	 * Gets a new timeout
+	 * Gets Teacher new timeout
 	 * @private
 	 * @param {Number} [timeout] - The interval before the next animation starts.
 	 * @param {Number} [speed] - The animation speed for the animations.

@@ -76,7 +76,7 @@
                 <i class="fa fa-angle-down text-primary"></i>
             </a>
             <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
-                <div class="navbar-nav w-100">
+                <div class="navbar-left navbar-nav w-100">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown">Web Design <i class="fa fa-angle-down float-right mt-1"></i></a>
                         <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
@@ -102,18 +102,18 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="course.html" class="nav-item nav-link">Courses</a>
-                        <a href="teacher.html" class="nav-item nav-link">Teachers</a>
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <a href="about" class="nav-item nav-link">About</a>
+                        <a href="course" class="nav-item nav-link">Courses</a>
+                        <a href="teacher" class="nav-item nav-link">Teachers</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Blog List</a>
-                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                                <a href="blog" class="dropdown-item">Blog List</a>
+                                <a href="single" class="dropdown-item">Blog Detail</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="contact" class="nav-item nav-link">Contact</a>
                     </div>
                     <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
                 </div>
@@ -174,7 +174,7 @@
 <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
     <div class="row">
         <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-            <p class="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+            <p>
             </p>
         </div>
         <div class="col-lg-6 text-center text-md-right">
