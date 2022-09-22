@@ -4,7 +4,7 @@
 /public/storage
 /storage/*.key
 /vendor
-.env
+../../Users/ThinkBook/Documents/GitHub/CollegeWeb/.env
 .env.backup
 .phpunit.result.cache
 Homestead.json

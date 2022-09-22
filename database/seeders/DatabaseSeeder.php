@@ -100,17 +100,32 @@ class DatabaseSeeder extends Seeder
             [
                 'student_id' => 1,
                 'student_email' => 'nguyenkhanh08112003@gmail.com',
-                'password' => '',
+                'password' => 'fpt21036',
             ],
             [
                 'student_id' => 2,
-                'student_email' => '',
-                'password' => '',
+                'student_email' => 'hoangckhg123@gmail.com',
+                'password' => 'fpt12345',
             ],
             [
                 'student_id' => 3,
-                'student_email' => '',
-                'password' => '',
+                'student_email' => 'dinhquanganh87@gmail.com',
+                'password' => 'fpt49758',
+            ],
+            [
+                'student_id' => 4,
+                'student_email' => 'nguyenmanhkien@gmail.com',
+                'password' => 'fpt86175',
+            ],
+            [
+                'student_id' => 5,
+                'student_email' => 'dinhcongbangsad@gmail.com',
+                'password' => 'fpt55578',
+            ],
+            [
+                'student_id' => 6,
+                'student_email' => 'tavanminhbot@gmail.com',
+                'password' => 'fpt68925',
             ],
         ]);
 
@@ -118,7 +133,37 @@ class DatabaseSeeder extends Seeder
             [
                 'staff_id' => 1,
                 'staff_email' => 'hoangluongviet2003@gmail.com',
-                'password' => '123',
+                'password' => 'staffedu485',
+                'level' => 2,
+            ],
+            [
+                'staff_id' => 2,
+                'staff_email' => 'khanhbanguyen2003@gmail.com',
+                'password' => 'staffedu789',
+                'level' => 2,
+            ],
+            [
+                'staff_id' => 3,
+                'staff_email' => 'anhquangdinh2000@gmail.com',
+                'password' => 'staffedu696',
+                'level' => 2,
+            ],
+            [
+                'staff_id' => 4,
+                'staff_email' => 'kienmanhnguyen2003@gmail.com',
+                'password' => 'staffedu123',
+                'level' => 2,
+            ],
+            [
+                'staff_id' => 5,
+                'staff_email' => 'bangcongdinh2003@gmail.com',
+                'password' => 'staffedu753',
+                'level' => 2,
+            ],
+            [
+                'staff_id' => 1,
+                'staff_email' => 'minhvanta2003@gmail.com',
+                'password' => 'staffedu852',
                 'level' => 2,
             ],
             ]);
@@ -239,6 +284,72 @@ class DatabaseSeeder extends Seeder
                 'discount' => null,
                 'status' => 1,
             ],
+            [
+                'course_name' => 'Security',
+                'description' => '',
+                'title' => '',
+                'subtitle' => 'Web protected',
+                'image' => 'cat-9.jpg',
+                'time' => 12,
+                'price' => 150,
+                'discount' => null,
+                'status' => 1,
+            ],
+            [
+                'course_name' => 'Security',
+                'description' => '',
+                'title' => '',
+                'subtitle' => 'Internet Security',
+                'image' => 'cat-10.jpg',
+                'time' => 12,
+                'price' => 190,
+                'discount' => null,
+                'status' => 1,
+            ],
+            [
+                'course_name' => 'Manage',
+                'description' => '',
+                'title' => '',
+                'subtitle' => 'Computer system management',
+                'image' => 'cat-11.jpg',
+                'time' => 12,
+                'price' => 190,
+                'discount' => null,
+                'status' => 1,
+            ],
+            [
+                'course_name' => 'Software',
+                'description' => '',
+                'title' => '',
+                'subtitle' => 'Upgrade and update the app',
+                'image' => 'cat-12.jpg',
+                'time' => 12,
+                'price' => 210,
+                'discount' => null,
+                'status' => 1,
+            ],
+            [
+                'course_name' => 'Hardware',
+                'description' => '',
+                'title' => '',
+                'subtitle' => 'Basic knowledge of hardware',
+                'image' => 'cat-13.jpg',
+                'time' => 12,
+                'price' => 190,
+                'discount' => null,
+                'status' => 1,
+            ],
+            [
+                'course_name' => 'Hardware',
+                'description' => '',
+                'title' => '',
+                'subtitle' => 'Advanced knowledge of hardware',
+                'image' => 'cat-14.jpg',
+                'time' => 12,
+                'price' => 190,
+                'discount' => null,
+                'status' => 1,
+            ],
         ]);
 
         DB::table('classes')->insert([
@@ -342,8 +453,8 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Vero ipsum sea justo dolore eirmod amet dolor tempor lorem',
                 'subtitle' => 'Est dolor lorem et ea',
                 'image' => 'blog-1.jpg',
-                'image1' => 'carousel-1.jpg',
-                'image2' => 'blog-1.jpg',
+                'image1' => 'carousel-2.jpg',
+                'image2' => 'blog-11.jpg',
                 'content1' => 'Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
                             Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
                             consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit
@@ -361,29 +472,56 @@ class DatabaseSeeder extends Seeder
             [
                 'id' => 2,
                 'staff_id' => 1,
-                'title' => 'Vero ipsum sea justo dolore eirmod amet dolor tempor lorem',
-                'subtitle' => 'Est dolor lorem et ea',
+                'title' => 'Stet clita kasd gubergren, zzril delinit augue duis painait nulla facilita',
+                'subtitle' => 'Es ist ein Schmerz im Arsch',
                 'image' => 'blog-2.jpg',
-                'image1' => 'carousel-1.jpg',
-                'image2' => 'blog-1.jpg',
-                'content1' => '',
-                'content2' => '',
-                'content3' => '',
-                'content4' => '',
+                'image1' => 'carousel-3.jpg',
+                'image2' => 'blog-9.jpg',
+                'content1' => 'Aliquam sit amet magna quam. Magna praesent ibidem. Nunumy sane mundus desolabitur et magnus mundus magno labore. Illum tristique accusamus et s
+                               anctum. Earum ut invidunt ut Klita dolor sit. Diam Mare nullum Mare Takimata est Sanctu
+                               s Diam Kasd Gubergren, Takimata Sancta Takimata est Sanctus Diam Kasd Kasd Gubergren..',
+                'content2' => 'Tristis est voluptas, sed invidia non est temporalis.
+                            Sancta Rebu erigitur. Sed accusatio stetit
+                            Sanctus mundi, kasd duo dolores et dolores. Duo sancti eam amabunt et operabuntur pro ea.
+                            Fiet, sed erit tantum pars, et erit dolor
+                            mi, ne sit diam. Dolor erat ipsum dolor non zelus.',
+                'content3' => 'Labore et odio torquet, odit cum voluptate, sanctus, sanctus.
+                            Clita dolor sit kasd diam takimata nur diam lorem sed. Volo eam reprehendere. Vitae non magna dolor
+                            In tempore Rebum perficietur, opus sacrum, sed Nonumy Diam multo magis erit. Sed sit tempor faucibus, ullamcorper mi
+                            Is in funere zkril interfuit et duorum tristium hominum propagationem delevit. Adipiscing consectetuer, sed diam praesent luptatum zzril delenit augue sit amet
+                            Dolore perpetua sadipscing cum. Clit dolore ipsum dolor sit. Sed zelus dorsi dolor kasd gubergren
+                            Molestiae erat, sed magna erat. Penitus regitur ab eirmod kasd
+                            Et bis see kasd clita ipsum et takimata kasd diam sit amet nisi aliquam erat.
+                             cum labore et dolore multum se regunt, si eos cum dolore et labore et voluptate gravant.
+                             . Ipse nos operari simul vult. Eos ut est magni ut rem.',
+                'content4' => 'Von Arbeit und Hass durchdrungen, will er hassen, heilig, heilig. Clita tut Kasd weh
+                               diam kasd kasd diam kasd gubergren, aber diam kasd takimata der Schmerz des Lebens wird nicht kritisieren.
+                               amet diam praesent luptatum zzril delenit ague duis vorhanden luptatum zzril delenit ague duis
+                               diam kasd kasd diam kasd gubergren, aber diam kasd takimata der Schmerz des Lebens wird nicht kritisieren
+                               Dolore perpetua sadipscing cum. Clit dolore ipsum dolor sit. Sed zelus dorsi dolor kasd gubergren
+                               .',
                 'tag' => '',
             ],
             [
                 'id' => 3,
                 'staff_id' => 1,
-                'title' => 'Vero ipsum sea justo dolore eirmod amet dolor tempor lorem',
+                'title' => 'Haufinyane tjena, ka linako tse ling ha ho hlokahale hore u tsamaee',
                 'subtitle' => 'Est dolor lorem et ea',
-                'image' => 'blog-3.jpg',
-                'image1' => 'carousel-1.jpg',
-                'image2' => 'blog-1.jpg',
-                'content1' => '',
-                'content2' => '',
-                'content3' => '',
-                'content4' => '',
+                'image' => 'blog-4.jpg',
+                'image1' => 'carousel-4.jpg',
+                'image2' => 'blog-7.jpg',
+                'content1' => 'Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
+                            Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
+                            consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit
+                            gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea
+                            sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.',
+                'content2' => 'Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet
+                            consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
+                            sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et.
+                            Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor
+                            elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt.',
+                'content3' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos magna, justo gubergren labore sit.',
+                'content4' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat.',
                 'tag' => '',
             ],
             [
@@ -393,11 +531,19 @@ class DatabaseSeeder extends Seeder
                 'subtitle' => 'Est dolor lorem et ea',
                 'image' => 'blog-3.jpg',
                 'image1' => 'carousel-1.jpg',
-                'image2' => 'blog-1.jpg',
-                'content1' => '',
-                'content2' => '',
-                'content3' => '',
-                'content4' => '',
+                'image2' => 'blog-12.jpg',
+                'content1' => 'Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
+                            Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
+                            consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit
+                            gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea
+                            sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.',
+                'content2' => 'Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet
+                            consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
+                            sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et.
+                            Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor
+                            elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt.',
+                'content3' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos magna, justo gubergren labore sit.',
+                'content4' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat.',
                 'tag' => '',
             ],
             [
@@ -405,13 +551,21 @@ class DatabaseSeeder extends Seeder
                 'staff_id' => 1,
                 'title' => 'Vero ipsum sea justo dolore eirmod amet dolor tempor lorem',
                 'subtitle' => 'Est dolor lorem et ea',
-                'image' => 'blog-3.jpg',
-                'image1' => 'carousel-1.jpg',
-                'image2' => 'blog-1.jpg',
-                'content1' => '',
-                'content2' => '',
-                'content3' => '',
-                'content4' => '',
+                'image' => 'blog-5.jpg',
+                'image1' => 'carousel-5.jpg',
+                'image2' => 'blog-10.jpg',
+                'content1' => 'Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
+                            Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
+                            consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit
+                            gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea
+                            sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.',
+                'content2' => 'Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet
+                            consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
+                            sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et.
+                            Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor
+                            elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt.',
+                'content3' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos magna, justo gubergren labore sit.',
+                'content4' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat.',
                 'tag' => '',
             ],
             [
@@ -419,13 +573,87 @@ class DatabaseSeeder extends Seeder
                 'staff_id' => 1,
                 'title' => 'Vero ipsum sea justo dolore eirmod amet dolor tempor lorem',
                 'subtitle' => 'Est dolor lorem et ea',
-                'image' => 'blog-3.jpg',
+                'image' => 'blog-6.jpg',
+                'image1' => 'carousel-6.jpg',
+                'image2' => 'blog-8.jpg',
+                'content1' => 'Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
+                            Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
+                            consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit
+                            gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea
+                            sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.',
+                'content2' => 'Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet
+                            consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
+                            sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et.
+                            Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor
+                            elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt.',
+                'content3' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos magna, justo gubergren labore sit.',
+                'content4' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat.',
+                'tag' => '',
+            ],
+            [
+            'id' => 7,
+            'staff_id' => 1,
+            'title' => 'Vero ipsum sea justo dolore eirmod amet dolor tempor lorem',
+            'subtitle' => 'Est dolor lorem et ea',
+            'image' => 'blog-13.jpg',
+            'image1' => 'carousel-5.jpg',
+            'image2' => 'blog-10.jpg',
+            'content1' => 'Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
+                            Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
+                            consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit
+                            gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea
+                            sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.',
+            'content2' => 'Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet
+                            consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
+                            sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et.
+                            Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor
+                            elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt.',
+            'content3' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos magna, justo gubergren labore sit.',
+            'content4' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat.',
+            'tag' => '',
+            ],
+            [
+                'id' => 8,
+                'staff_id' => 1,
+                'title' => 'Vero ipsum sea justo dolore eirmod amet dolor tempor lorem',
+                'subtitle' => 'Est dolor lorem et ea',
+                'image' => 'blog-14.jpg',
+                'image1' => 'carousel-4.jpg',
+                'image2' => 'blog-13.jpg',
+                'content1' => 'Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
+                            Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
+                            consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit
+                            gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea
+                            sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.',
+                'content2' => 'Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet
+                            consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
+                            sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et.
+                            Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor
+                            elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt.',
+                'content3' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos magna, justo gubergren labore sit.',
+                'content4' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat.',
+                'tag' => '',
+            ],
+            [
+                'id' => 9,
+                'staff_id' => 1,
+                'title' => 'Vero ipsum sea justo dolore eirmod amet dolor tempor lorem',
+                'subtitle' => 'Est dolor lorem et ea',
+                'image' => 'blog-15.jpg',
                 'image1' => 'carousel-1.jpg',
-                'image2' => 'blog-1.jpg',
-                'content1' => '',
-                'content2' => '',
-                'content3' => '',
-                'content4' => '',
+                'image2' => 'blog-14.jpg',
+                'content1' => 'Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut magna lorem.
+                            Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet amet magna accusam
+                            consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at sanctus et. Ipsum sit
+                            gubergren dolores et, consetetur justo invidunt at et aliquyam ut et vero clita. Diam sea
+                            sea no sed dolores diam nonumy, gubergren sit stet no diam kasd vero.',
+                'content2' => 'Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores vero stet
+                            consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit nonumy kasd diam dolores,
+                            sanctus lorem kasd duo dolor dolor vero sit et. Labore ipsum duo sanctus amet eos et.
+                            Consetetur no sed et aliquyam ipsum justo et, clita lorem sit vero amet amet est dolor
+                            elitr, stet et no diam sit. Dolor erat justo dolore sit invidunt.',
+                'content3' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat aliquyam et ut. Ea sed sadipscing no justo et eos labore, gubergren ipsum magna dolor lorem dolore, elitr aliquyam takimata sea kasd dolores diam, amet et est accusam labore eirmod vero et voluptua. Amet labore clita duo et no. Rebum voluptua magna eos magna, justo gubergren labore sit.',
+                'content4' => 'Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat.',
                 'tag' => '',
             ]
         ]);

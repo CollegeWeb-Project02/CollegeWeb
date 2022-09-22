@@ -14,11 +14,11 @@
                             {{ date('M d, Y', strtotime($blog->created_at)) }}
                         </h6>
                         <h1 class="mb-5">{{ $blog->title }}</h1>
-                        <img class="img-fluid rounded w-100 mb-4" src="front/img/carousel-1.jpg" alt="Image">
+                        <img class="img-fluid rounded w-100 mb-4" src="front/img/{{ $blog->image1 }}" alt="Image">
                         <p>{{ $blog->content1 }}</p>
                         <p>{{ $blog->content2 }}</p>
                         <h2 class="mb-4">Est dolor lorem et ea</h2>
-                        <img class="img-fluid rounded w-50 float-left mr-4 mb-3" src="front/img/blog-1.jpg" alt="Image">
+                        <img class="img-fluid rounded w-50 float-left mr-4 mb-3" src="front/img/{{ $blog->image2 }}" alt="Image">
                         <p>{{ $blog->content3 }}</p>
                         <p>{{ $blog->content4 }}</p>
                     </div>
