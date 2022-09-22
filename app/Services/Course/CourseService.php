@@ -14,9 +14,20 @@ class CourseService extends BaseService implements CourseServiceInterface
         $this->repository = $courseRepository;
     }
 
-    public function getRelatedCourse($course, $limit = 8)
+    public function find($id){
+        $course = $this->repository->find($id);
+
+        return $course;
+    }
+
+    public function getRelatedCourse($course, $limit = 6)
     {
         return $this->repository->getRelatedCourse($course, $limit);
+    }
+
+    public function getLimitCourse($course, $limit = 4)
+    {
+        return $this->repository->getLimitCourse($course, $limit);
     }
 
     public function getFeaturedCourse(){

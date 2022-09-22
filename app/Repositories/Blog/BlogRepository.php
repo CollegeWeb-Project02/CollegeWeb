@@ -13,7 +13,7 @@ class BlogRepository extends BaseRepository implements BlogRepositoryInterface
 
     public function getLatestBlogs($limit = 3)
     {
-        return $this->model->orderBy('id', 'desc')
+        return $this->model
             ->limit($limit)
             ->get();
     }

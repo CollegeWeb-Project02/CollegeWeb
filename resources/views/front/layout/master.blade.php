@@ -103,19 +103,13 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav py-0">
                         <a href="/" class="nav-item nav-link active">Home</a>
-                        <a href="about" class="nav-item nav-link">About</a>
-                        <a href="course" class="nav-item nav-link">Courses</a>
-                        <a href="teacher" class="nav-item nav-link">Teachers</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="blog" class="dropdown-item">Blog List</a>
-                                <a href="single" class="dropdown-item">Blog Detail</a>
-                            </div>
-                        </div>
-                        <a href="contact" class="nav-item nav-link">Contact</a>
+                        <a href="/about" class="nav-item nav-link">About</a>
+                        <a href="/course" class="nav-item nav-link">Courses</a>
+                        <a href="/teacher" class="nav-item nav-link">Teachers</a>
+                        <a href="/blog" class="nav-item nav-link">Blog</a>
+                        <a href="/contact" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
+                    <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="/login">Join Now</a>
                 </div>
             </nav>
         </div>

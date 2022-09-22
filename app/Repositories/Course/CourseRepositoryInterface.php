@@ -6,7 +6,10 @@ use App\Repositories\RepositoryInterface;
 
 interface CourseRepositoryInterface extends RepositoryInterface
 {
-    public function getRelatedCourse($course, $limit = 8);
+    public function getRelatedCourse($course, $limit = 6);
+
+    public function getLimitCourse($course, $limit = 6);
 
     public function getFeaturedCourseByCourse();
+
 }

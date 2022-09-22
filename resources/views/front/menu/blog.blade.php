@@ -9,60 +9,19 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row pb-3">
+                        @foreach($blogs as $blog)
                         <div class="col-lg-6 mb-4">
                             <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="front/img/blog-1.jpg" alt="">
-                                <a class="blog-overlay text-decoration-none" href="">
-                                    <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                                    <p class="text-primary m-0">Jan 01, 2050</p>
+                                <img class="img-fluid" src="front/img/{{ $blog->image }}" alt="">
+                                <a class="blog-overlay text-decoration-none" href="/blog/single/{{ $blog->id }}">
+                                    <h5 class="text-white mb-3">{{ $blog->title }}</h5>
+                                    <p class="text-primary m-0">
+                                        {{ date('M d, Y', strtotime($blog->created_at)) }}
+                                    </p>
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="front/img/blog-2.jpg" alt="">
-                                <a class="blog-overlay text-decoration-none" href="">
-                                    <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                                    <p class="text-primary m-0">Jan 01, 2050</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="front/img/blog-3.jpg" alt="">
-                                <a class="blog-overlay text-decoration-none" href="">
-                                    <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                                    <p class="text-primary m-0">Jan 01, 2050</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="front/img/blog-1.jpg" alt="">
-                                <a class="blog-overlay text-decoration-none" href="">
-                                    <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                                    <p class="text-primary m-0">Jan 01, 2050</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="front/img/blog-2.jpg" alt="">
-                                <a class="blog-overlay text-decoration-none" href="">
-                                    <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                                    <p class="text-primary m-0">Jan 01, 2050</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-4">
-                            <div class="blog-item position-relative overflow-hidden rounded mb-2">
-                                <img class="img-fluid" src="front/img/blog-3.jpg" alt="">
-                                <a class="blog-overlay text-decoration-none" href="">
-                                    <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut clita</h5>
-                                    <p class="text-primary m-0">Jan 01, 2050</p>
-                                </a>
-                            </div>
-                        </div>
+                        @endforeach
                         <div class="col-12">
                             <nav aria-label="Page navigation">
                                 <ul class="pagination pagination-lg justify-content-center mb-0">
@@ -113,53 +72,29 @@
                     <div class="mb-5">
                         <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Categories</h3>
                         <ul class="list-group list-group-flush">
+                            @foreach($subjectslimit as $subject)
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="" class="text-decoration-none h6 m-0">Web Design</a>
+                                <a href="" class="text-decoration-none h6 m-0">{{ $subject->subject_name }}</a>
                                 <span class="badge badge-primary badge-pill">150</span>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="" class="text-decoration-none h6 m-0">Web Development</a>
-                                <span class="badge badge-primary badge-pill">131</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="" class="text-decoration-none h6 m-0">Online Marketing</a>
-                                <span class="badge badge-primary badge-pill">78</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="" class="text-decoration-none h6 m-0">Keyword Research</a>
-                                <span class="badge badge-primary badge-pill">56</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="" class="text-decoration-none h6 m-0">Email Marketing</a>
-                                <span class="badge badge-primary badge-pill">98</span>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
 
                     <!-- Recent Post -->
                     <div class="mb-5">
                         <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Post</h3>
+                        @foreach($bloglimit as $blog)
                         <a class="d-flex align-items-center text-decoration-none mb-3" href="">
-                            <img class="img-fluid rounded" src="front/img/blog-80x80.jpg" alt="">
+                            <img class="img-fluid rounded" width="80px" height="80px" src="front/img/{{ $blog->image }}" alt="">
                             <div class="pl-3">
-                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
+                                <h6 class="m-1">{{ $blog->title }}</h6>
+                                <small>
+                                    {{ date('M d, Y', strtotime($blog->created_at)) }}
+                                </small>
                             </div>
                         </a>
-                        <a class="d-flex align-items-center text-decoration-none mb-3" href="">
-                            <img class="img-fluid rounded" src="front/img/blog-80x80.jpg" alt="">
-                            <div class="pl-3">
-                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
-                            </div>
-                        </a>
-                        <a class="d-flex align-items-center text-decoration-none mb-3" href="">
-                            <img class="img-fluid rounded" src="front/img/blog-80x80.jpg" alt="">
-                            <div class="pl-3">
-                                <h6 class="m-1">Diam lorem dolore justo eirmod lorem dolore</h6>
-                                <small>Jan 01, 2050</small>
-                            </div>
-                        </a>
+                        @endforeach
                     </div>
 
                     <!-- Tag Cloud -->

@@ -22,21 +22,21 @@ Route::prefix('about')->group(function() {
 });
 
 Route::prefix('course')->group(function() {
-    Route::get('/', function (){
-        return view('front.menu.course');
-    });
+    Route::get('/', [\App\Http\Controllers\Front\CourseController::class, 'index']);
+    Route::get('/course-details/{id}', [\App\Http\Controllers\Front\CourseController::class, 'show']);
 });
 
 Route::prefix('teacher')->group(function() {
-    Route::get('/', function (){
-        return view('front.menu.teacher');
-    });
+    Route::get('/', [\App\Http\Controllers\Front\TeacherController::class, 'teacher']);
+});
+
+Route::prefix('login')->group(function() {
+    Route::get('/', [\App\Http\Controllers\Front\AccountController::class, 'login']);
 });
 
 Route::prefix('blog')->group(function() {
-    Route::get('/', function (){
-        return view('front.menu.blog');
-    });
+    Route::get('/', [\App\Http\Controllers\Front\BlogController::class, 'index']);
+    Route::get('/single/{id}', [\App\Http\Controllers\Front\BlogController::class, 'blogid']);
 });
 
 Route::prefix('contact')->group(function() {

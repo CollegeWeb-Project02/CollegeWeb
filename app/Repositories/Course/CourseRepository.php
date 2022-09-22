@@ -11,9 +11,14 @@ class CourseRepository extends BaseRepository implements CourseRepositoryInterfa
     {
         return Course::class;
     }
-    public function getRelatedCourse($course, $limit = 8){
-        return $this->model->where('course_id', $course->course_id)
-            ->where('course_name', $course->name)
+    public function getRelatedCourse($course, $limit = 6){
+        return $this->model
+            ->limit($limit)
+            ->get();
+    }
+
+    public function getLimitCourse($course, $limit = 4){
+        return $this->model
             ->limit($limit)
             ->get();
     }
@@ -22,4 +27,6 @@ class CourseRepository extends BaseRepository implements CourseRepositoryInterfa
         return $this->model->where('status', true)
             ->get();
     }
+
+
 }

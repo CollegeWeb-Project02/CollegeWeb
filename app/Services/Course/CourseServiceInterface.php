@@ -6,7 +6,9 @@ use App\Services\ServiceInterface;
 
 interface CourseServiceInterface extends ServiceInterface
 {
-    public function getRelatedCourse($course, $limit = 8);
+    public function getRelatedCourse($course, $limit = 6);
+
+    public function getLimitCourse($course, $limit = 4);
 
     public function getFeaturedCourse();
 }

@@ -18,8 +18,14 @@ return new class extends Migration
 
             $table->integer('staff_id');
             $table->string('title');
+            $table->string('subtitle');
             $table->string('image');
-            $table->string('content');
+            $table->string('image1');
+            $table->string('image2');
+            $table->text('content1');
+            $table->text('content2');
+            $table->text('content3');
+            $table->text('content4');
             $table->string('tag');
 
             $table->timestamps();

@@ -4,18 +4,26 @@ namespace App\Providers;
 
 use App\Repositories\Blog\BlogRepository;
 use App\Repositories\Blog\BlogRepositoryInterface;
+use App\Repositories\Classes\ClassesRepository;
+use App\Repositories\Classes\ClassesRepositoryInterface;
 use App\Repositories\Comment\CommentRepository;
 use App\Repositories\Comment\CommentRepositoryInterface;
 use App\Repositories\Course\CourseRepository;
 use App\Repositories\Course\CourseRepositoryInterface;
+use App\Repositories\Subject\SubjectRepository;
+use App\Repositories\Subject\SubjectRepositoryInterface;
 use App\Repositories\Teacher\TeacherRepository;
 use App\Repositories\Teacher\TeacherRepositoryInterface;
 use App\Services\Blog\BlogService;
 use App\Services\Blog\BlogServiceInterface;
+use App\Services\Classes\ClassesService;
+use App\Services\Classes\ClassesServiceInterface;
 use App\Services\Comment\CommentService;
 use App\Services\Comment\CommentServiceInterface;
 use App\Services\Course\CourseService;
 use App\Services\Course\CourseServiceInterface;
+use App\Services\Subject\SubjectService;
+use App\Services\Subject\SubjectServiceInterface;
 use App\Services\Teacher\TeacherService;
 use App\Services\Teacher\TeacherServiceInterface;
 use Illuminate\Support\ServiceProvider;
@@ -71,6 +79,28 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(
             TeacherServiceInterface::class,
             TeacherService::class
+        );
+
+        //Classes
+        $this->app->singleton(
+            ClassesRepositoryInterface::class,
+            ClassesRepository::class
+        );
+
+        $this->app->singleton(
+            ClassesServiceInterface::class,
+            ClassesService::class
+        );
+
+        //Subject
+        $this->app->singleton(
+            SubjectRepositoryInterface::class,
+            SubjectRepository::class
+        );
+
+        $this->app->singleton(
+            SubjectServiceInterface::class,
+            SubjectService::class
         );
     }
 
