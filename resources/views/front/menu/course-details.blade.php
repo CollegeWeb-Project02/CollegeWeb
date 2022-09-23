@@ -49,7 +49,7 @@
                             <div class="mb-5 related-course">
                                 <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Related Course</h3>
                                 @foreach($limitCourse as $courses)
-                                <a class="d-flex align-items-center text-decoration-none mb-3" href="">
+                                <a class="d-flex align-items-center text-decoration-none mb-3" href="course/course-details/{{ $courses->id }}">
                                     <img class="img-fluid course-img" src="front/img/{{ $courses->image }}" alt="">
                                     <div class="pl-3">
                                         <h6 class="m-1 course-name">{{ $courses->subtitle }}</h6>

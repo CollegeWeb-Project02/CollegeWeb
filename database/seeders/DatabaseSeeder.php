@@ -206,7 +206,7 @@ class DatabaseSeeder extends Seeder
 
             [
                 'course_name' => 'Development',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Programing basic C for beginner',
                 'image' => 'cat-2.jpg',
@@ -218,7 +218,7 @@ class DatabaseSeeder extends Seeder
 
             [
                 'course_name' => 'Game Design',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Game developer C#, C for beginner',
                 'image' => 'cat-3.jpg',
@@ -230,7 +230,7 @@ class DatabaseSeeder extends Seeder
 
             [
                 'course_name' => 'App Design',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'App design, layout, color and character basic',
                 'image' => 'cat-4.jpg',
@@ -242,7 +242,7 @@ class DatabaseSeeder extends Seeder
 
             [
                 'course_name' => 'Marketing',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Strategies to master marketing for beginner',
                 'image' => 'cat-5.jpg',
@@ -253,7 +253,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'course_name' => 'Tester',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Basic about test program & tool can use for fresher',
                 'image' => 'cat-6.jpg',
@@ -264,7 +264,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'course_name' => 'Content Writing',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Web design & development courses for beginner',
                 'image' => 'cat-7.jpg',
@@ -275,7 +275,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'course_name' => 'SEO',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Web design & development courses for beginner',
                 'image' => 'cat-8.jpg',
@@ -286,7 +286,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'course_name' => 'Security',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Web protected',
                 'image' => 'cat-9.jpg',
@@ -297,7 +297,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'course_name' => 'Security',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Internet Security',
                 'image' => 'cat-10.jpg',
@@ -308,7 +308,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'course_name' => 'Manage',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Computer system management',
                 'image' => 'cat-11.jpg',
@@ -319,7 +319,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'course_name' => 'Software',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Upgrade and update the app',
                 'image' => 'cat-12.jpg',
@@ -330,7 +330,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'course_name' => 'Hardware',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Basic knowledge of hardware',
                 'image' => 'cat-13.jpg',
@@ -341,7 +341,7 @@ class DatabaseSeeder extends Seeder
             ],
             [
                 'course_name' => 'Hardware',
-                'description' => '',
+                'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
                 'subtitle' => 'Advanced knowledge of hardware',
                 'image' => 'cat-14.jpg',

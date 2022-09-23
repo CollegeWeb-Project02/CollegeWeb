@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Services\Course\CourseServiceInterface;
 use App\Services\Subject\SubjectServiceInterface;
+use http\Env\Request;
 
 class CourseController extends Controller
 {
@@ -21,7 +22,7 @@ class CourseController extends Controller
     public function show($id){
         $subject =$this->subjectService->all();
 
-        $course =$this->courseService->find($id);
+        $course = $this->courseService->find($id);
         $relatedCourse = $this->courseService->getRelatedCourse($course);
         $limitCourse = $this->courseService->getLimitCourse(4);
 
@@ -34,5 +35,13 @@ class CourseController extends Controller
 
 
         return view('front.menu.course', compact('subjects', 'relatedCourse'));
+    }
+
+    public function subject($subjectId, Request $request){
+        $subjects = $this->subjectService->all();
+
+        $courses =$this->courseService->getCourseBySubject($subjectId, $request);
+
+        return view('front.menu.subject-details', compact('subjects', 'courses'));
     }
 }

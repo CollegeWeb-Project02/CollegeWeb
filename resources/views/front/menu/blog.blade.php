@@ -85,7 +85,7 @@
                     <div class="mb-5">
                         <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Recent Post</h3>
                         @foreach($bloglimit as $blog)
-                        <a class="d-flex align-items-center text-decoration-none mb-3" href="">
+                        <a class="d-flex align-items-center text-decoration-none mb-3" href="blog/single/{{ $blog->id }}">
                             <img class="img-fluid rounded" width="80px" height="80px" src="front/img/{{ $blog->image }}" alt="">
                             <div class="pl-3">
                                 <h6 class="m-1">{{ $blog->title }}</h6>

@@ -24,6 +24,7 @@ Route::prefix('about')->group(function() {
 Route::prefix('course')->group(function() {
     Route::get('/', [\App\Http\Controllers\Front\CourseController::class, 'index']);
     Route::get('/course-details/{id}', [\App\Http\Controllers\Front\CourseController::class, 'show']);
+    Route::get('/subject/{id}', [\App\Http\Controllers\Front\CourseController::class, 'subject']);
 });
 
 Route::prefix('teacher')->group(function() {
@@ -44,3 +45,7 @@ Route::prefix('contact')->group(function() {
         return view('front.menu.contact');
     });
 });
+
+
+
+
