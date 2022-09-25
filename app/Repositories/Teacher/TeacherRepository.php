@@ -2,18 +2,19 @@
 
 namespace App\Repositories\Teacher;
 
-use App\Models\Staff;
+use App\Models\User;
 use App\Repositories\BaseRepository;
 
 class TeacherRepository extends BaseRepository implements TeacherRepositoryInterface
 {
     public function getModel(){
-        return Staff::class;
+        return User::class;
     }
 
-    public function getTeachers($limit = 3)
+    public function getTeachers($limit = 4, $level = 2)
     {
-        return $this->model->orderBy('id', 'desc')
+        return $this->model->where('level', $level)
+            ->orderBy('id', 'desc')
             ->limit($limit)
             ->get();
     }

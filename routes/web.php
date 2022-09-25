@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/dashboard', [\App\Http\Controllers\Dashboard\DashboardController::class, 'index']);
+
+
 Route::get('/', [\App\Http\Controllers\Front\HomeController::class, 'index']);
 
 Route::prefix('about')->group(function() {
@@ -24,15 +27,22 @@ Route::prefix('about')->group(function() {
 Route::prefix('course')->group(function() {
     Route::get('/', [\App\Http\Controllers\Front\CourseController::class, 'index']);
     Route::get('/course-details/{id}', [\App\Http\Controllers\Front\CourseController::class, 'show']);
-    Route::get('/subject/{id}', [\App\Http\Controllers\Front\CourseController::class, 'subject']);
+    Route::get('/subject-details/{subjectId}', [\App\Http\Controllers\Front\CourseController::class, 'subject']);
+    Route::post('/course-details/{id}', [\App\Http\Controllers\Front\CourseController::class, 'addRegister']);
 });
 
 Route::prefix('teacher')->group(function() {
     Route::get('/', [\App\Http\Controllers\Front\TeacherController::class, 'teacher']);
 });
 
-Route::prefix('login')->group(function() {
-    Route::get('/', [\App\Http\Controllers\Front\AccountController::class, 'login']);
+Route::prefix('account')->group(function() {
+    Route::get('login', [\App\Http\Controllers\Front\AccountController::class, 'login']);
+    Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLogin']);
+
+    Route::get('logout', [\App\Http\Controllers\Front\AccountController::class, 'logout']);
+
+    Route::get('register', [\App\Http\Controllers\Front\AccountController::class, 'register']);
+    Route::post('register', [\App\Http\Controllers\Front\AccountController::class, 'postRegister']);
 });
 
 Route::prefix('blog')->group(function() {

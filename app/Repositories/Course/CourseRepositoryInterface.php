@@ -11,5 +11,5 @@ interface CourseRepositoryInterface extends RepositoryInterface
     public function getLimitCourse($course, $limit = 6);
 
     public function getFeaturedCourseByCourse();
-
+    public function getCourseBySubject($subjectId, $request);
 }

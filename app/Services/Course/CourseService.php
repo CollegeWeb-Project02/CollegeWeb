@@ -33,4 +33,9 @@ class CourseService extends BaseService implements CourseServiceInterface
     public function getFeaturedCourse(){
         return  $this->repository->getFeaturedCourseByCourse();
     }
+
+    public function getCourseBySubject($subjectId, $request)
+    {
+        return $this->repository->getCourseBySubject($subjectId, $request);
+    }
 }

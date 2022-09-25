@@ -17,11 +17,7 @@ class Classes extends Model
         return $this->belongsTo(Course::class, 'classes_id', 'id');
     }
 
-    public function classesStaff(){
-        return $this->hasMany(Classes_Staff::class, 'classes_id', 'id');
-    }
-
-    public function studentClasses(){
-        return $this->hasMany(Student_Classes::class, 'classes_id', 'id');
+    public function classesUser(){
+        return $this->hasMany(Classes_user::class, 'classes_id', 'id');
     }
 }

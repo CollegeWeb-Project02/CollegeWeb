@@ -10,10 +10,14 @@ use App\Repositories\Comment\CommentRepository;
 use App\Repositories\Comment\CommentRepositoryInterface;
 use App\Repositories\Course\CourseRepository;
 use App\Repositories\Course\CourseRepositoryInterface;
+use App\Repositories\Register\RegisterRepository;
+use App\Repositories\Register\RegisterRepositoryInterface;
 use App\Repositories\Subject\SubjectRepository;
 use App\Repositories\Subject\SubjectRepositoryInterface;
 use App\Repositories\Teacher\TeacherRepository;
 use App\Repositories\Teacher\TeacherRepositoryInterface;
+use App\Repositories\User\UserRepository;
+use App\Repositories\User\UserRepositoryInterface;
 use App\Services\Blog\BlogService;
 use App\Services\Blog\BlogServiceInterface;
 use App\Services\Classes\ClassesService;
@@ -22,10 +26,14 @@ use App\Services\Comment\CommentService;
 use App\Services\Comment\CommentServiceInterface;
 use App\Services\Course\CourseService;
 use App\Services\Course\CourseServiceInterface;
+use App\Services\Register\RegisterService;
+use App\Services\Register\RegisterServiceInterface;
 use App\Services\Subject\SubjectService;
 use App\Services\Subject\SubjectServiceInterface;
 use App\Services\Teacher\TeacherService;
 use App\Services\Teacher\TeacherServiceInterface;
+use App\Services\User\UserService;
+use App\Services\User\UserServiceInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -101,6 +109,28 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(
             SubjectServiceInterface::class,
             SubjectService::class
+        );
+
+        //Register
+        $this->app->singleton(
+            RegisterRepositoryInterface::class,
+            RegisterRepository::class
+        );
+
+        $this->app->singleton(
+            RegisterServiceInterface::class,
+            RegisterService::class
+        );
+
+        //User
+        $this->app->singleton(
+            UserRepositoryInterface::class,
+            UserRepository::class
+        );
+
+        $this->app->singleton(
+            UserServiceInterface::class,
+            UserService::class
         );
     }
 

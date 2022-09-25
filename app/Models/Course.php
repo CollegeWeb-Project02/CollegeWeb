@@ -13,8 +13,8 @@ class Course extends Model
     protected $primaryKey = 'id';
     protected $guarded = [];
 
-    public function studentCourse(){
-        return $this->hasMany(Student_Course::class, 'course_id', 'id');
+    public function userCourse(){
+        return $this->hasMany(User_Course::class, 'course_id', 'id');
     }
 
     public function classes(){
@@ -23,5 +23,9 @@ class Course extends Model
 
     public function blog(){
         return $this->hasMany(Blog::class, 'course_id', 'id');
+    }
+
+    public function subject(){
+        return $this->belongsTo(Subject::class, 'subject_id', 'id');
     }
 }

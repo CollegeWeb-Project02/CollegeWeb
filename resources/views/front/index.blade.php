@@ -81,8 +81,8 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="front/img/{{ $subject->image }}" alt="">
-                        <a class="cat-overlay text-white text-decoration-none" href="/course/subject/{{ $subject->id }}">
-                            <h4 class="text-white font-weight-medium">{{ $subject->subject_name }}</h4>
+                        <a class="cat-overlay text-white text-decoration-none" href="/course/subject-details/{{ $subject->id }}">
+                            <h4 class="text-white font-weight-medium">{{ $subject->name }}</h4>
                         </a>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                         <img class="img-fluid" src="front/img/{{ $course->image }}" alt="">
                         <div class="bg-secondary p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>{{ $course -> course_name }}</small>
+                                <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>{{ $course->name }}</small>
                                 <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>{{ $course->time }} month</small>
                             </div>
                             <a class="h5" href="course/course-details/{{ $course->id }}">{{ $course->subtitle }}</a>
@@ -221,16 +221,33 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="owl-carousel testimonial-carousel">
-                        @foreach($comments as $comment)
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-normal mb-4">{{ $comment->content }}</h4>
-                            <i class="fa fa-3x fa-quote-right text-primary mb-4"></i>
-                            <img class="img-fluid mx-auto mb-3" src="front/img/testimonial-3.jpg" alt="">
-                            <h5 class="m-0">{{ $comment->name }}</h5>
-                            <span>{{ $comment->position }}</span>
+                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos.
+                                Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet
+                                eirmod eos labore diam</h4>
+                            <img class="img-fluid mx-auto mb-3" src="front/img/testimonial-1.jpg" alt="">
+                            <h5 class="m-0">Client Name</h5>
+                            <span>Profession</span>
                         </div>
-                        @endforeach
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos.
+                                Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet
+                                eirmod eos labore diam</h4>
+                            <img class="img-fluid mx-auto mb-3" src="front/img/testimonial-2.jpg" alt="">
+                            <h5 class="m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-normal mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos.
+                                Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet
+                                eirmod eos labore diam</h4>
+                            <img class="img-fluid mx-auto mb-3" src="front/img/testimonial-3.jpg" alt="">
+                            <h5 class="m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
                     </div>
                 </div>
             </div>

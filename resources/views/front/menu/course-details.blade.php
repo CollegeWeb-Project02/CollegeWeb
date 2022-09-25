@@ -74,27 +74,28 @@
                                 <h1 class="m-0">Register Now</h1>
                             </div>
                             <div class="course-register-form card-body rounded-bottom bg-primary">
-                                <form action="">
+                                <form action="" method="post">
+                                    @csrf
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <label for="name">Your Name <span>*</span></label>
-                                            <input type="text" id="name">
+                                            <input type="text" id="name" name="name">
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="email">Your Email <span>*</span></label>
-                                            <input type="text" id="email">
+                                            <input type="email" id="email" name="email">
                                         </div>
                                         <div class="col-lg-12">
                                             <label for="address">Your Address <span>*</span></label>
-                                            <input type="text" id="address">
+                                            <input type="text" id="address" name="address">
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="dob">Date Of Birth <span>*</span></label>
-                                            <input type="text" id="dob">
+                                            <input type="text" id="dob" name="dob">
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="phone">Phone <span>*</span></label>
-                                            <input type="text" id="phone">
+                                            <input type="text" id="phone" name="phone">
                                         </div>
                                         <div class="col-lg-12">
                                             <label for="achieve">Your Achieve</label>

@@ -16,12 +16,13 @@ return new class extends Migration
         Schema::create('course', function (Blueprint $table) {
             $table->id();
 
-            $table->string('course_name');
+            $table->string('name');
             $table->text('description');
             $table->string('title');
             $table->text('subtitle');
             $table->string('image');
             $table->integer('time');
+            $table->integer('subject_id');
             $table->integer('price');
             $table->integer('status');
             $table->integer('discount')->nullable();

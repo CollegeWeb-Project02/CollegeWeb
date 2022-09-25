@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('subject', function (Blueprint $table) {
             $table->id();
 
-            $table->string('subject_name');
+            $table->string('name');
             $table->string('description');
             $table->string('image');
             $table->string('course_id');

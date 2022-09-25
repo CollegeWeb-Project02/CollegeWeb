@@ -17,7 +17,7 @@
                             <img class="img-fluid" src="front/img/{{ $course->image }}" alt="">
                             <div class="bg-secondary p-4">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>{{ $course -> course_name }}</small>
+                                    <small class="m-0"><i class="fa fa-users text-primary mr-2"></i>{{ $course->name }}</small>
                                     <small class="m-0"><i class="far fa-clock text-primary mr-2"></i>{{ $course->time }} month</small>
                                 </div>
                                 <a class="h5" href="course/course-details/{{ $course->id }}">{{ $course->subtitle }}</a>

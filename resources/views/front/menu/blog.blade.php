@@ -74,7 +74,7 @@
                         <ul class="list-group list-group-flush">
                             @foreach($subjectslimit as $subject)
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                <a href="" class="text-decoration-none h6 m-0">{{ $subject->subject_name }}</a>
+                                <a href="" class="text-decoration-none h6 m-0">{{ $subject->name }}</a>
                                 <span class="badge badge-primary badge-pill">150</span>
                             </li>
                             @endforeach

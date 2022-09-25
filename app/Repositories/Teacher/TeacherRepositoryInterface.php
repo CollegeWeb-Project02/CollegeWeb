@@ -6,5 +6,5 @@ use App\Repositories\RepositoryInterface;
 
 interface TeacherRepositoryInterface extends RepositoryInterface
 {
-    public function getTeachers($limit = 3);
+    public function getTeachers($limit = 4);
 }

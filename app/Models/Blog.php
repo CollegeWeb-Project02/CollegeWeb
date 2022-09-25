@@ -16,8 +16,4 @@ class Blog extends Model
     public function comment(){
         return $this->hasMany(Comment::class, 'blog_id', 'id');
     }
-
-    public function course(){
-        return $this->belongsTo(Course::class, 'course_id', 'id');
-    }
 }

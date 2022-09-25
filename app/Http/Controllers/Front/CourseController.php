@@ -3,18 +3,22 @@
 namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
+use App\Models\Subject;
 use App\Services\Course\CourseServiceInterface;
+use App\Services\Register\RegisterServiceInterface;
 use App\Services\Subject\SubjectServiceInterface;
-use http\Env\Request;
-
+use Illuminate\Http\Request;
 class CourseController extends Controller
 {
     private $subjectService;
     private $courseService;
+    private $registerService;
 
     public function __construct(SubjectServiceInterface $subjectService,
-                                CourseServiceInterface  $courseService,)
+                                CourseServiceInterface  $courseService,
+                                RegisterServiceInterface $registerService)
     {
+        $this->registerService = $registerService;
         $this->subjectService = $subjectService;
         $this->courseService = $courseService;
     }
@@ -37,11 +41,16 @@ class CourseController extends Controller
         return view('front.menu.course', compact('subjects', 'relatedCourse'));
     }
 
-    public function subject($subjectId, Request $request){
+    public function subject($subjectId){
+        $courses = $this->subjectService->find($subjectId)->course;
+
         $subjects = $this->subjectService->all();
-
-        $courses =$this->courseService->getCourseBySubject($subjectId, $request);
-
         return view('front.menu.subject-details', compact('subjects', 'courses'));
+    }
+
+    public function addRegister(Request $request){
+        $this->registerService->create($request->all());
+
+        return redirect()->back();
     }
 }

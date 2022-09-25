@@ -11,4 +11,5 @@ interface CourseServiceInterface extends ServiceInterface
     public function getLimitCourse($course, $limit = 4);
 
     public function getFeaturedCourse();
+    public function getCourseBySubject($subjectId, $request);
 }

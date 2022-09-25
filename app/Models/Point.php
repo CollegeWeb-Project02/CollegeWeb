@@ -13,8 +13,8 @@ class Point extends Model
     protected $primaryKey = 'id';
     protected $guarded = [];
 
-    public function student(){
-        return $this->belongsTo(Student::class, 'student_id', 'id');
+    public function user(){
+        return $this->belongsTo(User::class, 'user_id', 'id');
     }
 
     public function course(){

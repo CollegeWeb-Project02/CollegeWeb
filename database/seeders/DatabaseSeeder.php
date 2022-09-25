@@ -18,18 +18,87 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        DB::table('student')->insert([
+        DB::table('users')->insert([
             [
-                'id' => 1,
-                'stu_name' => 'Nguyen Khanh',
+                'name' => 'Jane Maclain',
                 'dob' => '12121212122000',
                 'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
                 'achieve' => '',
                 'description' => '',
                 'phone'=>'098162162412',
                 'email' => 'nguyenkhanh08112003@gmail.com',
-                'avatar' => '',
+                'avatar' => 'team-1.jpg',
+                'password' => '123456',
+                'level' => 1,
                 'status' => '1',
+                'social_link' => '',
+            ],
+            [
+                'name' => 'Jayce Smith',
+                'dob' => '12121212122000',
+                'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
+                'achieve' => '',
+                'description' => '',
+                'phone'=>'098162162412',
+                'email' => 'nguyenkhanh08112003@gmail.com',
+                'avatar' => 'team-3.jpg',
+                'password' => '123456',
+                'level' => 2,
+                'status' => '1',
+                'social_link' => '',
+            ],
+            [
+                'name' => 'Johnson William',
+                'dob' => '12121212122000',
+                'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
+                'achieve' => '',
+                'description' => '',
+                'phone'=>'098162162412',
+                'email' => 'nguyenkhanh08112003@gmail.com',
+                'avatar' => 'team-2.jpg',
+                'password' => '123456',
+                'level' => 2,
+                'status' => '1',
+                'social_link' => '',
+            ],
+            [
+                'name' => 'David Mouse',
+                'dob' => '12121212122000',
+                'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
+                'achieve' => '',
+                'description' => '',
+                'phone'=>'098162162412',
+                'email' => 'nguyenkhanh08112003@gmail.com',
+                'avatar' => 'team-4.jpg',
+                'password' => '123456',
+                'level' => 2,
+                'status' => '1',
+                'social_link' => '',
+            ],
+            [
+                'name' => 'Charlie Nguyen',
+                'dob' => '12121212122000',
+                'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
+                'achieve' => '',
+                'description' => '',
+                'phone'=>'098162162412',
+                'email' => 'nguyenkhanh08112003@gmail.com',
+                'avatar' => 'team-1.jpg',
+                'password' => '123456',
+                'level' => 2,
+                'status' => '1',
+                'social_link' => '',
+            ],
+        ]);
+
+        DB::table('register')->insert([
+            [
+                'name' => 'Dinh Quang Anh',
+                'dob' => '12121212122000',
+                'address' => '',
+                'achieve' => '',
+                'phone' => '',
+                'email' => '',
             ]
         ]);
 
@@ -37,53 +106,6 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-//        DB::table('user')->insert([
-//            [
-//                'id' => 1,
-//                'name' => 'College',
-//                'email' => 'College@gmail.com',
-//                'password' => Hash::make('123456'),
-//                'avatar' => null,
-//                'level' => 0,
-//                'description' => null,
-//            ],
-//            [
-//                'id' => 2,
-//                'name' => 'admin',
-//                'email' => 'admin@gmail.com',
-//                'password' => Hash::make('123456'),
-//                'avatar' => null,
-//                'level' => 0,
-//                'description' => null,
-//            ],
-//            [
-//                'id' => 3,
-//                'name' => 'Shane Lynch',
-//                'email' => 'ShaneLynch@gmail.com',
-//                'password' => Hash::make('123456'),
-//                'avatar' => 'avatar-0.png',
-//                'level' => 1,
-//                'description' => 'Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud amodo'
-//            ],
-//            [
-//                'id' => 4,
-//                'name' => 'Brandon Kelley',
-//                'email' => 'BrandonKelley@gmail.com',
-//                'password' => Hash::make('123456'),
-//                'avatar' => 'avatar-1.png',
-//                'level' => 1,
-//                'description' => null,
-//            ],
-//            [
-//                'id' => 5,
-//                'name' => 'Roy Banks',
-//                'email' => 'RoyBanks@gmail.com',
-//                'password' => Hash::make('123456'),
-//                'avatar' => 'avatar-2.png',
-//                'level' => 1,
-//                'description' => null,
-//            ],
-//        ]);
 
         DB::table('feedback')->insert([
             [
@@ -96,85 +118,6 @@ class DatabaseSeeder extends Seeder
             ],
         ]);
 
-        DB::table('stu_account')->insert([
-            [
-                'student_id' => 1,
-                'student_email' => 'nguyenkhanh08112003@gmail.com',
-                'password' => 'fpt21036',
-            ],
-            [
-                'student_id' => 2,
-                'student_email' => 'hoangckhg123@gmail.com',
-                'password' => 'fpt12345',
-            ],
-            [
-                'student_id' => 3,
-                'student_email' => 'dinhquanganh87@gmail.com',
-                'password' => 'fpt49758',
-            ],
-            [
-                'student_id' => 4,
-                'student_email' => 'nguyenmanhkien@gmail.com',
-                'password' => 'fpt86175',
-            ],
-            [
-                'student_id' => 5,
-                'student_email' => 'dinhcongbangsad@gmail.com',
-                'password' => 'fpt55578',
-            ],
-            [
-                'student_id' => 6,
-                'student_email' => 'tavanminhbot@gmail.com',
-                'password' => 'fpt68925',
-            ],
-        ]);
-
-        DB::table('staff_account')->insert([
-            [
-                'staff_id' => 1,
-                'staff_email' => 'hoangluongviet2003@gmail.com',
-                'password' => 'staffedu485',
-                'level' => 2,
-            ],
-            [
-                'staff_id' => 2,
-                'staff_email' => 'khanhbanguyen2003@gmail.com',
-                'password' => 'staffedu789',
-                'level' => 2,
-            ],
-            [
-                'staff_id' => 3,
-                'staff_email' => 'anhquangdinh2000@gmail.com',
-                'password' => 'staffedu696',
-                'level' => 2,
-            ],
-            [
-                'staff_id' => 4,
-                'staff_email' => 'kienmanhnguyen2003@gmail.com',
-                'password' => 'staffedu123',
-                'level' => 2,
-            ],
-            [
-                'staff_id' => 5,
-                'staff_email' => 'bangcongdinh2003@gmail.com',
-                'password' => 'staffedu753',
-                'level' => 2,
-            ],
-            [
-                'staff_id' => 1,
-                'staff_email' => 'minhvanta2003@gmail.com',
-                'password' => 'staffedu852',
-                'level' => 2,
-            ],
-            ]);
-
-        DB::table('stu_classes')->insert([
-            [
-                'student_id' => 1,
-                'course_id' => 1,
-                'classes_id' => 1,
-            ],
-        ]);
 
         DB::table('point')->insert([
             [
@@ -184,18 +127,12 @@ class DatabaseSeeder extends Seeder
             ],
         ]);
 
-        DB::table('stu_course')->insert([
-            [
-                'student_id' => 1,
-                'course_id' => 1,
-            ],
-        ]);
-
         DB::table('course')->insert([
             [
-                'course_name' => 'Web Design',
+                'name' => 'Web Design',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 1,
                 'subtitle' => 'Web design & development courses for beginner',
                 'image' => 'cat-1.jpg',
                 'time' => 6,
@@ -205,9 +142,10 @@ class DatabaseSeeder extends Seeder
             ],
 
             [
-                'course_name' => 'Development',
+                'name' => 'Development',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 2,
                 'subtitle' => 'Programing basic C for beginner',
                 'image' => 'cat-2.jpg',
                 'time' => 18,
@@ -217,9 +155,10 @@ class DatabaseSeeder extends Seeder
             ],
 
             [
-                'course_name' => 'Game Design',
+                'name' => 'Game Design',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 3,
                 'subtitle' => 'Game developer C#, C for beginner',
                 'image' => 'cat-3.jpg',
                 'time' => 12,
@@ -229,9 +168,10 @@ class DatabaseSeeder extends Seeder
             ],
 
             [
-                'course_name' => 'App Design',
+                'name' => 'App Design',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 4,
                 'subtitle' => 'App design, layout, color and character basic',
                 'image' => 'cat-4.jpg',
                 'time' => 18,
@@ -241,9 +181,10 @@ class DatabaseSeeder extends Seeder
             ],
 
             [
-                'course_name' => 'Marketing',
+                'name' => 'Marketing',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 5,
                 'subtitle' => 'Strategies to master marketing for beginner',
                 'image' => 'cat-5.jpg',
                 'time' => 24,
@@ -252,9 +193,10 @@ class DatabaseSeeder extends Seeder
                 'status' => 1,
             ],
             [
-                'course_name' => 'Tester',
+                'name' => 'Tester',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 6,
                 'subtitle' => 'Basic about test program & tool can use for fresher',
                 'image' => 'cat-6.jpg',
                 'time' => 18,
@@ -263,9 +205,10 @@ class DatabaseSeeder extends Seeder
                 'status' => 1,
             ],
             [
-                'course_name' => 'Content Writing',
+                'name' => 'Content Writing',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 7,
                 'subtitle' => 'Web design & development courses for beginner',
                 'image' => 'cat-7.jpg',
                 'time' => 12,
@@ -274,9 +217,10 @@ class DatabaseSeeder extends Seeder
                 'status' => 1,
             ],
             [
-                'course_name' => 'SEO',
+                'name' => 'SEO',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 8,
                 'subtitle' => 'Web design & development courses for beginner',
                 'image' => 'cat-8.jpg',
                 'time' => 12,
@@ -285,9 +229,10 @@ class DatabaseSeeder extends Seeder
                 'status' => 1,
             ],
             [
-                'course_name' => 'Security',
+                'name' => 'Security',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 7,
                 'subtitle' => 'Web protected',
                 'image' => 'cat-9.jpg',
                 'time' => 12,
@@ -296,9 +241,10 @@ class DatabaseSeeder extends Seeder
                 'status' => 1,
             ],
             [
-                'course_name' => 'Security',
+                'name' => 'Security',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 6,
                 'subtitle' => 'Internet Security',
                 'image' => 'cat-10.jpg',
                 'time' => 12,
@@ -307,9 +253,10 @@ class DatabaseSeeder extends Seeder
                 'status' => 1,
             ],
             [
-                'course_name' => 'Manage',
+                'name' => 'Manage',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 4,
                 'subtitle' => 'Computer system management',
                 'image' => 'cat-11.jpg',
                 'time' => 12,
@@ -318,9 +265,10 @@ class DatabaseSeeder extends Seeder
                 'status' => 1,
             ],
             [
-                'course_name' => 'Software',
+                'name' => 'Software',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 2,
                 'subtitle' => 'Upgrade and update the app',
                 'image' => 'cat-12.jpg',
                 'time' => 12,
@@ -329,9 +277,10 @@ class DatabaseSeeder extends Seeder
                 'status' => 1,
             ],
             [
-                'course_name' => 'Hardware',
+                'name' => 'Hardware',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 5,
                 'subtitle' => 'Basic knowledge of hardware',
                 'image' => 'cat-13.jpg',
                 'time' => 12,
@@ -340,9 +289,10 @@ class DatabaseSeeder extends Seeder
                 'status' => 1,
             ],
             [
-                'course_name' => 'Hardware',
+                'name' => 'Hardware',
                 'description' => 'Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet',
                 'title' => '',
+                'subject_id' => 6,
                 'subtitle' => 'Advanced knowledge of hardware',
                 'image' => 'cat-14.jpg',
                 'time' => 12,
@@ -374,75 +324,6 @@ class DatabaseSeeder extends Seeder
                 'classes_name' => 'T2112',
                 'status' => 1,
             ],
-        ]);
-
-        DB::table('classes_staff')->insert([
-            [
-                'classes_id' => 1,
-                'staff_id' => 1,
-                'course_id' => 1,
-            ],
-        ]);
-
-        DB::table('staff')->insert([
-            [
-                'id' => 1,
-                'name' => 'Christine Juzang',
-                'social_link' => '',
-                'level' => 1,
-                'email' => 'juzangchrist98@gmail.com',
-                'skill' => 'Professor',
-                'description' => '',
-                'education' => 'Senior of Intelligent Technology in UTC',
-                'achieve' => '',
-                'avatar' => 'team-2.jpg',
-                ],
-
-                [
-                'id' => 2,
-                'name' => 'Maclain Emilia',
-                'social_link' => '',
-                'level' => 1,
-                'email' => 'emiliamc@gmail.com',
-                'skill' => 'Developer',
-                'description' => '',
-                'education' => 'Senior of Intelligent Technology in UTC',
-                'achieve' => '',
-                'avatar' => 'team-3.jpg',
-                ],
-
-                [
-                'id' => 3,
-                'name' => 'Jane Smith',
-                'social_link' => '',
-                'level' => 1,
-                'email' => 'janesmith12@gmail.com',
-                'skill' => 'Developer',
-                'description' => '',
-                'education' => 'Senior of Intelligent Technology in UTC',
-                'achieve' => '',
-                'avatar' => 'team-1.jpg',
-                ],
-
-                [
-                'id' => 4,
-                'name' => 'Richard Nguyen',
-                'social_link' => '',
-                'level' => 1,
-                'email' => 'richard98@gmail.com',
-                'skill' => 'Website Developer',
-                'description' => '',
-                'education' => 'Senior of Intelligent Technology in UTC',
-                'achieve' => '',
-                'avatar' => 'team-4.jpg',
-            ],
-        ]);
-
-        DB::table('staff_course')->insert([
-            [
-                'staff_id' => 1,
-                'course_id' => 1,
-            ]
         ]);
 
 
@@ -661,56 +542,56 @@ class DatabaseSeeder extends Seeder
         DB::table('subject')->insert([
             [
                 'id' => 1,
-                'subject_name' => 'Web Design',
+                'name' => 'Web Design',
                 'description' => '',
                 'image' => 'cat-1.jpg',
                 'course_id' => 1,
              ],
             [
                 'id' => 2,
-                'subject_name' => 'Development',
+                'name' => 'Development',
                 'description' => '',
                 'image' => 'cat-2.jpg',
                 'course_id' => 1,
             ],
             [
                 'id' => 3,
-                'subject_name' => 'Game Design',
+                'name' => 'Game Design',
                 'description' => '',
                 'image' => 'cat-3.jpg',
                 'course_id' => 1,
             ],
             [
                 'id' => 4,
-                'subject_name' => 'App Design',
+                'name' => 'App Design',
                 'description' => '',
                 'image' => 'cat-4.jpg',
                 'course_id' => 1,
             ],
             [
                 'id' => 5,
-                'subject_name' => 'Marketing',
+                'name' => 'Marketing',
                 'description' => '',
                 'image' => 'cat-5.jpg',
                 'course_id' => 1,
             ],
             [
                 'id' => 6,
-                'subject_name' => 'Research',
+                'name' => 'Research',
                 'description' => '',
                 'image' => 'cat-6.jpg',
                 'course_id' => 1,
             ],
             [
                 'id' => 7,
-                'subject_name' => 'Content Writing',
+                'name' => 'Content Writing',
                 'description' => '',
                 'image' => 'cat-7.jpg',
                 'course_id' => 1,
             ],
             [
                 'id' => 8,
-                'subject_name' => 'SEO',
+                'name' => 'SEO',
                 'description' => '',
                 'image' => 'cat-8.jpg',
                 'course_id' => 1,

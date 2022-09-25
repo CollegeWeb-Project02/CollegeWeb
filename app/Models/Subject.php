@@ -14,6 +14,6 @@ class Subject extends Model
     protected $guarded = [];
 
     public function course(){
-        return $this->hasMany(Course::class, 'course_id', 'id');
+        return $this->hasMany(Course::class, 'subject_id', 'id');
     }
 }
