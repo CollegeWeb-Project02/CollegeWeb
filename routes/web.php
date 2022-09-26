@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/dashboard', [\App\Http\Controllers\Dashboard\DashboardController::class, 'index']);
-
 Route::get('/', [\App\Http\Controllers\Front\HomeController::class, 'index']);
 
 Route::prefix('about')->group(function() {
@@ -35,9 +33,7 @@ Route::prefix('teacher')->group(function() {
 
 Route::prefix('account')->group(function() {
     Route::get('login', [\App\Http\Controllers\Front\AccountController::class, 'login']);
-    Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLoginStudent']);
-    Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLoginTeacher']);
-    Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLoginHost']);
+    Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLogin']);
 
     Route::get('logout', [\App\Http\Controllers\Front\AccountController::class, 'logout']);
 
@@ -56,10 +52,9 @@ Route::prefix('contact')->group(function() {
     });
 });
 
-
 // Dashboard Admin
 Route::prefix('admin')->group(function() {
     Route::resource('index',\App\Http\Controllers\Admin\UserController::class);
     Route::get('profile', [\App\Http\Controllers\Admin\UserController::class, 'profile']);
-    Route::get('teacherview', [\App\Http\Controllers\Admin\UserController::class, 'teacherView']);
+    Route::get('logout', [\App\Http\Controllers\Front\AccountController::class, 'logoutAdmin']);
 });

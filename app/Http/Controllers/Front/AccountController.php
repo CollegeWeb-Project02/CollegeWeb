@@ -25,48 +25,16 @@ class AccountController extends Controller
         return view('front.menu.login');
     }
 
-    public function checkLoginStudent(Request $request)
+    public function checkLogin(Request $request)
     {
         $credentials = [
             'email' => $request->email,
             'password' => $request->password,
-            'level' => 1, //Tải khoản cấp độ khách hàng bình thường
-        ];
-
-        $remember = $request->remember;
-
-        if (Auth::attempt($credentials, $remember)) {
-//            return redirect('');
-            return redirect()->intended('');
-        } else {
-            return back()->with('notification', 'ERROR: Email or password is wrong!');
-        }
-    }
-
-    public function checkLoginTeacher(Request $request)
-    {
-        $credentials = [
-            'email' => $request->email,
-            'password' => $request->password,
-            'level' => Constant::user_level_teacher,
-        ];
-
-        $remember = $request->remember;
-
-        if (Auth::attempt($credentials, $remember)) {
-//            return redirect('');
-            return redirect()->intended('admin/teacherview');
-        } else {
-            return back()->with('notification', 'ERROR: Email or password is wrong!');
-        }
-    }
-
-    public function checkLoginHost(Request $request)
-    {
-        $credentials = [
-            'email' => $request->email,
-            'password' => $request->password,
-            'level' => Constant::user_level_host,
+            'level' => [
+                Constant::user_level_student,
+                Constant::user_level_teacher,
+                Constant::user_level_host,
+            ],
         ];
 
         $remember = $request->remember;
@@ -84,5 +52,12 @@ class AccountController extends Controller
         Auth::logout();
 
         return back();
+    }
+
+    public function logoutAdmin()
+    {
+        Auth::logout();
+
+        return redirect('account/login');
     }
 }

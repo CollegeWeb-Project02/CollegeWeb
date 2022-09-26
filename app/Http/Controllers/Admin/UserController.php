@@ -26,6 +26,14 @@ class UserController extends Controller
     {
         $users = $this->userService->all();
 
+        return view('dashboard.index', compact('users'));
+    }
+
+    public function teacherView(){
+        return view('teacherview.index');
+    }
+
+    public function hostView(){
         return view('dashboard.index');
     }
 
@@ -34,10 +42,6 @@ class UserController extends Controller
         $user = Auth::user();
 
         return view('dashboard.profile.profile', compact('user'));
-    }
-
-    public function teacherView(){
-        return view('teacherview.index');
     }
 
     /**
