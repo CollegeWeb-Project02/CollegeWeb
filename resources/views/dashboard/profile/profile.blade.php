@@ -19,7 +19,7 @@
                             <!-- Card Body -->
                             <div class="card-body">
                                 <div class="course-img-wrapper">
-                                    <img src="dashboard/img/undraw_profile_1.svg" alt="" class="img-fluid">
+                                    <img src="dashboard/img/{{ $user->avatar }}" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -33,22 +33,22 @@
                             <div class="card-body container-fluid">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h4 class="course-name"> teacher->name</h4><br>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5 class="course-title"> teacher->email</h5>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5 class="course-subtitle"> teacher->phone</h5>
+                                        <h4 class="course-name">Name: {{ $user->name }}</h4><br>
                                     </div>
                                     <div class="col-lg-12">
-                                        <h5 class="course-price">eacher->address</h5>
+                                        <h5 class="course-title">Email: {{ $user->email }}</h5>
                                     </div>
                                     <div class="col-lg-12">
-                                        <h5 class="course->discount">eacher->achieve</h5>
+                                        <h5 class="course-subtitle">Phone: {{ $user->phone }}</h5>
                                     </div>
                                     <div class="col-lg-12">
-                                        <h5> teacher->description</h5>
+                                        <h5 class="course-price">Address: {{ $user->address }}</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <h5 class="course->discount">Achieve: {{ $user->achieve }}</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <h5>Description: {{ $user->description }}</h5>
                                     </div>
                                 </div>
                             </div>
