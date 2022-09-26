@@ -57,7 +57,7 @@ class DatabaseSeeder extends Seeder
                 'email' => 'william12@gmail.com',
                 'avatar' => 'team-2.jpg',
                 'password' => Hash::make('123456'),
-                'level' => 2,
+                'level' => 3,
                 'status' => '1',
                 'social_link' => '',
             ],
