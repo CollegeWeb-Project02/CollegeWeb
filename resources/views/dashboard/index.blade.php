@@ -1,6 +1,7 @@
 @extends('dashboard.layout.master')
 
-@section('title', 'Dasboard')
+@section('title', 'Dashboard')
+
 @section('body')
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
