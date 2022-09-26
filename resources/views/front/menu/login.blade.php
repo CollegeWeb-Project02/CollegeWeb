@@ -13,13 +13,15 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
 
+                    <div class="contact-form bg-secondary rounded p-5">
+
                         @if(session('notification'))
                             <div class="alert alert-warning" role="alert">
                                 {{ session('notification') }}
                             </div>
                         @endif
 
-                        <form action="" method="post">
+                        <form action="" method="post" id="contactForm">
                             @csrf
                             <div class="control-group">
                                 <input type="email" class="form-control border-0 p-4" id="email" name="email" data-validation-required-message="Please enter your email" />
@@ -43,6 +45,7 @@
                         </form>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <!-- Contact End -->

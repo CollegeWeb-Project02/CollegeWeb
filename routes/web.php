@@ -18,9 +18,8 @@ Route::get('/dashboard', [\App\Http\Controllers\Dashboard\DashboardController::c
 Route::get('/', [\App\Http\Controllers\Front\HomeController::class, 'index']);
 
 Route::prefix('about')->group(function() {
-    Route::get('/', function (){
-        return view('front.menu.about');
-    });
+    Route::get('/', [\App\Http\Controllers\Front\AboutController::class, 'index']);
+    Route::post('/', [\App\Http\Controllers\Front\AboutController::class, 'addDiscount']);
 });
 
 Route::prefix('course')->group(function() {
@@ -36,7 +35,8 @@ Route::prefix('teacher')->group(function() {
 
 Route::prefix('account')->group(function() {
     Route::get('login', [\App\Http\Controllers\Front\AccountController::class, 'login']);
-    Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLogin']);
+    Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLoginStudent']);
+    Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLoginTeacher']);
 
     Route::get('logout', [\App\Http\Controllers\Front\AccountController::class, 'logout']);
 

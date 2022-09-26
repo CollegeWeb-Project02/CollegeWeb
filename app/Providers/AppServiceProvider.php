@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Repositories\About\AboutRepository;
+use App\Repositories\About\AboutRepositoryInterface;
 use App\Repositories\Blog\BlogRepository;
 use App\Repositories\Blog\BlogRepositoryInterface;
 use App\Repositories\Classes\ClassesRepository;
@@ -18,6 +20,8 @@ use App\Repositories\Teacher\TeacherRepository;
 use App\Repositories\Teacher\TeacherRepositoryInterface;
 use App\Repositories\User\UserRepository;
 use App\Repositories\User\UserRepositoryInterface;
+use App\Services\About\AboutService;
+use App\Services\About\AboutServiceInterface;
 use App\Services\Blog\BlogService;
 use App\Services\Blog\BlogServiceInterface;
 use App\Services\Classes\ClassesService;
@@ -131,6 +135,17 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(
             UserServiceInterface::class,
             UserService::class
+        );
+
+        //About
+        $this->app->singleton(
+            AboutRepositoryInterface::class,
+            AboutRepository::class
+        );
+
+        $this->app->singleton(
+            AboutServiceInterface::class,
+            AboutService::class
         );
     }
 

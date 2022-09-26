@@ -25,7 +25,7 @@ class AccountController extends Controller
         return view('front.menu.login');
     }
 
-    public function checkLogin(Request $request)
+    public function checkLoginStudent(Request $request)
     {
         $credentials = [
             'email' => $request->email,
@@ -38,6 +38,27 @@ class AccountController extends Controller
         if (Auth::attempt($credentials, $remember)) {
 //            return redirect('');
             return redirect()->intended('');
+        } else {
+            return back()->with('notification', 'ERROR: Email or password is wrong!');
+        }
+    }
+
+    public function checkLoginTeacher(Request $request)
+    {
+        $credentials = [
+            'email' => $request->email,
+            'password' => $request->password,
+            'level' => [
+                Constant::user_level_teacher,
+                Constant::user_level_host,
+            ],
+        ];
+
+        $remember = $request->remember;
+
+        if (Auth::attempt($credentials, $remember)) {
+//            return redirect('');
+            return redirect()->intended('admin/index');
         } else {
             return back()->with('notification', 'ERROR: Email or password is wrong!');
         }

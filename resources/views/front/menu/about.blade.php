@@ -1,9 +1,9 @@
 @extends('front.layout.master-breadcrumb')
 
-@section('title', 'About')
+@section('title', 'AboutController')
 
 @section('body')
-    <!-- About Start -->
+    <!-- AboutController Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row align-items-center">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
+    <!-- AboutController End -->
 
 
     <!-- Registration Start -->
@@ -56,22 +56,23 @@
                             <h1 class="m-0">Sign Up Now</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-primary p-5">
-                            <form>
+                            <form action="" method="post">
+                                @csrf
                                 <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="Your name"
+                                    <input type="text" name="name" class="form-control border-0 p-4" placeholder="Your name"
                                            required="required"/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="Your email"
+                                    <input type="email" name="email" class="form-control border-0 p-4" placeholder="Your email"
                                            required="required"/>
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select border-0 px-4" style="height: 47px;">
-                                        <option selected>Select a course</option>
-                                        <option value="1">Course 1</option>
-                                        <option value="2">Course 1</option>
-                                        <option value="3">Course 1</option>
-                                    </select>
+                                    <input type="text" name="age" class="form-control border-0 p-4" placeholder="Your age"
+                                           required="required"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="phone" class="form-control border-0 p-4" placeholder="Your phone"
+                                           required="required"/>
                                 </div>
                                 <div>
                                     <button class="btn btn-dark btn-block border-0 py-3" type="submit">Sign Up Now

@@ -24,11 +24,11 @@ class Constant
     ];
 
     const user_level_host = 3;
-    const user_level_admin = 2;
-    const user_level_client = 1;
+    const user_level_teacher = 2;
+    const user_level_student = 1;
     public static $user_level = [
         self::user_level_host => 'host',
-        self::user_level_admin => 'admin',
-        self::user_level_client => 'client',
+        self::user_level_teacher => 'teacher',
+        self::user_level_student => 'student',
     ];
 }

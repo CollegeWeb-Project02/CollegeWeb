@@ -48,7 +48,7 @@
     <!-- Carousel End -->
 
 
-    <!-- About Start -->
+    <!-- AboutController Start -->
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row align-items-center">
@@ -66,7 +66,7 @@
             </div>
         </div>
     </div>
-    <!-- About End -->
+    <!-- AboutController End -->
 
 
     <!-- Category Start -->
