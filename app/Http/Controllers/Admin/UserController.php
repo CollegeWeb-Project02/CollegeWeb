@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Services\User\UserServiceInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -28,7 +29,10 @@ class UserController extends Controller
         return view('dashboard.index');
     }
     public function profile(){
-        return view('dashboard.profile.profile');
+
+        $user = Auth::user();
+
+        return view('dashboard.profile.profile', compact('user'));
     }
 
     /**
