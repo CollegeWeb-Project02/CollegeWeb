@@ -48,10 +48,25 @@ class AccountController extends Controller
         $credentials = [
             'email' => $request->email,
             'password' => $request->password,
-            'level' => [
-                Constant::user_level_teacher,
-                Constant::user_level_host,
-            ],
+            'level' => Constant::user_level_teacher,
+        ];
+
+        $remember = $request->remember;
+
+        if (Auth::attempt($credentials, $remember)) {
+//            return redirect('');
+            return redirect()->intended('admin/teacherview');
+        } else {
+            return back()->with('notification', 'ERROR: Email or password is wrong!');
+        }
+    }
+
+    public function checkLoginHost(Request $request)
+    {
+        $credentials = [
+            'email' => $request->email,
+            'password' => $request->password,
+            'level' => Constant::user_level_host,
         ];
 
         $remember = $request->remember;

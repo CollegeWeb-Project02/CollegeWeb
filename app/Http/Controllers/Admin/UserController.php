@@ -28,11 +28,16 @@ class UserController extends Controller
 
         return view('dashboard.index');
     }
+
     public function profile(){
 
         $user = Auth::user();
 
         return view('dashboard.profile.profile', compact('user'));
+    }
+
+    public function teacherView(){
+        return view('teacherview.index');
     }
 
     /**

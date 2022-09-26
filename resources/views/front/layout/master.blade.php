@@ -109,8 +109,10 @@
                         <a href="/blog" class="nav-item nav-link">Blog</a>
                         <a href="/contact" class="nav-item nav-link">Contact</a>
                     </div>
-                    @if(Auth::check())
+                    @if(Auth::check(\App\Utilities\Constant::user_level_host))
                         <span><a href="./admin/index">{{ Auth::user()->name }}</a></span><a href="./account/logout" class=" login-panel">Logout</a>
+                    @elseif(Auth::check(\App\Utilities\Constant::user_level_teacher))
+                        <span><a href="./admin/teacherview">{{ Auth::user()->name }}</a></span><a href="./account/logout" class=" login-panel">Logout</a>
                     @else
                         <a href="./account/login" class=" btn btn-primary py-2 px-4 ml-auto d-none d-lg-block">Login</a>
                     @endif

@@ -37,6 +37,7 @@ Route::prefix('account')->group(function() {
     Route::get('login', [\App\Http\Controllers\Front\AccountController::class, 'login']);
     Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLoginStudent']);
     Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLoginTeacher']);
+    Route::post('login', [\App\Http\Controllers\Front\AccountController::class, 'checkLoginHost']);
 
     Route::get('logout', [\App\Http\Controllers\Front\AccountController::class, 'logout']);
 
@@ -60,7 +61,5 @@ Route::prefix('contact')->group(function() {
 Route::prefix('admin')->group(function() {
     Route::resource('index',\App\Http\Controllers\Admin\UserController::class);
     Route::get('profile', [\App\Http\Controllers\Admin\UserController::class, 'profile']);
+    Route::get('teacherview', [\App\Http\Controllers\Admin\UserController::class, 'teacherView']);
 });
-
-
-
