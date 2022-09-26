@@ -26,7 +26,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="password" class="form-control border-0 p-4" id="pass" name="password" data-validation-required-message="Please enter a subject" />
+                                <input type="password" class="form-control border-0 p-4" id="password" name="password" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <label for="save-pass">

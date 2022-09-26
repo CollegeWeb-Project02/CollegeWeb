@@ -30,7 +30,7 @@ class AccountController extends Controller
         $credentials = [
             'email' => $request->email,
             'password' => $request->password,
-            'level' => Constant::user_level_client, //Tải khoản cấp độ khách hàng bình thường
+            'level' => 1, //Tải khoản cấp độ khách hàng bình thường
         ];
 
         $remember = $request->remember;

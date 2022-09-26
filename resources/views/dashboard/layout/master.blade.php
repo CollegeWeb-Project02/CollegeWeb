@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <base href="{{ asset('/') }}">
+    <base href="/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +12,7 @@
     <title>@yield('title') | College Website </title>
 
     <!-- Custom fonts for this template-->
-    <link href="dashboard/vendor/fontawesome-free/dashboard/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="dashboard/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
@@ -72,8 +72,8 @@
             </a>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="dashboard/course/allCourse.html">All Courses</a>
-                    <a class="collapse-item" href="dashboard/course/addCourse.html">Add Course</a>
+                    <a class="collapse-item" href="admin/allCourse">All Courses</a>
+                    <a class="collapse-item" href="admin/addCourse">Add Course</a>
                 </div>
             </div>
         </li>
@@ -92,13 +92,11 @@
             <div id="collapseTeachets" class="collapse" aria-labelledby="headingTeachets"
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="dashboard/teacher/allTeacher.html">All Teachers</a>
-                    <a class="collapse-item" href="dashboard/teacher/addTeacher.html">Add Teacher</a>
+                    <a class="collapse-item" href="admin/allTeacher">All Teachers</a>
+                    <a class="collapse-item" href="admin/addTeacher">Add Teacher</a>
                 </div>
             </div>
         </li>
-
-        <!-- Nav Item - Student Collapse Menu -->
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseStudents"
                aria-expanded="true" aria-controls="collapseStudents">
@@ -110,8 +108,8 @@
             <div id="collapseStudents" class="collapse" aria-labelledby="headingStudents"
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="dashboard/student/allStudent.html">All Students</a>
-                    <a class="collapse-item" href="dashboard/student/addStudent.html">Add Student</a>
+                    <a class="collapse-item" href="admin/allStudent">All Students</a>
+                    <a class="collapse-item" href="admin/addStudent">Add Student</a>
                 </div>
             </div>
         </li>
@@ -136,7 +134,7 @@
             </a>
             <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="dashboard/studentRegister/studentRegister.html">All Register</a>
+                    <a class="collapse-item" href="admin/studentRegister">All Register</a>
                 </div>
             </div>
         </li>
@@ -328,7 +326,7 @@
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="dashboard/profile/profile.html">
+                            <a class="dropdown-item" href="admin/profile">
                                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Profile
                             </a>
@@ -401,7 +399,7 @@
 
     <!-- Bootstrap core JavaScript-->
     <script src="dashboard/vendor/jquery/jquery.min.js"></script>
-    <script src="dashboard/vendor/bootstrap/dashboard/js/bootstrap.bundle.min.js"></script>
+    <script src="dashboard/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="dashboard/vendor/jquery-easing/jquery.easing.min.js"></script>

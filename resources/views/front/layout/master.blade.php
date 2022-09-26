@@ -110,7 +110,7 @@
                         <a href="/contact" class="nav-item nav-link">Contact</a>
                     </div>
                     @if(Auth::check())
-                        <a href="./account/logout" class=" login-panel">{{ Auth::user()->name }} - Logout</a>
+                        <span><a href="./admin/index">{{ Auth::user()->name }}</a></span><a href="./account/logout" class=" login-panel">Logout</a>
                     @else
                         <a href="./account/login" class=" btn btn-primary py-2 px-4 ml-auto d-none d-lg-block">Login</a>
                     @endif
