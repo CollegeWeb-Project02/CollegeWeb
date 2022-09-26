@@ -27,8 +27,13 @@ class UserController extends Controller
 
         return view('dashboard.index');
     }
+
     public function profile(){
         return view('dashboard.profile.profile');
+    }
+
+    public function teacherView(){
+        return view('teacherview.index');
     }
 
     /**
