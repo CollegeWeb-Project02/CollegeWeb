@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/dashboard', [\App\Http\Controllers\Dashboard\DashboardController::class, 'index']);
+
 Route::get('/', [\App\Http\Controllers\Front\HomeController::class, 'index']);
 
 Route::prefix('about')->group(function() {
