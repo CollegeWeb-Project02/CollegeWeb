@@ -41,7 +41,7 @@ class DatabaseSeeder extends Seeder
                 'description' => '',
                 'phone'=>'098162162412',
                 'email' => 'smithjayce2000@gmail.com',
-                'avatar' => 'team-3.jpg',
+                'avatar' => null,
                 'password' => Hash::make('123456'),
                 'level' => 2,
                 'status' => '1',
