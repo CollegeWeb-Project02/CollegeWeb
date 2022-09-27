@@ -443,7 +443,7 @@ class DatabaseSeeder extends Seeder
                 'title' => '',
                 'subject_id' => 3,
                 'subtitle' => 'Alumni Status',
-                'image' => 'cat-16.jpg',
+                'image' => 'cat-16.png',
                 'time' => 12,
                 'price' => 299,
                 'discount' => null,
