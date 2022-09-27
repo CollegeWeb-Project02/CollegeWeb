@@ -12,4 +12,8 @@ class Register extends Model
     protected $table = 'register';
     protected $primaryKey = 'id';
     protected $guarded = [];
+
+    public function courses(){
+        return $this->belongsTo(Course::class, 'course_id', 'id');
+    }
 }

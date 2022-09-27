@@ -66,7 +66,7 @@ class CourseController extends Controller
         Mail::send('front.sendmail.email',
             compact('register'),
             function ($message) use ($email_to){
-                $message->from('hex.4b68616e68@gmail.com', 'Second-Hand eShop');
+                $message->from('hex.4b68616e68@gmail.com', 'E Course');
                 $message->to($email_to, $email_to);
                 $message->subject('Confirm Notification');
             });

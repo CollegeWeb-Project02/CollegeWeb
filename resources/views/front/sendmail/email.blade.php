@@ -100,10 +100,10 @@
                             <tbody>
                                 <tr>
                                     <td style="border-top: 1px solid #dee2e6; padding: 5px 0;">
-                                        {{ $course->name }}
+                                        {{ $register->courses->name }}
                                     </td>
                                     <td style="border-top: 1px solid #dee2e6; padding: 5px 20px 5px 0; text-align: right;">
-                                        {{ $course->price }} $
+                                        {{ $register->courses->price }} $
                                     </td>
                                 </tr>
                             </tbody>
@@ -124,21 +124,21 @@
                             <table class="mt-2 w-100"
                                    style="font-size: 16px; width: 100%; text-align: left;  margin-bottom: 5px;">
                                 <tr>
-                                    <td class="">Subtotal</td>
+                                    <td class="">Discount</td>
                                     <td class="pr-3 text-right" style="text-align: right; padding-right: 20px;">
-                                        {{ $course->price }} $
+                                        0.0 $
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="">Discount</td>
+                                    <td class="">Price</td>
                                     <td class="pr-3 text-right" style="text-align: right; padding-right: 20px;">
-                                        {{ $course->discount }} $
+                                        {{ $register->courses->price }} $
                                     </td>
                                 </tr>
                                 <tr style="font-size: 18px;">
                                     <td><b>TOTAL</b></td>
                                     <td class="pr-3 text-right" style="text-align: right; padding-right: 20px;">
-                                        <b>{{ $course->price }} $</b>
+                                        <b>{{ $register->courses->price }} $</b>
                                     </td>
                                 </tr>
                             </table>
