@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Jane Maclain',
                 'dob' => '12121212122000',
-                'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
+                'address' => 'Ha Noi',
                 'achieve' => '',
                 'description' => '',
                 'phone'=>'098162162412',
@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Jayce Smith',
                 'dob' => '12121212122000',
-                'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
+                'address' => 'Ha Noi',
                 'achieve' => '',
                 'description' => '',
                 'phone'=>'098162162412',
@@ -50,7 +50,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Johnson William',
                 'dob' => '12121212122000',
-                'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
+                'address' => 'Ha Noi',
                 'achieve' => '',
                 'description' => '',
                 'phone'=>'098162162412',
@@ -64,7 +64,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'David Mouse',
                 'dob' => '12121212122000',
-                'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
+                'address' => 'Ha Noi',
                 'achieve' => '',
                 'description' => '',
                 'phone'=>'098162162412',
@@ -78,7 +78,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Charlie Nguyen',
                 'dob' => '12121212122000',
-                'address' => 'Thanh Cao - Thanh Oai - Ha Noi',
+                'address' => 'Ha Noi',
                 'achieve' => '',
                 'description' => '',
                 'phone'=>'098162162412',

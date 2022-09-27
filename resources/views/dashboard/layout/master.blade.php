@@ -48,7 +48,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="./admin/index">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                         <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
@@ -410,7 +410,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="./admin/index">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
@@ -476,8 +476,8 @@
             <div id="collapseTeachets" class="collapse" aria-labelledby="headingTeachets"
                  data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="admin/allTeacher">All Teachers</a>
-                    <a class="collapse-item" href="admin/addTeacher">Add Teacher</a>
+                    <a class="collapse-item" href="admin/teacher/">All Teachers</a>
+                    <a class="collapse-item" href="./admin/teacher/create">Add Teacher</a>
                 </div>
             </div>
         </li>
@@ -1195,6 +1195,8 @@
     <!-- Page level custom scripts -->
     <script src="dashboard/js/demo/chart-area-demo.js"></script>
     <script src="dashboard/js/demo/chart-pie-demo.js"></script>
+
+    <script src="dashboard/js/changeImg.js"></script>
 
 </body>
 

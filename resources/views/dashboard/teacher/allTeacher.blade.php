@@ -19,6 +19,7 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
+                                        <th class="text-center">ID</th>
                                         <th class="text-center">Name</th>
                                         <th class="text-center">Email</th>
                                         <th class="text-center">Address</th>
@@ -28,6 +29,7 @@
                                 </thead>
                                 <tfoot>
                                     <tr>
+                                        <th class="text-center">ID</th>
                                         <th  class="text-center">Name</th>
                                         <th class="text-center">Email</th>
                                         <th class="text-center">Address</th>
@@ -36,26 +38,31 @@
                                     </tr>
                                 </tfoot>
                                 <tbody>
+                                @foreach($teachers as $teacher)
                                     <tr>
-                                        <td class="text-center">
-                                            <img class="img-profile" width="40px;" src="../../img/undraw_profile_1.svg" alt="">
-                                            <span>Student Name</span>
+                                        <td class="text-center">#{{ $teacher->id }}</td>
+                                        <td class="">
+                                            <img class="img-profile rounded" width="40px;" src="dashboard/img/{{ $teacher->avatar ?? 'default-avatar.png' }}" alt="">
+                                            <span>{{ $teacher->name }}</span>
                                         </td>
-                                        <td class="text-center">System Architect</td>
-                                        <td class="text-center">Edinburgh</td>
-                                        <td class="text-center">61</td>
+                                        <td class="">{{ $teacher->email }}</td>
+                                        <td class="text-center">{{ $teacher->address }}</td>
+                                        <td class="text-center">{{ $teacher->phone }}</td>
                                         <td class="text-center">
-                                            <a href="viewTeacher.blade.php"
+                                            <a href="admin/teacher/{{ $teacher->id }}"
                                                class="btn btn-hover-shine btn-outline-primary border-0 btn-sm">
                                                 Details
                                             </a>
-                                            <a href="updateTeacher.blade.php" data-toggle="tooltip" title="Update"
+                                            <a href="admin/teacher/{{ $teacher->id }}/edit" data-toggle="tooltip" title="Update"
                                                data-placement="bottom" class="btn btn-outline-warning border-0 btn-sm">
                                                         <span class="btn-icon-wrapper opacity-8">
                                                             <i class="fa fa-edit fa-w-20"></i>
                                                         </span>
                                             </a>
-                                            <form class="d-inline" action="" method="post">
+                                            <form class="d-inline" action="./admin/teacher/{{$teacher->id}}" method="post">
+                                                @csrf
+                                                @method('DELETE')
+
                                                 <button class="btn btn-hover-shine btn-outline-danger border-0 btn-sm"
                                                         type="submit" data-toggle="tooltip" title="Delete"
                                                         data-placement="bottom"
@@ -67,6 +74,7 @@
                                             </form>
                                         </td>
                                     </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>

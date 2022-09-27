@@ -13,46 +13,48 @@
                 </div>
 
                 <div class="row">
-                    <form action="" class="col-lg-12">
+                    <form action="./admin/teacher/{{ $teacher->id }}" method="post" enctype="multipart/form-data" class="col-lg-12">
+                        @csrf
+                        @method('PUT')
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group" id="course-name">
-                                    <input type="text" class="form-control" placeholder="Name">
+                                    <input name="name" value="{{ $teacher->name }}" type="text" class="form-control" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group" id="title">
-                                    <input type="text" class="form-control" placeholder="Phone">
+                                    <input name="phone" value="{{ $teacher->phone }}" type="text" class="form-control" placeholder="Phone">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group" id="subtitle">
-                                    <input type="text" class="form-control" placeholder="Date Of Birth">
+                                    <input name="dob" value="{{ $teacher->dob }}" type="text" class="form-control" placeholder="Date Of Birth">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group" id="time">
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input name="email" value="{{ $teacher->email }}" type="text" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group" id="price">
-                                    <input type="text" class="form-control" placeholder="Address">
+                                    <input name="address" value="{{ $teacher->address }}" type="text" class="form-control" placeholder="Address">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group" id="achieve">
-                                    <textarea rows="4" class="form-control no-resize" placeholder="Achieve"></textarea>
+                                    <textarea name="achieve" rows="4" class="form-control no-resize" placeholder="Achieve"></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group" id="description">
-                                    <textarea rows="4" class="form-control no-resize" placeholder="Description"></textarea>
+                                    <textarea name="description" rows="4" class="form-control no-resize" placeholder="Description"></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group" style="max-width: 100%">
-                                    <img style="height: 400px;" class="img-thumbnail" src="../../img/undraw_profile_1.svg" alt="">
+                                    <img style="height: 400px;" class="img-thumbnail" src="dashboard/img/{{ $teacher->avatar }}" alt="">
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -60,7 +62,7 @@
                                     <img style="width: 98%; cursor: pointer;"
                                          class="thumbnail"
                                          data-toggle="tooltip" title="Click to add image" data-placement="bottom"
-                                         src="../../img/img-new.png" alt="Add Image">
+                                         src="dashboard/img/img-new.png" alt="Add Image">
 
                                     <input name="image" type="file" onchange="changeImg(this);"
                                            accept="image/x-png,image/gif,image/jpeg"
@@ -69,7 +71,12 @@
                             </div>
                             <div class="col-lg-12" style="margin-top: 20px;">
                                 <button type="submit" class="btn btn-raised waves-effect btn-round btn-primary">Submit</button>
-                                <button type="submit" class="btn btn-raised waves-effect btn-round">Cancel</button>
+                                <a href="./admin/teacher/" class="border-0 btn btn-outline-danger mr-1">
+                                    <span class="btn-icon-wrapper pr-1 opacity-8">
+                                                        <i class="fa fa-times fa-w-20"></i>
+                                                    </span>
+                                    <span>Cancel</span>
+                                </a>
                             </div>
                         </div>
                     </form>

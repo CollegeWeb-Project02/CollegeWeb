@@ -29,4 +29,19 @@ abstract class BaseRepository implements RepositoryInterface
     {
         return $this->model->findOrFail($id);
     }
+
+    public function update(array $data,$id)
+    {
+        $object = $this->model->find($id);
+
+        return $object->update($data);
+    }
+
+    public function delete($id)
+    {
+        $object = $this->model->find($id);
+
+        return $object->delete();
+    }
+
 }

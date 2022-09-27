@@ -17,4 +17,8 @@ class TeacherService extends BaseService implements TeacherServiceInterface
     public function getTeachers($limit = 4){
         return $this->repository->getTeachers($limit);
     }
+
+    public function getTeacherInDashboard(){
+        return $this->repository->getTeacherInDashboard();
+    }
 }
