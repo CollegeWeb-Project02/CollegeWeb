@@ -68,6 +68,8 @@ class TeacherController extends Controller
     {
         $data = $request->all();
 
+        /*var_dump($data);*/
+
         // Xử lý file:
         if ($request->hasFile('image')) {
             $data['avatar'] = Common::uploadFile($request->file('image'),'dashboard/img');

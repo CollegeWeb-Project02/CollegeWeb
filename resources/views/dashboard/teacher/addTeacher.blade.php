@@ -33,7 +33,11 @@
                                 </div>
                             </div>
                             <div class="col-lg-12">
+<<<<<<< Updated upstream
                                 <div class="form-group" id="email">
+=======
+                                <div class="form-group" id="time">
+>>>>>>> Stashed changes
                                     <input name="email" type="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
