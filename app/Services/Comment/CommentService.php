@@ -14,7 +14,7 @@ class CommentService extends BaseService implements CommentServiceInterface
         $this->repository = $commentRepository;
     }
 
-    public function getComments($limit = 3){
-        return $this->repository->getComments($limit);
+    public function getComments(){
+        return $this->repository->getComments();
     }
 }

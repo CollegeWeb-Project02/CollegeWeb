@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\Front\HomeController::class, 'index']);
-
+Route::prefix('/')->group(function() {
+    Route::get('/', [\App\Http\Controllers\Front\HomeController::class, 'index']);
+    Route::post('/', [\App\Http\Controllers\Front\AboutController::class, 'addDiscount']);
+});
 Route::prefix('about')->group(function() {
     Route::get('/', [\App\Http\Controllers\Front\AboutController::class, 'index']);
     Route::post('/', [\App\Http\Controllers\Front\AboutController::class, 'addDiscount']);
@@ -44,12 +46,14 @@ Route::prefix('account')->group(function() {
 Route::prefix('blog')->group(function() {
     Route::get('/', [\App\Http\Controllers\Front\BlogController::class, 'index']);
     Route::get('/single/{id}', [\App\Http\Controllers\Front\BlogController::class, 'blogid']);
+    Route::post('/single/{id}', [\App\Http\Controllers\Front\BlogController::class, 'addComment']);
 });
 
 Route::prefix('contact')->group(function() {
     Route::get('/', function (){
         return view('front.menu.contact');
     });
+    Route::post('/', [\App\Http\Controllers\Front\AboutController::class, 'addContact']);
 });
 
 // Dashboard Admin
