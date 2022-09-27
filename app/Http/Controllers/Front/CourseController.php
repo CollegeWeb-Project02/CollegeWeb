@@ -8,6 +8,8 @@ use App\Services\Course\CourseServiceInterface;
 use App\Services\Register\RegisterServiceInterface;
 use App\Services\Subject\SubjectServiceInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 class CourseController extends Controller
 {
     private $subjectService;
@@ -49,8 +51,24 @@ class CourseController extends Controller
     }
 
     public function addRegister(Request $request){
-        $this->registerService->create($request->all());
+        $register = $this->registerService->create($request->all());
 
-        return redirect()->back();
+        $this->sendEmail($register);
+
+        return redirect()->back()->with('notification', 'Success! You was registered successful. Please check your email');
+    }
+
+
+    private function sendEmail($register)
+    {
+        $email_to = $register->email;
+
+        Mail::send('front.sendmail.email',
+            compact('register'),
+            function ($message) use ($email_to){
+                $message->from('hex.4b68616e68@gmail.com', 'Second-Hand eShop');
+                $message->to($email_to, $email_to);
+                $message->subject('Confirm Notification');
+            });
     }
 }

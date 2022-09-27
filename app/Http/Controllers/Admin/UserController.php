@@ -29,14 +29,6 @@ class UserController extends Controller
         return view('dashboard.index', compact('users'));
     }
 
-    public function teacherView(){
-        return view('teacherview.index');
-    }
-
-    public function hostView(){
-        return view('dashboard.index');
-    }
-
     public function profile(){
 
         $user = Auth::user();

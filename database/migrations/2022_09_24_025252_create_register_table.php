@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
 
             $table->integer('user_id')->nullable();
+            $table->integer('course_id');
             $table->string('name');
             $table->string('dob');
             $table->string('address');

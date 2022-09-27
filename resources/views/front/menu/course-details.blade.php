@@ -77,6 +77,8 @@
                                 <form action="" method="post">
                                     @csrf
                                     <div class="row">
+                                        <div class="col-lg-6" style="display: none">
+                                            <input type="hidden" name="course_id" value="{{ $course->id }}">                                        </div>
                                         <div class="col-lg-6">
                                             <label for="name">Your Name <span>*</span></label>
                                             <input type="text" id="name" name="name">

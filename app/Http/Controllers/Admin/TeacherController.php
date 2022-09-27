@@ -84,7 +84,7 @@ class TeacherController extends Controller
         // Xóa file
         $file_name = $teacher->avatar;
         if ($file_name != '') {
-            unlink('dashboard/img' . $file_name);
+            unlink('dashboard/img/' . $file_name);
         }
 
         return redirect('admin/teacher');

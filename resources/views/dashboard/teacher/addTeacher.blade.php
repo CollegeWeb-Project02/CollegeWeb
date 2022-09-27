@@ -16,30 +16,29 @@
                 <div class="row">
                     <form method="post" action="admin/teacher/" class="col-lg-12">
                         @csrf
-
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="form-group" id="course-name">
+                                <div class="form-group" id="name">
                                     <input name="name" type="text" class="form-control" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-group" id="title">
+                                <div class="form-group" id="phone">
                                     <input name="phone" type="text" class="form-control" placeholder="Phone">
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-group" id="subtitle">
+                                <div class="form-group" id="dob">
                                     <input name="dob" type="text" class="form-control" placeholder="Date Of Birth">
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="form-group" id="time">
-                                    <input name="email" type="text" class="form-control" placeholder="Email">
+                                <div class="form-group" id="email">
+                                    <input name="email" type="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="form-group" id="price">
+                                <div class="form-group" id="address">
                                     <input name="address" type="text" class="form-control" placeholder="Address">
                                 </div>
                             </div>

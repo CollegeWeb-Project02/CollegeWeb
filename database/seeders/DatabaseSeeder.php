@@ -219,17 +219,6 @@ class DatabaseSeeder extends Seeder
             ],
         ]);
 
-        DB::table('register')->insert([
-            [
-                'name' => 'Dinh Quang Anh',
-                'dob' => '12121212122000',
-                'address' => '',
-                'achieve' => '',
-                'phone' => '',
-                'email' => '',
-            ]
-        ]);
-
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
