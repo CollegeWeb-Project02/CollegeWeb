@@ -23,11 +23,11 @@ return new class extends Migration
             $table->string('description');
             $table->string('phone');
             $table->string('email');
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->string('avatar')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
             $table->integer('level');
-            $table->string('social_link');
+            $table->string('social_link')->nullable();
 
             $table->timestamps();
         });

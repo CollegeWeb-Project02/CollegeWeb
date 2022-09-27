@@ -22,6 +22,11 @@ class User extends Authenticatable
         'email',
         'password',
 
+        'address',
+        'achieve',
+        'dob',
+        'phone',
+
         'avatar',
         'level',
         'description'
