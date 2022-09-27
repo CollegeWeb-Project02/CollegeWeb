@@ -1076,40 +1076,5 @@ class DatabaseSeeder extends Seeder
                 'course_id' => 1,
             ],
         ]);
-
-        DB::table('comment')->insert([
-            [
-                'id' => 1,
-                'blog_id' => 1,
-                'name' => 'Nguyen Khanh',
-                'position' => 'Developer',
-                'content' => '',
-                'avatar' => '',
-            ],
-            [
-                'id' => 2,
-                'blog_id' => 1,
-                'name' => 'Dinh Quang Anh',
-                'position' => 'Professor',
-                'content' => '',
-                'avatar' => '',
-            ],
-            [
-                'id' => 3,
-                'blog_id' => 1,
-                'name' => 'Luong Viet Hoang',
-                'position' => 'Back-end Developer',
-                'content' => '',
-                'avatar' => '',
-            ],
-            [
-                'id' => 4,
-                'blog_id' => 1,
-                'name' => 'Ta Duy Linh',
-                'position' => 'Game Developer',
-                'content' => '',
-                'avatar' => '',
-            ]
-        ]);
     }
 }

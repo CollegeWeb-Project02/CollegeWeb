@@ -10,6 +10,8 @@ use App\Repositories\Classes\ClassesRepository;
 use App\Repositories\Classes\ClassesRepositoryInterface;
 use App\Repositories\Comment\CommentRepository;
 use App\Repositories\Comment\CommentRepositoryInterface;
+use App\Repositories\Contact\ContactRepository;
+use App\Repositories\Contact\ContactRepositoryInterface;
 use App\Repositories\Course\CourseRepository;
 use App\Repositories\Course\CourseRepositoryInterface;
 use App\Repositories\Register\RegisterRepository;
@@ -28,6 +30,8 @@ use App\Services\Classes\ClassesService;
 use App\Services\Classes\ClassesServiceInterface;
 use App\Services\Comment\CommentService;
 use App\Services\Comment\CommentServiceInterface;
+use App\Services\Contact\ContactService;
+use App\Services\Contact\ContactServiceInterface;
 use App\Services\Course\CourseService;
 use App\Services\Course\CourseServiceInterface;
 use App\Services\Register\RegisterService;
@@ -146,6 +150,17 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(
             AboutServiceInterface::class,
             AboutService::class
+        );
+
+        //Contact
+        $this->app->singleton(
+            ContactRepositoryInterface::class,
+            ContactRepository::class
+        );
+
+        $this->app->singleton(
+            ContactServiceInterface::class,
+            ContactService::class
         );
     }
 

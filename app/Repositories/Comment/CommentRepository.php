@@ -11,10 +11,9 @@ class CommentRepository extends BaseRepository implements CommentRepositoryInter
         return Comment::class;
     }
 
-    public function getComments($limit = 3)
+    public function getComments()
     {
         return $this->model->orderBy('id', 'desc')
-            ->limit($limit)
             ->get();
     }
 }

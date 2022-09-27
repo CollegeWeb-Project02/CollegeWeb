@@ -25,63 +25,42 @@
 
                     <!-- Teacher List -->
                     <div class="mb-5">
-                        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">3 Comments</h3>
+                        <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">{{ count($comments) }} Comments</h3>
+                        @foreach($comments as $comment)
                         <div class="media mb-4">
                             <img src="front/img/user.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
                                 style="width: 45px;">
                             <div class="media-body">
-                                <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                                <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at.
-                                    Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. Gubergren clita aliquyam
-                                    consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
-                                <button class="btn btn-sm btn-secondary">Reply</button>
+                                <h6>{{ $comment->name }}<small><i>
+                                            {{ date('M d, Y', strtotime($comment->created_at)) }}
+                                        </i></small></h6>
+                                <p>{{ $comment->content }}</p>
                             </div>
                         </div>
-                        <div class="media mb-4">
-                            <img src="front/img/user.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
-                                style="width: 45px;">
-                            <div class="media-body">
-                                <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                                <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at.
-                                    Kasd diam tempor rebum magna dolores sed sed eirmod ipsum. Gubergren clita aliquyam
-                                    consetetur sadipscing, at tempor amet ipsum diam tempor consetetur at sit.</p>
-                                <button class="btn btn-sm btn-secondary">Reply</button>
-                                <div class="media mt-4">
-                                    <img src="front/img/user.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
-                                        style="width: 45px;">
-                                    <div class="media-body">
-                                        <h6>John Doe <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                                        <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum
-                                            et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.
-                                            Gubergren clita aliquyam consetetur, at tempor amet ipsum diam tempor at
-                                            sit.</p>
-                                        <button class="btn btn-sm btn-secondary">Reply</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
 
                     <!-- Teacher Form -->
                     <div class="bg-secondary rounded p-5">
                         <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">Leave a comment</h3>
-                        <form>
+                        <form action="" method="post">
+                            @csrf
                             <div class="form-group">
                                 <label for="name">Name *</label>
-                                <input type="text" class="form-control border-0" id="name">
+                                <input type="text" name="name" class="form-control border-0" id="name">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email *</label>
-                                <input type="email" class="form-control border-0" id="email">
+                                <input type="email" name="email" class="form-control border-0" id="email">
                             </div>
                             <div class="form-group">
-                                <label for="website">Website</label>
-                                <input type="url" class="form-control border-0" id="website">
+                                <label for="age">Age *</label>
+                                <input type="text" name="age" class="form-control border-0" id="age">
                             </div>
 
                             <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" cols="30" rows="5" class="form-control border-0"></textarea>
+                                <label for="content">Message *</label>
+                                <textarea id="content" name="content" cols="30" rows="5" class="form-control border-0"></textarea>
                             </div>
                             <div class="form-group mb-0">
                                 <input type="submit" value="Leave Comment" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">
