@@ -30,7 +30,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-1.jpg',
                 'password' => Hash::make('123456'),
                 'level' => 1,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -44,7 +43,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-2.jpg',
                 'password' => Hash::make('123456'),
                 'level' => 1,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -58,7 +56,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-3.jpg',
                 'password' => Hash::make('123456'),
                 'level' => 2,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -72,7 +69,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-4.jpg',
                 'password' => Hash::make('123456'),
                 'level' => 2,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -86,7 +82,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-5.png',
                 'password' => Hash::make('123456'),
                 'level' => 2,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -100,7 +95,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-6.png',
                 'password' => Hash::make('123456'),
                 'level' => 2,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -114,7 +108,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-7.png',
                 'password' => Hash::make('123456'),
                 'level' => 2,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -128,7 +121,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-8.png',
                 'password' => Hash::make('123456'),
                 'level' => 3,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -142,7 +134,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-9.png',
                 'password' => Hash::make('123456'),
                 'level' => 3,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -156,7 +147,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-10.png',
                 'password' => Hash::make('123456'),
                 'level' => 3,
-                'status' => '1',
                 'social_link' => '',
             ],
 
@@ -172,7 +162,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-1.jpg',
                 'password' => Hash::make('123456'),
                 'level' => 2,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -186,7 +175,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-2.jpg',
                 'password' => Hash::make('123456'),
                 'level' => 3,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -200,7 +188,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-4.jpg',
                 'password' => Hash::make('123456'),
                 'level' => 2,
-                'status' => '1',
                 'social_link' => '',
             ],
             [
@@ -214,7 +201,6 @@ class DatabaseSeeder extends Seeder
                 'avatar' => 'team-6.png',
                 'password' => Hash::make('123456'),
                 'level' => 2,
-                'status' => '1',
                 'social_link' => '',
             ],
         ]);

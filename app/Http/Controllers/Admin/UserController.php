@@ -36,6 +36,13 @@ class UserController extends Controller
         return view('dashboard.profile.profile', compact('user'));
     }
 
+    public function getUser(){
+
+        $user = $this->userService->all();
+
+        return view('dashboard.account.account', compact('user'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

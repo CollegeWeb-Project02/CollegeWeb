@@ -3,7 +3,6 @@
 namespace App\Repositories\Course;
 
 use App\Models\Course;
-use App\Models\Subject;
 use App\Repositories\BaseRepository;
 
 class CourseRepository extends BaseRepository implements CourseRepositoryInterface
@@ -33,5 +32,9 @@ class CourseRepository extends BaseRepository implements CourseRepositoryInterfa
 //        $courses = Subject::find($subjectId)->courses->toQuery();
 
 //        return $courses;
+    }
+
+    public function getCourseInDashboard(){
+        return $this->model->get();
     }
 }

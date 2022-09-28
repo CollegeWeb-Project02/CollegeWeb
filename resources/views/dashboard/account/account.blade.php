@@ -42,8 +42,7 @@
                     <tr>
                         <td class="text-center">#1233</td>
                         <td class="text-center">
-                            <img class="img-profile" width="40px;" src="../../img/undraw_profile_1.svg" alt="">
-                            <span>Quanh</span>
+                            Quanh
                         </td>
                         <td class="text-center">quanh@gmail.com</td>
                         <td class="text-center">dfgdgfjsdhgfsdh</td>

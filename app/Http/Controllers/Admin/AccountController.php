@@ -4,41 +4,41 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
-use App\Repositories\Teacher\TeacherRepositoryInterface;
+use App\Repositories\Account\AccountRepositoryInterface;
 use Illuminate\Http\Request;
 use App\Utilities\Common;
 
-class TeacherController extends Controller
+class AccountController extends Controller
 {
-    private $teacherService;
+    private $accountService;
 
-    public function __construct(TeacherRepositoryInterface $teacherService)
+    public function __construct(AccountRepositoryInterface $accountService)
     {
-        $this->teacherService = $teacherService;
+        $this->accountService = $accountService;
     }
 
     public function index(){
-        $teachers = $this->teacherService->getTeacherInDashboard();
+        $accounts = $this->accountService->getAccountInDashboard();
 
-        return view('dashboard.teacher.allTeacher', compact('teachers'));
+        return view('dashboard.account.allAccount', compact('accounts'));
     }
 
     public function show($id){
 
-        $teacher = $this->teacherService->find($id);
+        $account = $this->accountService->find($id);
 
-        return view('dashboard.teacher.viewTeacher', compact('teacher'));
+        return view('dashboard.account.viewAccount', compact('account'));
     }
 
     public function edit($id){
-        $teacher = $this->teacherService->find($id);
+        $account = $this->accountService->find($id);
 
-        return view('dashboard.teacher.updateTeacher', compact('teacher'));
+        return view('dashboard.account.updateAccount', compact('account'));
     }
 
     public function update(Request $request, $id){
 
-        $teacher = $this->teacherService->find($id);
+        $account = $this->accountService->find($id);
 
         $data = $request->all();
 
@@ -54,9 +54,9 @@ class TeacherController extends Controller
             }
         }
 
-        $this->teacherService->update($data,$teacher->id);
+        $this->accountService->update($data,$account->id);
 
-        return redirect('/admin/teacher/' . $teacher->id);
+        return redirect('/admin/account/' . $account->id);
     }
 
     public function create()
@@ -75,21 +75,21 @@ class TeacherController extends Controller
             $data['avatar'] = Common::uploadFile($request->file('image'),'dashboard/img');
         }
 
-        $teacher = $this->teacherService->create($data);
-        return redirect('/admin/teacher/' . $teacher->id);
+        $account = $this->accountService->create($data);
+        return redirect('/admin/account/' . $account->id);
     }
 
-    public function destroy(User $teacher)
+    public function destroy(User $account)
     {
-        $this->teacherService->delete($teacher->id);
+        $this->accountService->delete($account->id);
 
         // Xóa file
-        $file_name = $teacher->avatar;
+        $file_name = $account->avatar;
         if ($file_name != '') {
             unlink('dashboard/img/' . $file_name);
         }
 
-        return redirect('admin/teacher');
+        return redirect('admin/account');
 
     }
 }

@@ -61,12 +61,10 @@ Route::prefix('admin')->group(function() {
     Route::resource('index',\App\Http\Controllers\Admin\UserController::class);
     Route::get('profile', [\App\Http\Controllers\Admin\UserController::class, 'profile']);
     Route::get('logout', [\App\Http\Controllers\Front\AccountController::class, 'logoutAdmin']);
+    Route::get('user', [\App\Http\Controllers\Admin\UserController::class, 'getUser']);
 
     Route::resource('teacher', \App\Http\Controllers\Admin\TeacherController::class);
-
-    /*Route::prefix('teacher')->group(function (){
-        Route::get('/', [\App\Http\Controllers\Admin\TeacherController::class, 'index']);
-        Route::get('/view/{id}', [\App\Http\Controllers\Admin\TeacherController::class, 'view']);
-        Route::get('/{id}/update', [\App\Http\Controllers\Admin\TeacherController::class, 'update']);
-    });*/
+    Route::resource('course', \App\Http\Controllers\Admin\CourseController::class);
 });
+
+

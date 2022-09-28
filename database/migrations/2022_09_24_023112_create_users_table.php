@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('description');
             $table->string('phone');
             $table->string('email');
-            $table->string('status')->nullable();
             $table->string('avatar')->nullable();
             $table->string('password')->nullable();
             $table->integer('level');

@@ -38,4 +38,8 @@ class CourseService extends BaseService implements CourseServiceInterface
     {
         return $this->repository->getCourseBySubject($subjectId, $request);
     }
+
+    public function getCourseInDashboard(){
+        return $this->repository->getCourseInDashboard();
+    }
 }
