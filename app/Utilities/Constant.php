@@ -31,4 +31,12 @@ class Constant
         self::user_level_teacher => 'teacher',
         self::user_level_student => 'student',
     ];
+
+    // Register status
+    const student_register_done = 1;
+    const student_register_not_done = 0;
+    public static $student_register_status = [
+        self::student_register_done => 'Paid',
+        self::student_register_not_done => 'Have not paid'
+    ];
 }

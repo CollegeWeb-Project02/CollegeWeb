@@ -20,48 +20,40 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
-                                    <th class="text-center">Name</th>
-                                    <th class="text-center">Email</th>
-                                    <th class="text-center">Address</th>
-                                    <th class="text-center">Phone</th>
-                                    <th class="text-center">Actions</th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Date Of Birth</th>
+                                    <th>Course</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
-                                    <th  class="text-center">Name</th>
-                                    <th class="text-center">Email</th>
-                                    <th class="text-center">Address</th>
-                                    <th class="text-center">Phone</th>
-                                    <th class="text-center">Actions</th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Date Of Birth</th>
+                                    <th>Course</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                                 </tfoot>
                                 <tbody>
-                                <tr>
-                                    <td class="text-center">
-                                        <img class="img-profile" width="40px;" src="../../img/undraw_profile_1.svg" alt="">
-                                        <span>Student Name</span>
-                                    </td>
-                                    <td class="text-center">System Architect</td>
-                                    <td class="text-center">Edinburgh</td>
-                                    <td class="text-center">61</td>
-                                    <td class="text-center">
-                                        <a href="../student/addStudent.blade.php"
-                                           class="btn btn-hover-shine btn-outline-primary border-0 btn-sm">
-                                            Add
-                                        </a>
-                                        <form class="d-inline" action="" method="post">
-                                            <button class="btn btn-hover-shine btn-outline-danger border-0 btn-sm"
-                                                    type="submit" data-toggle="tooltip" title="Delete"
-                                                    data-placement="bottom"
-                                                    onclick="return confirm('Do you really want to delete this item?')">
-                                                            <span class="btn-icon-wrapper opacity-8">
-                                                                <i class="fa fa-trash fa-w-20"></i>
-                                                            </span>
-                                            </button>
-                                        </form>
-                                    </td>
-                                </tr>
+                                @foreach($registers as $register)
+                                    <tr>
+                                        <th>#{{ $register->id }}</th>
+                                        <th>{{ $register->name }}</th>
+                                        <th>{{ $register->email }}</th>
+                                        <th>{{ $register->dob }}</th>
+                                        <th>{{ $register->course_id }}</th>
+                                        <th>{{ $register->status }}</th>
+                                        <th class="text-center">
+                                            <a href="editStatus.blade.php"><i class="fa fa-edit fa-w-20"></i></a>
+                                        </th>
+                                    </tr>
+                                @endforeach
                                 </tbody>
                             </table>
                         </div>

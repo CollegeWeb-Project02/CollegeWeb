@@ -12,4 +12,8 @@ class Register extends Model
     protected $table = 'register';
     protected $primaryKey = 'id';
     protected $guarded = [];
+
+    protected $fillable = [
+        'course_id',
+    ];
 }
