@@ -16,14 +16,20 @@ return new class extends Migration
         Schema::create('register', function (Blueprint $table) {
             $table->id();
 
-            $table->integer('user_id')->nullable();
-            $table->integer('course_id');
             $table->string('name');
             $table->string('dob');
             $table->string('address');
             $table->string('achieve');
+            $table->string('description');
             $table->string('phone');
             $table->string('email');
+            $table->string('avatar')->nullable();
+            $table->string('password')->nullable();
+            $table->integer('level');
+            $table->string('social_link')->nullable();
+            $table->integer('class_id')->nullable();
+            $table->integer('status')->default(0);
+
 
 
             $table->timestamps();
