@@ -406,7 +406,7 @@
 <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="sticky navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="./admin/index">
@@ -464,6 +464,24 @@
                 <div class=" py-2 collapse-inner rounded">
                     <a class="collapse-item" href="admin/course">All Courses</a>
                     <a class="collapse-item" href="admin/course/create">Add Course</a>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseClass"
+               aria-expanded="true" aria-controls="collapseClass">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+                    <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                    <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"/>
+                </svg>
+
+                <span>Class</span>
+            </a>
+            <div id="collapseClass" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class=" py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="class/allclass">All Class</a>
+                    <a class="collapse-item" href="class/addclass">Add Class</a>
                 </div>
             </div>
         </li>

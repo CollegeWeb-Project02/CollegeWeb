@@ -29,6 +29,12 @@ class UserController extends Controller
         return view('dashboard.index', compact('users'));
     }
 
+    public function account(){
+        $accounts = $this->accountService->getAccountInDashboard();
+
+        return view('dashboard.account.allAccount', compact('accounts'));
+    }
+
     public function profile(){
 
         $user = Auth::user();
@@ -38,9 +44,9 @@ class UserController extends Controller
 
     public function getUser(){
 
-        $user = $this->userService->all();
+        $users = $this->userService->all();
 
-        return view('dashboard.account.account', compact('user'));
+        return view('dashboard.account.account', compact('users'));
     }
 
     /**

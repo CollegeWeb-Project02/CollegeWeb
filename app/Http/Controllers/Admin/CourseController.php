@@ -92,7 +92,9 @@ class CourseController extends Controller
             unlink('front/img/' . $file_name);
         }
 
+
         return redirect('/admin/course');
+
 
     }
 }

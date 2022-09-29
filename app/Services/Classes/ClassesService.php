@@ -13,4 +13,8 @@ class ClassesService extends BaseService implements ClassesServiceInterface
     {
         $this->repository = $classesRepository;
     }
+
+    public function getClass(){
+        return $this->repository->getClass();
+    }
 }

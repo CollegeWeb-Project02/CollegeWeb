@@ -18,6 +18,7 @@ return new class extends Migration
 
             $table->string('classes_name');
             $table->integer('status');
+            $table->integer('course_id');
 
             $table->timestamps();
         });

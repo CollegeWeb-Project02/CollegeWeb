@@ -6,4 +6,5 @@ use App\Repositories\RepositoryInterface;
 
 interface ClassesRepositoryInterface extends RepositoryInterface
 {
+    public function getClass();
 }
