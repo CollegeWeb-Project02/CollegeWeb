@@ -64,14 +64,12 @@ Route::prefix('admin')->group(function() {
     Route::get('user', [\App\Http\Controllers\Admin\UserController::class, 'getUser']);
 
     Route::resource('teacher', \App\Http\Controllers\Admin\TeacherController::class);
+    Route::resource('student', \App\Http\Controllers\Admin\StudentController::class);
     Route::resource('course', \App\Http\Controllers\Admin\CourseController::class);
     Route::resource('register', \App\Http\Controllers\Admin\RegisterController::class);
 
-    /*Route::prefix('teacher')->group(function (){
-        Route::get('/', [\App\Http\Controllers\Admin\TeacherController::class, 'index']);
-        Route::get('/view/{id}', [\App\Http\Controllers\Admin\TeacherController::class, 'view']);
-        Route::get('/{id}/update', [\App\Http\Controllers\Admin\TeacherController::class, 'update']);
-    });*/
+    Route::get('register/{id}', [\App\Http\Controllers\Admin\RegisterController::class, 'updateStatus']);
 });
 
-
+//Route::resource('register/check', \App\Http\Controllers\Admin\RegisterController::class);
+Route::get('register/filter1', [\App\Http\Controllers\Admin\RegisterController::class, 'checkRegister']);

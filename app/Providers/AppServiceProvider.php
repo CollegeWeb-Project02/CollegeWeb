@@ -18,6 +18,8 @@ use App\Repositories\Course\CourseRepository;
 use App\Repositories\Course\CourseRepositoryInterface;
 use App\Repositories\Register\RegisterRepository;
 use App\Repositories\Register\RegisterRepositoryInterface;
+use App\Repositories\Student\StudentRepository;
+use App\Repositories\Student\StudentRepositoryInterface;
 use App\Repositories\Subject\SubjectRepository;
 use App\Repositories\Subject\SubjectRepositoryInterface;
 use App\Repositories\Teacher\TeacherRepository;
@@ -40,6 +42,8 @@ use App\Services\Course\CourseService;
 use App\Services\Course\CourseServiceInterface;
 use App\Services\Register\RegisterService;
 use App\Services\Register\RegisterServiceInterface;
+use App\Services\Student\StudentService;
+use App\Services\Student\StudentServiceInterface;
 use App\Services\Subject\SubjectService;
 use App\Services\Subject\SubjectServiceInterface;
 use App\Services\Teacher\TeacherService;
@@ -176,6 +180,18 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(
             AccountServiceInterface::class,
             AccountService::class
+        );
+
+
+        //Student
+        $this->app->singleton(
+            StudentRepositoryInterface::class,
+            StudentRepository::class
+        );
+
+        $this->app->singleton(
+            StudentServiceInterface::class,
+            StudentService::class
         );
     }
 

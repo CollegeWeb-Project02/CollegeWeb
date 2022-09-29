@@ -26,6 +26,9 @@ return new class extends Migration
             $table->string('avatar')->nullable();
             $table->string('password')->nullable();
             $table->integer('level');
+            $table->integer('status')->nullable();
+            $table->integer('class_id')->nullable();
+            $table->integer('course_id')->nullable();
             $table->string('social_link')->nullable();
 
             $table->timestamps();

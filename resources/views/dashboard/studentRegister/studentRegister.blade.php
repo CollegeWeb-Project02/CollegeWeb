@@ -5,10 +5,10 @@
 @section('body')
 
             <!-- Begin Page Content -->
-            <div class="container-fluid">
+            <div class="container-fluid" xmlns="http://www.w3.org/1999/html">
 
                 <!-- Page Heading -->
-                <h2 class="h3 mb-2 text-gray-800">Student Register</h2>
+                <h2 class="h3 mb-2 text-gray-800">Student Register(Unpaid)</h2>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
@@ -50,7 +50,26 @@
                                         <th>{{ $register->course_id }}</th>
                                         <th>{{ $register->status }}</th>
                                         <th class="text-center">
-                                            <a href="editStatus.blade.php"><i class="fa fa-edit fa-w-20"></i></a>
+                                            <form action="admin/register/{{ $register->id }}" method="post">
+                                                @csrf
+                                                @method('PUT')
+
+                                                <input name="status" type="number" hidden value="1">
+                                                <button type="submit">Edit status</button>
+                                            </form>
+                                            <form class="d-inline" action="/admin/register/{{$register->id}}" method="post">
+                                                @csrf
+                                                @method('DELETE')
+
+                                                <button class="btn btn-hover-shine btn-outline-danger border-0 btn-sm"
+                                                        type="submit" data-toggle="tooltip" title="Delete"
+                                                        data-placement="bottom"
+                                                        onclick="return confirm('Do you really want to delete this item?')">
+                                                            <span class="btn-icon-wrapper opacity-8">
+                                                                <i class="fa fa-trash fa-w-20"></i>
+                                                            </span>
+                                                </button>
+                                            </form>
                                         </th>
                                     </tr>
                                 @endforeach

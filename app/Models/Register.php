@@ -14,10 +14,28 @@ class Register extends Model
     protected $guarded = [];
 
     protected $fillable = [
+        'name',
+        'email',
+        'password',
+
+        'address',
+        'achieve',
+        'dob',
+        'phone',
+
+        'avatar',
+        'level',
+        'status',
+        'class_id',
         'course_id',
+        'description'
     ];
 
     public function courses(){
         return $this->belongsTo(Course::class, 'course_id', 'id');
+    }
+
+    public function classes(){
+        return $this->belongsTo(Classes::class, 'class_id', 'id');
     }
 }

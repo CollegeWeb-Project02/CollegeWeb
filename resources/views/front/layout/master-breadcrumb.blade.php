@@ -40,7 +40,7 @@
                 <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
                 <div class="text-left">
                     <h6 class="font-weight-semi-bold mb-1">Our Office</h6>
-                    <small>123 Street, New York, USA</small>
+                    <small>8th Ton That Thuyet, My Dinh, Ha Noi</small>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                 <i class="fa fa-2x fa-envelope text-primary mr-3"></i>
                 <div class="text-left">
                     <h6 class="font-weight-semi-bold mb-1">Email Us</h6>
-                    <small>info@example.com</small>
+                    <small>ecourset2109m@gmail.com</small>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
                 <i class="fa fa-2x fa-phone text-primary mr-3"></i>
                 <div class="text-left">
                     <h6 class="font-weight-semi-bold mb-1">Call Us</h6>
-                    <small>+012 345 6789</small>
+                    <small>+84 987 729 543</small>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
                 <i class="fa fa-angle-down text-primary"></i>
             </a>
             <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
-                <div class="navbar-nav w-100">
+                <div class="navbar-left navbar-nav w-100">
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link" data-toggle="dropdown">Web Design <i class="fa fa-angle-down float-right mt-1"></i></a>
                         <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
@@ -102,7 +102,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav py-0">
-                        <a href="/" class="nav-item nav-link">Home</a>
+                        <a href="/" class="nav-item nav-link active">Home</a>
                         <a href="/about" class="nav-item nav-link">About</a>
                         <a href="/course" class="nav-item nav-link">Courses</a>
                         <a href="/teacher" class="nav-item nav-link">Teachers</a>
@@ -110,9 +110,9 @@
                         <a href="/contact" class="nav-item nav-link">Contact</a>
                     </div>
                     @if(Auth::check())
-                        <a href="./account/logout" class=" login-panel">{{ Auth::user()->name }} - Logout</a>
+                        <a href="./account/logout" class="login-panel">{{ Auth::user()->name }} - Logout</a>
                     @else
-                        <a href="./account/login" class=" btn btn-primary py-2 px-4 ml-auto d-none d-lg-block">Login</a>
+                        <a href="./account/login" class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block">Login</a>
                     @endif
                 </div>
             </nav>
@@ -150,9 +150,9 @@
             <div class="row">
                 <div class="col-md-6 mb-5">
                     <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>8th Ton That Thuyet, My Dinh, Ha Noi</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+84 987 729 543</p>
+                    <p><i class="fa fa-envelope mr-2"></i>ecourset2109m@gmail.com</p>
                     <div class="d-flex justify-content-start mt-4">
                         <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>

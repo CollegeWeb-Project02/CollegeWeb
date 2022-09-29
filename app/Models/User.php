@@ -29,6 +29,9 @@ class User extends Authenticatable
 
         'avatar',
         'level',
+        'status',
+        'class_id',
+        'course_id',
         'description'
     ];
 

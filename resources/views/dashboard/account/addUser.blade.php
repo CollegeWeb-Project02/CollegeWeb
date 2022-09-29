@@ -9,7 +9,7 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Add New Teacher</h2>
+                        <h2>Add New User</h2>
                     </div>
                 </div>
 

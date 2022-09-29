@@ -20,4 +20,8 @@ class Classes extends Model
     public function classesUser(){
         return $this->hasMany(Classes_user::class, 'classes_id', 'id');
     }
+
+    public function register(){
+        return $this->hasMany(Register::class, 'classes_id', 'id');
+    }
 }
