@@ -10,4 +10,8 @@ class ClassesRepository extends BaseRepository implements ClassesRepositoryInter
     public function getModel(){
         return Classes::class;
     }
+
+    public function getClass(){
+        return $this->model->get();
+    }
 }

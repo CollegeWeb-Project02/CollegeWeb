@@ -39,14 +39,15 @@
                     </tr>
                     </tfoot>
                     <tbody>
+                    @foreach($users as $user)
                     <tr>
-                        <td class="text-center">#1233</td>
+                        <td class="text-center">#{{ $user->id }}</td>
                         <td class="text-center">
-                            Quanh
+                            {{ $user->name }}
                         </td>
-                        <td class="text-center">quanh@gmail.com</td>
-                        <td class="text-center">dfgdgfjsdhgfsdh</td>
-                        <td class="text-center">Teacher</td>
+                        <td class="text-center">{{ $user->email }}</td>
+                        <td class="text-center">{{ $user->password }}</td>
+                        <td class="text-center">{{ $user->level }}</td>
                         <td class="text-center">
                             <form class="d-inline" action="" method="post">
                                 <button class="btn btn-hover-shine btn-outline-danger border-0 btn-sm"
@@ -60,6 +61,7 @@
                             </form>
                         </td>
                     </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>

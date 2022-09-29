@@ -37,13 +37,14 @@
                         </tr>
                         </tfoot>
                         <tbody>
+                        @foreach($classes as $class)
                         <tr>
-                            <td class="text-center">#1233</td>
+                            <td class="text-center">#{{ $class->id }}</td>
                             <td class="text-center">
-                                <span>Lop T2109M</span>
+                                <span>{{ $class->classes_name }}</span>
                             </td>
-                            <td class="text-center">ThiDK</td>
-                            <td class="text-center">Web Design</td>
+                            <td class="text-center">{{ \Illuminate\Support\Facades\DB::table('users')->where('id', $class->user_id)->where('level', 2)->get('name') }}</td>
+                            <td class="text-center">{{ \Illuminate\Support\Facades\DB::table('course')->where('id', $class->course_id)->get('name') }}</td>
                             <td class="text-center">
                                 <form class="d-inline" action="" method="post">
                                     <button class="btn btn-hover-shine btn-outline-danger border-0 btn-sm"
@@ -57,6 +58,7 @@
                                 </form>
                             </td>
                         </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

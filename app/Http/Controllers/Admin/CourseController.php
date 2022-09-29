@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Repositories\Course\CourseRepositoryInterface;
 use App\Utilities\Common;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
@@ -90,6 +91,5 @@ class CourseController extends Controller
         }
 
         return redirect('admin/course');
-
     }
 }

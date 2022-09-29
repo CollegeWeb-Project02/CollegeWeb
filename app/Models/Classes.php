@@ -14,14 +14,14 @@ class Classes extends Model
     protected $guarded = [];
 
     public function course(){
-        return $this->belongsTo(Course::class, 'classes_id', 'id');
-    }
-
-    public function classesUser(){
-        return $this->hasMany(Classes_user::class, 'classes_id', 'id');
+        return $this->belongsTo(Course::class, 'course_id', 'id');
     }
 
     public function register(){
         return $this->hasMany(Register::class, 'classes_id', 'id');
+    }
+
+    public function user(){
+        return $this->hasMany(User::class, 'classes_id', 'id');
     }
 }

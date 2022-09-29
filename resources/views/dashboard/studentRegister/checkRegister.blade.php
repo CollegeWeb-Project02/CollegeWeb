@@ -26,7 +26,7 @@
                             <th>Date Of Birth</th>
                             <th>Course</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th class="text-center">Action</th>
                         </tr>
                         </thead>
                         <tfoot>
@@ -37,7 +37,7 @@
                             <th>Date Of Birth</th>
                             <th>Course</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th class="text-center">Action</th>
                         </tr>
                         </tfoot>
                         <tbody>

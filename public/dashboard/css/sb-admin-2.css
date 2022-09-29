@@ -9555,6 +9555,13 @@ button.bg-dark:focus {
   text-transform: lowercase !important;
 }
 
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
 .text-uppercase, .dropdown .dropdown-menu .dropdown-header, .sidebar .sidebar-heading {
   text-transform: uppercase !important;
 }
