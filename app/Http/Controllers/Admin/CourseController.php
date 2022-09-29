@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Course;
 use App\Models\User;
 use App\Repositories\Course\CourseRepositoryInterface;
 use App\Utilities\Common;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
@@ -18,7 +20,7 @@ class CourseController extends Controller
     }
 
     public function index(){
-        $courses = $this->courseService->getCourseInDashboard();
+        $courses = DB::table('course')->get();
 
         return view('dashboard.course.allCourse', compact('courses'));
     }
@@ -42,18 +44,19 @@ class CourseController extends Controller
 
         $data = $request->all();
 
-        // xu ly upload anh
+        //Xử lý file ảnh
         if ($request->hasFile('image')) {
             //Thêm file mới:
-            $data['avatar'] = Common::uploadFile($request->file('image'),'dashboard/img');
+            $data['image'] = Common::uploadFile($request->file('image'),'front/img');
 
             // Xóa file cũ:
             $file_name_old = $request->get('image_old');
             if ($file_name_old != '') {
-                unlink('dashboard/img' . $file_name_old);
+                unlink('front/img' . $file_name_old);
             }
         }
 
+        //Cập nhật dữ liệu
         $this->courseService->update($data,$course->id);
 
         return redirect('/admin/course/' . $course->id);
@@ -72,24 +75,24 @@ class CourseController extends Controller
 
         // Xử lý file:
         if ($request->hasFile('image')) {
-            $data['avatar'] = Common::uploadFile($request->file('image'),'dashboard/img');
+            $data['image'] = Common::uploadFile($request->file('image'),'dashboard/img');
         }
 
-        $teacher = $this->courseService->create($data);
-        return redirect('/admin/course/' . $teacher->id);
+        $course = $this->courseService->create($data);
+        return redirect('/admin/course/' . $course->id);
     }
 
-    public function destroy(User $course)
+    public function destroy(Course $course)
     {
         $this->courseService->delete($course->id);
 
         // Xóa file
-        $file_name = $course->avatar;
+        $file_name = $course->image;
         if ($file_name != '') {
-            unlink('dashboard/img/' . $file_name);
+            unlink('front/img/' . $file_name);
         }
 
-        return redirect('admin/course');
+        return redirect('/admin/course');
 
     }
 }

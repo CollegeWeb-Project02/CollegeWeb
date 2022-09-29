@@ -20,7 +20,7 @@
                             <!-- Card Body -->
                             <div class="card-body">
                                 <div class="course-img-wrapper">
-                                    <img src="../../img/course-1.jpg" alt="" class="img-fluid">
+                                    <img src="front/img/{{ $course->image }}" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -34,31 +34,40 @@
                             <div class="card-body container-fluid">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h4 class="course-name">{{ course->name}}</h4><br>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5 class="course-title">{{ course->title}}</h5>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5 class="course-subtitle">{{ course->subtitle}}</h5>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <h5 class="course-price">{{ course->price}}</h5>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <h5 class="course->discount">{{ course->discount}}</h5>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <h5>{{ course->time}}</h5>
+                                        <h4 class="course-name">Name: {{ $course->name}}</h4><br>
                                     </div>
                                     <div class="col-lg-12">
-                                        <p class="course-description">{{ course->description}}</p>
+                                        <h5 class="course-title">Title: {{ $course->title}}</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <h5 class="course-subtitle">Subtitle: {{ $course->subtitle}}</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <h5 class="course-price">Price: {{ $course->price}}</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <h5 class="course->discount">Discount: {{ $course->discount}}</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <h5>Time: {{ $course->time}}</h5>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <h5>Description: </h5><p class="course-description"> {{ $course->description}}</p>
                                     </div>
                                     <div class="col-lg-12">
                                         <button class="btn btn-raised waves-effect btn-round btn-primary">
-                                            <a href="updateCourse.blade.php" style="text-decoration: none; color: white">Update Course</a>
+                                            <a href="admin/course/{{ $course->id }}/edit" style="text-decoration: none; color: white">Update Course</a>
                                         </button>
-                                        <button class="btn btn-raised waves-effect btn-round btn-danger">Delete Course</button>
+                                        <form class="d-inline" action="./admin/course/{{$course->id}}" method="post">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-raised waves-effect btn-round btn-danger"
+                                                    type="submit" data-toggle="tooltip" title="Delete"
+                                                    data-placement="bottom"
+                                                    onclick="return confirm('Do you really want to delete this?')">
+                                                Delete
+                                            </button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

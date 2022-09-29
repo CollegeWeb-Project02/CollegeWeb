@@ -5,7 +5,7 @@ namespace App\Repositories;
 interface RepositoryInterface
 {
     public function all();
-    public function find(int $id);
+    public function find($id);
     public function create(array $data);
 
     public function delete($id);

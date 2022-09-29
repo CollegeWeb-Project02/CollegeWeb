@@ -18,13 +18,12 @@ return new class extends Migration
 
             $table->string('name');
             $table->text('description');
-            $table->string('title');
-            $table->text('subtitle');
-            $table->string('image');
-            $table->integer('time');
-            $table->integer('subject_id');
-            $table->integer('price');
-            $table->integer('status');
+            $table->string('title')->nullable();
+            $table->text('subtitle')->nullable();
+            $table->string('image')->nullable();
+            $table->integer('time')->nullable();
+            $table->integer('subject_id')->nullable();
+            $table->integer('price')->nullable();
             $table->integer('discount')->nullable();
 
             $table->timestamps();

@@ -300,7 +300,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 99,
                 'discount' => 10,
-                'status' => 1,
             ],
             [
                 'name' => 'Python Programming Bootcamp',
@@ -312,7 +311,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 6,
                 'price' => 129,
                 'discount' => 10,
-                'status' => 1,
             ],
             [
                 'name' => '9+ Programming Tools & Languages',
@@ -324,7 +322,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 8,
                 'price' => 105,
                 'discount' => 10,
-                'status' => 1,
             ],
             [
                 'name' => 'Career Mentorship Sessions (1:1)',
@@ -336,7 +333,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 6,
                 'price' => 122,
                 'discount' => 10,
-                'status' => 1,
             ],
             [
                 'name' => 'Just-in-time Interviews',
@@ -348,7 +344,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 10,
                 'price' => 143,
                 'discount' => 10,
-                'status' => 1,
             ],
             [
                 'name' => 'Career Essential Soft Skills Program',
@@ -360,7 +355,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 8,
                 'price' => 178,
                 'discount' => 10,
-                'status' => 1,
             ],
             [
                 'name' => '25+ Industry-driven Case Studies',
@@ -372,7 +366,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 240,
                 'discount' => 15,
-                'status' => 1,
             ],
             [
                 'name' => 'AI-powered Profile Builder',
@@ -384,7 +377,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 240,
                 'discount' => 15,
-                'status' => 1,
             ],
             [
                 'name' => 'Career Bootcamp',
@@ -396,7 +388,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 240,
                 'discount' => 15,
-                'status' => 1,
             ],
             [
                 'name' => '1350 Hours of Learning',
@@ -408,7 +399,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 240,
                 'discount' => 15,
-                'status' => 1,
             ],
             [
                 'name' => 'Accredited by Institute of Analytics UK (IOA)',
@@ -420,7 +410,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 240,
                 'discount' => 15,
-                'status' => 1,
             ],
             [
                 'name' => 'Designed for Working Professionals',
@@ -432,7 +421,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 240,
                 'discount' => 15,
-                'status' => 1,
             ],
 
             [
@@ -445,7 +433,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 299,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'High-performance Coaching (1:1)',
@@ -457,7 +444,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 299,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Industry Readiness Assessments',
@@ -469,7 +455,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 299,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'University of Arizona Alumni Status',
@@ -481,7 +466,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 299,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Exclusive Job Opportunities Portal',
@@ -493,7 +477,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 299,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Game Design',
@@ -505,7 +488,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 299,
                 'discount' => null,
-                'status' => 1,
             ],
 
             [
@@ -518,7 +500,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 200,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Personalised Industry Session',
@@ -530,7 +511,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 200,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => '30+ Live Learning Sessions',
@@ -542,7 +522,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 200,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Support is available all days for 24 hours',
@@ -554,7 +533,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 200,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Ethical Foundations',
@@ -566,7 +544,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 200,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Ethics in Data',
@@ -578,7 +555,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 200,
                 'discount' => null,
-                'status' => 1,
             ],
 
             [
@@ -591,7 +567,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 24,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Ethics in Modelling',
@@ -603,7 +578,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 24,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Capstone Project 2',
@@ -615,7 +589,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 24,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Structured Problem Solving',
@@ -627,7 +600,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 24,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Data Storytelling',
@@ -639,7 +611,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 24,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Framework to DS/ML Solution Building Strategy',
@@ -651,7 +622,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 24,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Building Data Architecture',
@@ -663,7 +633,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Tester',
@@ -675,7 +644,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Introduction to MLOps',
@@ -687,7 +655,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Introduction to Data and Model Lifecycle',
@@ -699,7 +666,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Lexical Processing',
@@ -711,7 +677,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Syntactic Processing',
@@ -723,7 +688,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 18,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Semantic Processing',
@@ -735,7 +699,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Content Writing',
@@ -747,7 +710,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Introduction to Attention Mechanism',
@@ -759,7 +721,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Advanced Language Models: BERT, GPT',
@@ -771,7 +732,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Introduction to Neural Networks',
@@ -783,7 +743,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'CNN',
@@ -795,7 +754,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 199,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'SEO',
@@ -807,7 +765,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 240,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'RNN',
@@ -819,7 +776,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 240,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Computer Vision',
@@ -831,7 +787,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 240,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Best practices for Effective Communication',
@@ -843,7 +798,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 240,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Capstone Project',
@@ -855,7 +809,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 240,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Introduction to Cloud',
@@ -867,7 +820,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 240,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Security',
@@ -879,7 +831,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 150,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Elastic Provision Services of Cloud and Setting up Cloud',
@@ -891,7 +842,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 190,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Introduction to HDFS',
@@ -903,7 +853,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 190,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Software',
@@ -915,7 +864,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 210,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Hardware',
@@ -927,7 +875,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 190,
                 'discount' => null,
-                'status' => 1,
             ],
             [
                 'name' => 'Hive Querying',
@@ -939,7 +886,6 @@ class DatabaseSeeder extends Seeder
                 'time' => 12,
                 'price' => 190,
                 'discount' => null,
-                'status' => 1,
             ],
         ]);
 
