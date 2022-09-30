@@ -24,6 +24,7 @@
                             <th class="text-center">Name</th>
                             <th class="text-center">Teacher</th>
                             <th class="text-center">Course</th>
+                            <th class="text-center">Status</th>
                             <th class="text-center">Actions</th>
                         </tr>
                         </thead>
@@ -33,6 +34,7 @@
                             <th class="text-center">Name</th>
                             <th class="text-center">Teacher</th>
                             <th class="text-center">Course</th>
+                            <th class="text-center">Status</th>
                             <th class="text-center">Actions</th>
                         </tr>
                         </tfoot>
@@ -44,9 +46,10 @@
                                 <span>{{ $class->classes_name }}</span>
                             </td>
                             <td class="text-center">
-                                <span>{{ $class->user_id }}</span>
+                                <span>{{ \Illuminate\Support\Facades\DB::table('users')->where('id', $class->user_id)->where('level', 2)->get('name')->value('name') }}</span>
                             </td>
                             <td class="text-center">{{ \Illuminate\Support\Facades\DB::table('course')->where('id', $class->course_id)->get('name')->value('name') }}</td>
+                            <td class="text-center">{{ \App\Utilities\Constant::$class_status[$class->status] }}</td>
                             <td class="text-center">
                                 <form class="d-inline" action="" method="post">
                                     <button class="btn btn-hover-shine btn-outline-danger border-0 btn-sm"
