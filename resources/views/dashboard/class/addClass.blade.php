@@ -39,7 +39,11 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group" id="user_id">
-                                    <label for="user_id"></label>
+                                    <label for="user_id">
+                                        <select name="user_id">
+                                            <option value="{{  }}"></option>
+                                        </select>
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-lg-12">

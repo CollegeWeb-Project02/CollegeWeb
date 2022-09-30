@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
-use App\Repositories\Teacher\TeacherRepositoryInterface;
+use App\Services\Teacher\TeacherServiceInterface;
 use Illuminate\Http\Request;
 use App\Utilities\Common;
 
@@ -12,7 +12,7 @@ class TeacherController extends Controller
 {
     private $teacherService;
 
-    public function __construct(TeacherRepositoryInterface $teacherService)
+    public function __construct(TeacherServiceInterface $teacherService)
     {
         $this->teacherService = $teacherService;
     }

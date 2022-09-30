@@ -76,6 +76,6 @@ Route::get('register/filter1', [\App\Http\Controllers\Admin\RegisterController::
 
 Route::prefix('class')->group(function (){
     Route::get('allclass', [\App\Http\Controllers\Admin\ClassController::class, 'index']);
-    Route::get('allclass', [\App\Http\Controllers\Admin\ClassController::class, 'storeClass']);
+    Route::get('addclass', [\App\Http\Controllers\Admin\ClassController::class, 'storeClass']);
     Route::get('addclass', [\App\Http\Controllers\Admin\ClassController::class, 'addClass']);
 });
