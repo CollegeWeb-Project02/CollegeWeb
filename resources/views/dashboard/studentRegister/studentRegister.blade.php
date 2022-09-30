@@ -59,6 +59,7 @@
                                                 @csrf
                                                 @method('PUT')
 
+                                                <input type="email" name="email" hidden value="{{ $register->email }}">
                                                 <input class="btn-icon-wrapper opacity-8" name="status" type="number" hidden value="1">
                                                 <button type="submit" style="border: none; background-color: white; color: lawngreen;">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">

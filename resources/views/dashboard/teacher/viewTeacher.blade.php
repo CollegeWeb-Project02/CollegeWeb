@@ -1,13 +1,13 @@
 @extends('dashboard.layout.master')
 
-@section('title', 'View Teacher')
+@section('title', 'Profile')
 
 @section('body')
             <!-- Begin Page Content -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>View Teacher</h2>
+                        <h2>Profile</h2>
                     </div>
                 </div>
 

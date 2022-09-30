@@ -31,8 +31,9 @@ class CourseController extends Controller
         $course = $this->courseService->find($id);
         $relatedCourse = $this->courseService->getRelatedCourse($course);
         $limitCourse = $this->courseService->getLimitCourse(4);
+        $notification = session('notification');
 
-        return view('front.menu.course-details', compact('subject', 'relatedCourse', 'course', 'limitCourse'));
+        return view('front.menu.course-details', compact('subject', 'relatedCourse', 'course', 'limitCourse', 'notification'));
     }
 
     public function index(){

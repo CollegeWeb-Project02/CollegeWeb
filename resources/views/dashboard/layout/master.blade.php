@@ -61,20 +61,15 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccount"
+                <a class="nav-link collapsed" href="admin/profile" data-target="#collapseAccount"
                    aria-expanded="true" aria-controls="collapseAccount">
                     <i class="fa-solid fa-user"></i>
                     <span>Accounts</span></a>
-                <div id="collapseAccount" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class=" py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="./admin/user">All Account</a>
-                    </div>
-                </div>
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                <a class="nav-link collapsed" href="admin/course" data-target="#collapseTwo"
                    aria-expanded="true" aria-controls="collapseTwo">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
                         <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
@@ -82,11 +77,6 @@
                     </svg>
                     <span>Courses</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin/course">All Courses</a>
-                    </div>
-                </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
@@ -113,27 +103,6 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                University
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                   aria-expanded="true" aria-controls="collapsePages">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
-                        <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                    </svg>
-                </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class=" py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="admin/register/">All Register</a>
-                    </div>
-                </div>
-            </li>
         </ul>
         <!-- End of Sidebar -->
 
@@ -317,7 +286,7 @@
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{Auth::user()->name}}</span>
                                 <img class="img-profile rounded-circle"
-                                     src="dashboard/img/undraw_profile.svg">
+                                     src="front/img/{{ Auth::user()->avatar ?? "default-avatar.png"}}">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -527,6 +496,23 @@
                 </div>
             </div>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMailbox"
+               aria-expanded="true" aria-controls="collapseMailbox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox2" viewBox="0 0 16 16">
+                    <path d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z"/>
+                    <path d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z"/>
+                </svg>
+                <span>Email box </span>
+            </a>
+            <div id="collapseMailbox" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                <div class=" py-2 collapse-inner rounded">
+                    <a class="collapse-item" href="admin/contactmail/">Contact mail</a>
+                    <a class="collapse-item" href="admin/discountmail/">Consultation mail</a>
+                </div>
+            </div>
+        </li>
     </ul>
     <!-- End of Sidebar -->
 
@@ -710,7 +696,7 @@
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{Auth::user()->name}}</span>
                             <img class="img-profile rounded-circle"
-                                 src="dashboard/img/undraw_profile.svg">
+                                 src="front/img/{{ Auth::user()->avatar ?? "default-avatar.png"}}">
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -723,9 +709,9 @@
                                 <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Settings
                             </a>
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="/">
                                 <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Activity Log
+                                Back to front
                             </a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/admin/logout" data-toggle="modal" data-target="#logoutModal">
@@ -823,15 +809,10 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAccount"
+                <a class="nav-link collapsed" href="admin/profile" data-target="#collapseAccount"
                    aria-expanded="true" aria-controls="collapseAccount">
                     <i class="fa-solid fa-user"></i>
                     <span>Accounts</span></a>
-                <div id="collapseAccount" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class=" py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="./admin/user">All Account</a>
-                    </div>
-                </div>
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -875,11 +856,6 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                University
-            </div>
         </ul>
         <!-- End of Sidebar -->
 
@@ -1063,7 +1039,7 @@
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{Auth::user()->name}}</span>
                                 <img class="img-profile rounded-circle"
-                                     src="dashboard/img/undraw_profile.svg">
+                                     src="front/img/{{ Auth::user()->avatar ?? "default-avatar.png"}}">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

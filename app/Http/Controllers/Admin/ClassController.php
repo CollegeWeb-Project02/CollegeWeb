@@ -44,7 +44,7 @@ class ClassController extends Controller
 
         $courses = $this->courseService->all();
 
-        $teachers = $this->teacherService->all()->where('level', 2)->where('class_id', null);
+        $teachers = $this->teacherService->all()->where('level', 2);
 
         return view('dashboard.class.addClass',compact('d', 'courses', 'teachers'));
     }
