@@ -31,7 +31,7 @@
                                     <label class="form-control" for="course">
                                         <select style="width: 100%; border: none; outline: none;" id="course" name="course_id">
                                             @foreach($courses as $course)
-                                            <option value="{{ $c++ }}">{{ $course->name }}</option>
+                                            <option value="{{ $d++ }}">{{ $course->name }}</option>
                                             @endforeach
                                         </select>
                                     </label>
@@ -42,7 +42,7 @@
                                     <label class="form-control" for="user_id">
                                         <select style="width: 100%; border: none; outline: none;" name="user_id">
                                             @foreach($teachers as $teacher)
-                                            <option value="{{ $c++ }}">{{ $teacher->name }}</option>
+                                            <option value="{{ $teacher->id }}">{{ $teacher->name }}</option>
                                             @endforeach
                                         </select>
                                     </label>

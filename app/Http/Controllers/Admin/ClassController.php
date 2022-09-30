@@ -40,12 +40,12 @@ class ClassController extends Controller
 
     public function create()
     {
-        $c = 1;
+        $d = 1;
 
         $courses = $this->courseService->all();
 
         $teachers = $this->teacherService->all()->where('level', 2)->where('class_id', null);
 
-        return view('dashboard.class.addClass',compact('c', 'courses', 'teachers'));
+        return view('dashboard.class.addClass',compact('d', 'courses', 'teachers'));
     }
 }

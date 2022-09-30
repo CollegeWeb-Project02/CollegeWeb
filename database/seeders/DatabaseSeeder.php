@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
         DB::table('register')->insert([
             [
                 'name' => 'Brush Nguyen',
-                'dob' => '12121212122000',
+                'dob' => '18/2/2004',
                 'address' => 'Ha Noi',
                 'achieve' => '',
                 'description' => '',
