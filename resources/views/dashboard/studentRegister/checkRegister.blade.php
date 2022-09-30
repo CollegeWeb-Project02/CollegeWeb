@@ -23,7 +23,7 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Date Of Birth</th>
+                            <th>Register Date</th>
                             <th>Course</th>
                             <th>Status</th>
                             <th class="text-center">Action</th>
@@ -34,7 +34,7 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Date Of Birth</th>
+                            <th>Register Date</th>
                             <th>Course</th>
                             <th>Status</th>
                             <th class="text-center">Action</th>
@@ -46,9 +46,9 @@
                                 <th>#{{ $checkRegister->id }}</th>
                                 <th>{{ $checkRegister->name }}</th>
                                 <th>{{ $checkRegister->email }}</th>
-                                <th>{{ $checkRegister->dob }}</th>
-                                <th>{{ $checkRegister->course_id }}</th>
-                                <th>{{ $checkRegister->status }}</th>
+                                <th>{{ $checkRegister->created_at }}</th>
+                                <th>{{ \Illuminate\Support\Facades\DB::table('course')->where('id', $checkRegister->course_id)->get('name')->value('name') }}</th>
+                                <th>{{ \App\Utilities\Constant::$student_register_status[$checkRegister->status] }}</th>
                                 <th class="text-center">
                                     <a href="./admin/register/{{ $checkRegister->id }}/edit"><i class="fa fa-edit fa-w-20"></i></a>
                                     <form class="d-inline" action="/admin/register/{{$checkRegister->id}}" method="post">

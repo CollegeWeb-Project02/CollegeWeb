@@ -23,7 +23,7 @@
                                     <th>ID</th>
                                     <th>Name</th>
                                     <th>Email</th>
-                                    <th>Date Of Birth</th>
+                                    <th>Register Date</th>
                                     <th>Course</th>
                                     <th>Status</th>
                                     <th class="text-center">Action</th>
@@ -34,7 +34,7 @@
                                     <th>ID</th>
                                     <th>Name</th>
                                     <th>Email</th>
-                                    <th>Date Of Birth</th>
+                                    <th>Register Date</th>
                                     <th>Course</th>
                                     <th>Status</th>
                                     <th class="text-center">Action</th>
@@ -46,9 +46,9 @@
                                         <th>#{{ $register->id }}</th>
                                         <th>{{ $register->name }}</th>
                                         <th>{{ $register->email }}</th>
-                                        <th>{{ $register->dob }}</th>
-                                        <th>{{ $register->course_id }}</th>
-                                        <th>{{ $register->status }}</th>
+                                        <th>{{ $register->created_at }}</th>
+                                        <th>{{ \Illuminate\Support\Facades\DB::table('course')->where('id', $register->course_id)->get('name')->value('name') }}</th>
+                                        <th>{{ \App\Utilities\Constant::$student_register_status[$register->status] }}</th>
                                         <th class="text-center">
 
                                             <form action="admin/register/{{ $register->id }}" method="post" data-toggle="tooltip" title="Update"

@@ -37,6 +37,6 @@ class Constant
     const student_register_not_done = 0;
     public static $student_register_status = [
         self::student_register_done => 'Paid',
-        self::student_register_not_done => 'Have not paid'
+        self::student_register_not_done => 'Unpaid'
     ];
 }
