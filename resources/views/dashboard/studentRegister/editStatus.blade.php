@@ -49,32 +49,21 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label for="position">Position </label>
-                            <select name="level" id="position">
-                                <option value="1">Student</option>
-                                <option value="2">Teacher</option>
-                                <option value="3">Host</option>
+                            <span>Class</span><select class="form-control" name="class_id" id="class_id">
+                                @foreach($classes as $class)
+                                <option value="{{ $class->id }}">{{ $class->classes_name }}</option>
+                                @endforeach
                             </select>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label for="class_id">Class </label>
-                            <select name="class_id" id="class_id">
-                                <option value="1">T2108</option>
-                                <option value="2">T2109</option>
-                                <option value="3">T2110</option>
-                                <option value="4">T2111</option>
-                            </select>
+                            <input value="1" name="level" hidden type="number">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
-                            <label for="status">Status </label>
-                            <select name="status" id="status">
-                                <option value="0">Unpaid</option>
-                                <option value="1">Paid</option>
-                            </select>
+                            <input value="1" name="status" hidden type="number">
                         </div>
                     </div>
                     <div class="col-lg-12">

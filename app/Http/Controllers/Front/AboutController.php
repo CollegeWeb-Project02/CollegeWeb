@@ -34,4 +34,16 @@ class AboutController extends Controller
 
         return redirect()->back();
     }
+
+    public function getContactMail(){
+        $contactMails = $this->contactService->all();
+
+        return view('dashboard.emailBox.contactMail', compact('contactMails'));
+    }
+
+    public function getDiscountMail(){
+        $discountMails = $this->aboutService->all();
+
+        return view(('dashboard.emailBox.discountMail'), compact('discountMails'));
+    }
 }

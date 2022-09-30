@@ -19,7 +19,7 @@
                             <!-- Card Body -->
                             <div class="card-body">
                                 <div class="course-img-wrapper">
-                                    <img src="dashboard/img/{{ $user->avatar ?? "default-avatar.png"}}" alt="" class="img-fluid">
+                                    <img src="front/img/{{ $user->avatar ?? "default-avatar.png"}}" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>

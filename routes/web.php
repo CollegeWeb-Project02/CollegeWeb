@@ -68,6 +68,10 @@ Route::prefix('admin')->group(function() {
     Route::resource('course', \App\Http\Controllers\Admin\CourseController::class);
     Route::resource('register', \App\Http\Controllers\Admin\RegisterController::class);
     Route::resource('class', \App\Http\Controllers\Admin\ClassController::class);
+    Route::resource('discountmail', \App\Http\Controllers\Admin\AboutController::class);
+    Route::resource('contactmail', \App\Http\Controllers\Admin\ContactController::class);
+
+    Route::get('mail/contact', [\App\Http\Controllers\Admin\ContactController::class, 'getContactMail']);
 
     Route::get('register/{id}', [\App\Http\Controllers\Admin\RegisterController::class, 'updateStatus']);
 });

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Services\Classes\ClassesServiceInterface;
 use App\Services\Course\CourseServiceInterface;
 use App\Services\Register\RegisterServiceInterface;
 use App\Utilities\Common;
@@ -16,12 +17,15 @@ class RegisterController extends Controller
 {
     private $registerService;
     private $courseService;
+    private $classesService;
 
     public function __construct(RegisterServiceInterface $registerService,
-                                CourseServiceInterface $courseService)
+                                CourseServiceInterface $courseService,
+                                ClassesServiceInterface $classesService)
     {
         $this->registerService = $registerService;
         $this->courseService = $courseService;
+        $this->classesService = $classesService;
     }
 
     public function show($id){
@@ -41,7 +45,9 @@ class RegisterController extends Controller
     public function edit($id){
         $register = $this->registerService->find($id);
 
-        return view('dashboard.studentRegister.editStatus', compact('register'));
+        $classes = $this->classesService->all()->where('course_id', $register->course_id);
+
+        return view('dashboard.studentRegister.editStatus', compact('register', 'classes'));
     }
 
     public function update(Request $request, $id){
@@ -97,7 +103,7 @@ class RegisterController extends Controller
 //            unlink('dashboard/img/' . $file_name);
 //        }
 
-        return redirect('admin/register/');
+        return redirect('register/filter1');
     }
 
     public function updateStatus($id, Request $request){

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here"/>
-    <title>Confirm Notification | ECource</title>
+    <title> Notification Back To School | E Cource</title>
 </head>
 
 <body

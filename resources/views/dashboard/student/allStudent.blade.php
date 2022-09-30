@@ -7,7 +7,7 @@
     <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h2 class="h3 mb-2 text-gray-800">students</h2>
+        <h2 class="h3 mb-2 text-gray-800">All students</h2>
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
@@ -24,6 +24,7 @@
                             <th class="text-center">Email</th>
                             <th class="text-center">Address</th>
                             <th class="text-center">Phone</th>
+                            <th class="text-center">Class</th>
                             <th class="text-center">Actions</th>
                         </tr>
                         </thead>
@@ -34,6 +35,7 @@
                             <th class="text-center">Email</th>
                             <th class="text-center">Address</th>
                             <th class="text-center">Phone</th>
+                            <th class="text-center">Class</th>
                             <th class="text-center">Actions</th>
                         </tr>
                         </tfoot>
@@ -48,6 +50,7 @@
                                 <td class="">{{ $student->email }}</td>
                                 <td class="text-center">{{ $student->address }}</td>
                                 <td class="text-center">{{ $student->phone }}</td>
+                                <td class="text-center">{{ $student->class_id }}</td>
                                 <td class="text-center">
                                     <a href="admin/student/{{ $student->id }}"
                                        class="btn btn-hover-shine btn-outline-primary border-0 btn-sm">
