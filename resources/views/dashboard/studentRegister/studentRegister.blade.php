@@ -43,13 +43,13 @@
                                 <tbody>
                                 @foreach($registers as $register)
                                     <tr>
-                                        <th>#{{ $register->id }}</th>
-                                        <th>{{ $register->name }}</th>
-                                        <th>{{ $register->email }}</th>
-                                        <th>{{ $register->created_at }}</th>
-                                        <th>{{ \Illuminate\Support\Facades\DB::table('course')->where('id', $register->course_id)->get('name')->value('name') }}</th>
-                                        <th>{{ \App\Utilities\Constant::$student_register_status[$register->status] }}</th>
-                                        <th class="text-center">
+                                        <td>#{{ $register->id }}</td>
+                                        <td>{{ $register->name }}</td>
+                                        <td>{{ $register->email }}</td>
+                                        <td>{{ $register->created_at }}</td>
+                                        <td>{{ \Illuminate\Support\Facades\DB::table('course')->where('id', $register->course_id)->get('name')->value('name') }}</td>
+                                        <td id="registerStatus">{{ \App\Utilities\Constant::$student_register_status[$register->status] }}</td>
+                                        <td class="text-center">
 
                                             <form action="admin/register/{{ $register->id }}" method="post" data-toggle="tooltip" title="Update"
                                                   data-placement="bottom" class="btn border-0 btn-sm">
@@ -76,7 +76,7 @@
                                                             </span>
                                                 </button>
                                             </form>
-                                        </th>
+                                        </td>
                                     </tr>
                                 @endforeach
                                 </tbody>
