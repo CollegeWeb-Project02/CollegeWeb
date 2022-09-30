@@ -30,22 +30,22 @@ class ClassController extends Controller
         return view('dashboard.class.allClass', compact('classes'));
     }
 
-    public function addClass(){
+    public function store(Request $request){
+        $data = $request->all();
 
-        $c = 1;
+        $this->classesService->create($data);
+
+        return redirect('admin/class');
+    }
+
+    public function create()
+    {
+        $d = 1;
 
         $courses = $this->courseService->all();
 
-        $teacher = $this->teacherService->all()->where('level', 2);
+        $teachers = $this->teacherService->all()->where('level', 2)->where('class_id', null);
 
-        return view('dashboard.class.addClass',compact('c', 'courses'));
-    }
-
-    public function storeClass(Request $request){
-        $data = $request->all();
-
-        $class = $this->classesService->create($data);
-
-        return redirect('class/allclass' . $class->id);
+        return view('dashboard.class.addClass',compact('d', 'courses', 'teachers'));
     }
 }

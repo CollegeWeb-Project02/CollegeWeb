@@ -10033,3 +10033,7 @@ div.course-register-item {
     box-sizing: border-box;
     margin: 0 auto;
 }
+
+#select-focus{
+    outline: none;
+}
