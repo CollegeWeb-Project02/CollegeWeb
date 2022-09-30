@@ -51,6 +51,10 @@
                             <td class="text-center">{{ \Illuminate\Support\Facades\DB::table('course')->where('id', $class->course_id)->get('name')->value('name') }}</td>
                             <td class="text-center">{{ \App\Utilities\Constant::$class_status[$class->status] }}</td>
                             <td class="text-center">
+                                <a href="admin/class/{{ $class->id }}"
+                                   class="btn btn-hover-shine btn-outline-primary border-0 btn-sm">
+                                    Details
+                                </a>
                                 <form class="d-inline" action="" method="post">
                                     <button class="btn btn-hover-shine btn-outline-danger border-0 btn-sm"
                                             type="submit" data-toggle="tooltip" title="Delete"
