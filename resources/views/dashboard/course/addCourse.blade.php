@@ -55,19 +55,9 @@
                                 <div class="form-group" id="description">
                                     <label for="subject">
                                         <select name="subject_id" id="subject">
-                                            <option value="1">Web Design</option>
-                                            <option value="2">Development
-                                            </option>
-                                            <option value="3">Game Design
-                                            </option>
-                                            <option value="4">App Design</option>
-                                            <option value="5">Marketing
-                                            </option>
-                                            <option value="6">
-                                                Research</option>
-                                            <option value="7">Content Writing</option>
-                                            <option value="8">
-                                                SEO</option>
+                                            @foreach($courses as $course)
+                                            <option value="{{ $a++ }}">{{ $course->name }}</option>
+                                            @endforeach
                                         </select>
                                     </label>
                                 </div>

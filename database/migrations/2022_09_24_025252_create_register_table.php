@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('dob');
             $table->string('address');
-            $table->string('achieve');
-            $table->string('description');
+            $table->string('achieve')->nullable();
+            $table->string('description')->nullable();
             $table->string('phone');
             $table->string('email');
             $table->string('avatar')->nullable();

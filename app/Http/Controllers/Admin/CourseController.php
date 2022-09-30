@@ -64,7 +64,11 @@ class CourseController extends Controller
 
     public function create()
     {
-        return view('dashboard.course.addCourse');
+        $courses = $this->courseService->all();
+
+        $a = 1;
+
+        return view('dashboard.course.addCourse', compact('a', 'courses'));
     }
 
     public function store(Request $request)
@@ -91,10 +95,6 @@ class CourseController extends Controller
         if ($file_name != '') {
             unlink('front/img/' . $file_name);
         }
-
-
         return redirect('/admin/course');
-
-
     }
 }

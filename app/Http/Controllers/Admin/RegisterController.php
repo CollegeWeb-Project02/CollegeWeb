@@ -9,6 +9,7 @@ use App\Services\Register\RegisterServiceInterface;
 use App\Utilities\Common;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use function Symfony\Component\Translation\t;
 
 class RegisterController extends Controller
@@ -106,6 +107,10 @@ class RegisterController extends Controller
 
         $this->registerService->update($data['status'], $id);
 
+        $register = $this->registerService->create($request->all());
+
+        $this->sendNoticeEmail($register);
+
         return redirect('admin/register');
     }
 
@@ -113,5 +118,18 @@ class RegisterController extends Controller
         $checkRegisters = DB::table('register')->where('status', 1)->get();
 
         return view('dashboard.studentRegister.checkRegister', compact('checkRegisters'));
+    }
+
+    private function sendNoticeEmail($register)
+    {
+        $email_to = $register->email;
+
+        Mail::send('front.sendmail.noticeEmail',
+            compact('register'),
+            function ($message) use ($email_to){
+                $message->from('hex.4b68616e68@gmail.com', 'E Course');
+                $message->to($email_to, $email_to);
+                $message->subject('Confirm Notification');
+            });
     }
 }

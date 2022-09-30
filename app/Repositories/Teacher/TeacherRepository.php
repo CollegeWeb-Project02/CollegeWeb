@@ -20,6 +20,6 @@ class TeacherRepository extends BaseRepository implements TeacherRepositoryInter
     }
 
     public function getTeacherInDashboard($level = 2){
-        return $this->model->where('level', $level)->orderBy('id', 'desc')->get();
+        return $this->model->where('level', $level)->get();
     }
 }

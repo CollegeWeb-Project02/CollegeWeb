@@ -58,7 +58,6 @@ class CourseController extends Controller
         return redirect()->back()->with('notification', 'Success! You was registered successful. Please check your email');
     }
 
-
     private function sendEmail($register)
     {
         $email_to = $register->email;

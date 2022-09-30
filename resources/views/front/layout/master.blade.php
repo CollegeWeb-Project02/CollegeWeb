@@ -11,6 +11,7 @@
 
     <!-- Favicon -->
     <link href="front/img/favicon.ico" rel="icon">
+    <LINK REL="SHORTCUT ICON" HREF="front/img/logo-collegeweb.png"/>
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">

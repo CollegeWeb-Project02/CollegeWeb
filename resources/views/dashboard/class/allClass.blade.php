@@ -43,7 +43,7 @@
                             <td class="text-center">
                                 <span>{{ $class->classes_name }}</span>
                             </td>
-                            <td class="text-center">{{ \Illuminate\Support\Facades\DB::table('users')->where('id', $class->user_id)->where('level', 2)->get('name') }}</td>
+                            <td class="text-center">{{ \Illuminate\Support\Facades\DB::table('users')->where('id', $class->user_id)->where('level', 2)->where('course_id', $class->course_id)->get('name') }}</td>
                             <td class="text-center">{{ \Illuminate\Support\Facades\DB::table('course')->where('id', $class->course_id)->get('name') }}</td>
                             <td class="text-center">
                                 <form class="d-inline" action="" method="post">

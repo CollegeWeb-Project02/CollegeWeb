@@ -64,6 +64,7 @@ class TeacherController extends Controller
         return view('dashboard.account.addUser');
     }
 
+
     public function store(Request $request)
     {
         $data = $request->all();

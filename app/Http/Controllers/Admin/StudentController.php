@@ -25,9 +25,9 @@ class StudentController extends Controller
 
     public function show($id){
 
-        $student = $this->teacherService->find($id);
+        $student = $this->studentService->find($id);
 
-        return view('dashboard.studenstudenttudent', compact('student'));
+        return view('dashboard.student.viewStudent', compact('student'));
     }
 
     public function edit($id){
