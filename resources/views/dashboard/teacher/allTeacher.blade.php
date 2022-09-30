@@ -42,7 +42,7 @@
                                     <tr>
                                         <td class="text-center">#{{ $teacher->id }}</td>
                                         <td class="">
-                                            <img class="img-profile rounded" width="40px;" src="dashboard/img/{{ $teacher->avatar ?? 'default-avatar.png' }}" alt="">
+                                            <img class="img-profile rounded" width="40px;" src="front/img/{{ $teacher->avatar ?? 'default-avatar.png' }}" alt="">
                                             <span>{{ $teacher->name }}</span>
                                         </td>
                                         <td class="">{{ $teacher->email }}</td>

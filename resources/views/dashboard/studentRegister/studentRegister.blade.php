@@ -44,7 +44,10 @@
                                 @foreach($registers as $register)
                                     <tr>
                                         <td>#{{ $register->id }}</td>
-                                        <td>{{ $register->name }}</td>
+                                        <td>
+                                            <img class="img-profile rounded" width="40px;" src="dashboard/img/{{ $student->avatar ?? 'default-avatar.png' }}" alt="">
+                                            {{ $register->name }}
+                                        </td>
                                         <td>{{ $register->email }}</td>
                                         <td>{{ $register->created_at }}</td>
                                         <td>{{ \Illuminate\Support\Facades\DB::table('course')->where('id', $register->course_id)->get('name')->value('name') }}</td>
