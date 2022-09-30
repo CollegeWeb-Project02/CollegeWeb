@@ -7,6 +7,8 @@ use App\Models\User;
 use App\Services\Teacher\TeacherServiceInterface;
 use Illuminate\Http\Request;
 use App\Utilities\Common;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class TeacherController extends Controller
 {
@@ -28,6 +30,14 @@ class TeacherController extends Controller
         $teacher = $this->teacherService->find($id);
 
         return view('dashboard.teacher.viewTeacher', compact('teacher'));
+    }
+
+    public function myClass(){
+        $teacher = $this->teacherService->find(Auth::id());
+
+        $classes = DB::table('classes')->where('user_id', $teacher->id)->get();
+
+        return view('dashboard.class.myClass', compact('classes'));
     }
 
     public function edit($id){

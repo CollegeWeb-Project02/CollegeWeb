@@ -7,6 +7,8 @@ use App\Models\User;
 use App\Repositories\Student\StudentRepositoryInterface;
 use Illuminate\Http\Request;
 use App\Utilities\Common;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class StudentController extends Controller
 {
@@ -28,6 +30,14 @@ class StudentController extends Controller
         $student = $this->studentService->find($id);
 
         return view('dashboard.student.viewStudent', compact('student'));
+    }
+
+    public function myClass(){
+        $student = $this->studentService->find(Auth::id());
+
+        $classes = DB::table('classes')->where('user_id', $student->id)->get();
+
+        return view('dashboard.class.myClass', compact('classes'));
     }
 
     public function edit($id){

@@ -3,12 +3,14 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Middleware\CheckMemberLogin;
 use App\Models\User;
 use App\Services\Classes\ClassesServiceInterface;
 use App\Services\Course\CourseServiceInterface;
 use App\Services\Student\StudentServiceInterface;
 use App\Services\Teacher\TeacherServiceInterface;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class ClassController extends Controller

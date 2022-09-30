@@ -74,7 +74,12 @@ Route::prefix('admin')->group(function() {
     Route::get('mail/contact', [\App\Http\Controllers\Admin\ContactController::class, 'getContactMail']);
 
     Route::get('register/{id}', [\App\Http\Controllers\Admin\RegisterController::class, 'updateStatus']);
+
 });
+
+// Teacher's Class
+Route::get('myclass', [\App\Http\Controllers\Admin\TeacherController::class, 'myClass']);
+Route::get('/myclass', [\App\Http\Controllers\Admin\StudentController::class, 'myClass']);
 
 //Route::resource('register/check', \App\Http\Controllers\Admin\RegisterController::class);
 Route::get('register/filter1', [\App\Http\Controllers\Admin\RegisterController::class, 'checkRegister']);
