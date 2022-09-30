@@ -39,4 +39,13 @@ class Constant
         self::student_register_done => 'Paid',
         self::student_register_not_done => 'Unpaid'
     ];
+
+    // Class status
+
+    const class_full = 0;
+    const class_available = 1;
+    public static $class_status = [
+        self::class_full => 'Full',
+        self::class_available => 'Available'
+    ];
 }
