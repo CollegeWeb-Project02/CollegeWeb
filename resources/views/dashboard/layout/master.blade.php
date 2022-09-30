@@ -480,8 +480,8 @@
             </a>
             <div id="collapseClass" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class=" py-2 collapse-inner rounded">
-                    <a class="collapse-item" href="class/allclass">All Class</a>
-                    <a class="collapse-item" href="class/addclass">Add Class</a>
+                    <a class="collapse-item" href="admin/class">All Class</a>
+                    <a class="collapse-item" href="admin/class/create">Add Class</a>
                 </div>
             </div>
         </li>

@@ -52,9 +52,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="form-group" id="description">
-                                    <label for="subject">
-                                        <select name="subject_id" id="subject">
+                                <div id="description">
+                                    <label class="form-group" for="subject">
+                                        <select style="width: 100%; border: none; outline: none;" name="subject_id" id="subject">
                                             @foreach($courses as $course)
                                             <option value="{{ $a++ }}">{{ $course->name }}</option>
                                             @endforeach

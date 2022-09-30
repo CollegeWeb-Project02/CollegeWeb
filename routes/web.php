@@ -67,15 +67,16 @@ Route::prefix('admin')->group(function() {
     Route::resource('student', \App\Http\Controllers\Admin\StudentController::class);
     Route::resource('course', \App\Http\Controllers\Admin\CourseController::class);
     Route::resource('register', \App\Http\Controllers\Admin\RegisterController::class);
+    Route::resource('class', \App\Http\Controllers\Admin\ClassController::class);
 
     Route::get('register/{id}', [\App\Http\Controllers\Admin\RegisterController::class, 'updateStatus']);
 });
 
 //Route::resource('register/check', \App\Http\Controllers\Admin\RegisterController::class);
 Route::get('register/filter1', [\App\Http\Controllers\Admin\RegisterController::class, 'checkRegister']);
-
-Route::prefix('class')->group(function (){
-    Route::get('allclass', [\App\Http\Controllers\Admin\ClassController::class, 'index']);
-    Route::get('addclass', [\App\Http\Controllers\Admin\ClassController::class, 'storeClass']);
-    Route::get('addclass', [\App\Http\Controllers\Admin\ClassController::class, 'addClass']);
-});
+//
+//Route::prefix('class')->group(function (){
+//    Route::get('allclass', [\App\Http\Controllers\Admin\ClassController::class, 'index']);
+//    Route::get('addclass', [\App\Http\Controllers\Admin\ClassController::class, 'storeClass']);
+//    Route::get('addclass', [\App\Http\Controllers\Admin\ClassController::class, 'addClass']);
+//});
