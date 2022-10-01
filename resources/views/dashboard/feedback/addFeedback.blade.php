@@ -22,14 +22,14 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group" id="name">
-                            <input name="name"
+                            <input name="name" readonly
                                    value="{{ $user->name }}"
                                    type="text" class="form-control" placeholder="Name">
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group" id="email">
-                            <input name="email" value="{{ $user->email }}" type="email" class="form-control" placeholder="Email">
+                            <input name="email" readonly value="{{ $user->email }}" type="email" class="form-control" placeholder="Email">
                         </div>
                     </div>
                     <div class="col-lg-12">
