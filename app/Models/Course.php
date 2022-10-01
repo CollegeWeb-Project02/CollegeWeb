@@ -32,4 +32,8 @@ class Course extends Model
     public function user(){
         return $this->hasMany(User::class, 'course_id', 'id');
     }
+
+    public function feedback(){
+        return $this->hasMany(Feedback::class,'course_id', 'id');
+    }
 }

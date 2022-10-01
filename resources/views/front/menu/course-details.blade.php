@@ -9,16 +9,33 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <div style="border-bottom: none;">
-                            <h1 class="mb-5 course-name">{{ $course->subtitle }}</h1>
+                        <div class="course-information">
+                            <div style="border-bottom: none;">
+                                <h1 class="mb-5 course-name">{{ $course->subtitle }}</h1>
+                            </div>
+                            <div class="course-thumbnail">
+                                <img class="img-fluid rounded w-100 mb-4 course-img" src="front/img/{{ $course->image }}" alt="">
+                            </div>
+                            <div>
+                                <p class="course-description">
+                                    {{ $course->description }}
+                                </p>
+                            </div>
                         </div>
-                        <div class="course-thumbnail">
-                            <img class="img-fluid rounded w-100 mb-4 course-img" src="front/img/{{ $course->image }}" alt="">
-                        </div>
-                        <div>
-                            <p class="course-description">
-                                {{ $course->description }}
-                            </p>
+                        <div class="course-feedback">
+                            <h2>Feedback From Students ({{ count($feedbacks) }})</h2>
+                            @foreach($feedbacks as $feedback)
+                                <div class="media mb-4">
+                                    <img src="dashboard/img/default-avatar.png" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
+                                         style="width: 45px;">
+                                    <div class="media-body">
+                                        <h6>{{ $feedback->name }}<small><i>
+                                                    {{ date('M d, Y', strtotime($feedback->created_at)) }}
+                                                </i></small></h6>
+                                        <p>{{ $feedback->content }}</p>
+                                    </div>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                     <div class="col-lg-4 mt-5 mt-lg-0">

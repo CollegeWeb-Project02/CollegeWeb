@@ -17,11 +17,12 @@ return new class extends Migration
             $table->id();
 
             $table->integer('student_id');
+            $table->integer('course_id');
             $table->string('name');
-            $table->string('avatar');
+            $table->string('avatar')->nullable();
             $table->string('email');
             $table->string('content');
-            $table->integer('rating');
+            $table->integer('rating')->nullable();
 
             $table->timestamps();
         });

@@ -71,6 +71,8 @@ Route::prefix('admin')->group(function() {
     Route::resource('discountmail', \App\Http\Controllers\Admin\AboutController::class);
     Route::resource('contactmail', \App\Http\Controllers\Admin\ContactController::class);
 
+    Route::resource('feedback', \App\Http\Controllers\Admin\FeedbackController::class);
+
     Route::get('mail/contact', [\App\Http\Controllers\Admin\ContactController::class, 'getContactMail']);
 
     Route::get('register/{id}', [\App\Http\Controllers\Admin\RegisterController::class, 'updateStatus']);

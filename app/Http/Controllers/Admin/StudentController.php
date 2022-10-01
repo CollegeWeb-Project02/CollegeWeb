@@ -35,7 +35,7 @@ class StudentController extends Controller
     public function myClass(){
         $student = $this->studentService->find(Auth::id());
 
-        $classes = DB::table('classes')->where('user_id', $student->id)->get();
+        $classes = DB::table('classes')->where('id', $student->class_id)->get();
 
         return view('dashboard.class.myClass', compact('classes'));
     }
