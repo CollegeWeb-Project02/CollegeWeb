@@ -83,6 +83,7 @@ class DatabaseSeeder extends Seeder
                 'class_id' => 2,
                 'course_id' => 1,
                 'point' => null,
+
                 'social_link' => '',
             ],
             [
@@ -100,6 +101,7 @@ class DatabaseSeeder extends Seeder
                 'class_id' => 3,
                 'course_id' => 1,
                 'point' => null,
+
                 'social_link' => '',
             ],
             [
@@ -117,6 +119,7 @@ class DatabaseSeeder extends Seeder
                 'class_id' => 4,
                 'course_id' => 1,
                 'point' => null,
+
                 'social_link' => '',
             ],
             [
@@ -132,8 +135,10 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 5,
-                'course_id' => null,
+
+                'course_id' => 1,
                 'point' => null,
+
                 'social_link' => '',
             ],
             [
@@ -149,7 +154,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 6,
-                'course_id' => null,
+                'course_id' => 4,
                 'point' => null,
                 'social_link' => '',
             ],
@@ -166,8 +171,10 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 7,
-                'course_id' => null,
+
+                'course_id' => 5,
                 'point' => null,
+
                 'social_link' => '',
             ],
             [
@@ -183,8 +190,12 @@ class DatabaseSeeder extends Seeder
                 'level' => 3,
                 'status' => null,
                 'class_id' => null,
-                'course_id' => null,
+
+                'course_id' => 4,
+
+
                 'point' => null,
+
                 'social_link' => '',
             ],
             [
@@ -200,7 +211,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 3,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 1,
                 'point' => null,
                 'social_link' => '',
             ],
@@ -217,7 +228,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 3,
                 'status' => null,
                 'class_id' => null,
-                'course_id' => null,
+                'course_id' => 3,
                 'point' => null,
                 'social_link' => '',
             ],
@@ -253,7 +264,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 2,
                 'point' => null,
                 'social_link' => '',
             ],
@@ -270,7 +281,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 3,
                 'point' => null,
                 'social_link' => '',
             ],
@@ -287,7 +298,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 4,
                 'point' => null,
                 'social_link' => '',
             ],[
@@ -303,7 +314,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 5,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -319,7 +330,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 6,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -335,7 +346,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -351,7 +362,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 2,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -367,7 +378,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -383,7 +394,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 2,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -399,7 +410,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -415,7 +426,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -431,7 +442,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 5,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -447,7 +458,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 6,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -463,7 +474,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 6,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -479,7 +490,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -495,7 +506,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -511,7 +522,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -527,7 +538,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -543,7 +554,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 2,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -559,7 +570,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 1,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -575,7 +586,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -591,7 +602,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 5,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -607,7 +618,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 2,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -623,7 +634,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -639,7 +650,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -655,7 +666,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 7,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -671,7 +682,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 2,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -687,7 +698,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 1,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -703,7 +714,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 8,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -719,7 +730,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -735,7 +746,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 8,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -751,7 +762,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 9,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -767,7 +778,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -783,7 +794,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -799,7 +810,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -815,7 +826,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 2,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -831,7 +842,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 2,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -847,7 +858,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -863,7 +874,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -879,7 +890,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 2,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -895,7 +906,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 1,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -911,7 +922,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -927,7 +938,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 5,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -943,7 +954,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 6,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -959,7 +970,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 7,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -975,7 +986,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -991,7 +1002,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 7,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1007,7 +1018,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-                'course_id' => null,
+                'course_id' => 8,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1023,7 +1034,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1039,7 +1050,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 2,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1055,7 +1066,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 1,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1071,7 +1082,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 5,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1087,7 +1098,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1103,7 +1114,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 1,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1119,7 +1130,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 5,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1135,7 +1146,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 6,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1151,7 +1162,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 7,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1167,7 +1178,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 8,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1183,7 +1194,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 9,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1199,7 +1210,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 3,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1215,7 +1226,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1231,7 +1242,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 5,
                     'point' => null,
                 'social_link' => '',
             ],[
@@ -1247,7 +1258,7 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-                'course_id' => null,
+                'course_id' => 1,
                     'point' => null,
                 'social_link' => '',
             ],
