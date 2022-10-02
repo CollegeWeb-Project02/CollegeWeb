@@ -33,6 +33,21 @@ class DatabaseSeeder extends Seeder
                 'level' => null,
                 'social_link' => '',
             ],
+
+            [
+                'name' => 'Khanh Nguyen',
+                'dob' => '18/2/2004',
+                'address' => 'Ha Noi',
+                'achieve' => '',
+                'description' => '',
+                'phone'=>'0987729543',
+                'email' => 'khanhnbth2109011@fpt.edu.vn',
+                'avatar' => '',
+                'password' => '',
+                'course_id' => 1,
+                'level' => null,
+                'social_link' => '',
+            ],
 ]);
 
             DB::table('users')->insert([
