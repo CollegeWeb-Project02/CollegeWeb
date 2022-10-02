@@ -73,6 +73,7 @@
                                     <th class="text-center">Email</th>
                                     <th class="text-center">Address</th>
                                     <th class="text-center">Phone</th>
+                                    <th class="text-center">Test Point</th>
                                     <th class="text-center">Actions</th>
                                 </tr>
                                 </thead>
@@ -83,6 +84,7 @@
                                     <th class="text-center">Email</th>
                                     <th class="text-center">Address</th>
                                     <th class="text-center">Phone</th>
+                                    <th class="text-center">Test Point</th>
                                     <th class="text-center">Actions</th>
                                 </tr>
                                 </tfoot>
@@ -97,7 +99,11 @@
                                         <td class="">{{ $student->email }}</td>
                                         <td>{{ $student->address }}</td>
                                         <td>{{ $student->phone }}</td>
+                                        <td>{{ $student->point }}</td>
                                         <td class="text-center">
+                                            <a href="/admin/student/point/{{ $student->id }}">
+                                                <i class="fa fa-pen-alt"></i>
+                                            </a>
                                             <form class="d-inline" action="./admin/student/{{$student->id}}" method="post">
                                                 @csrf
                                                 @method('DELETE')
