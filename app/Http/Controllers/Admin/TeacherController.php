@@ -4,19 +4,24 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Services\Student\StudentServiceInterface;
 use App\Services\Teacher\TeacherServiceInterface;
 use Illuminate\Http\Request;
 use App\Utilities\Common;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use function Symfony\Component\Translation\t;
 
 class TeacherController extends Controller
 {
     private $teacherService;
+    private $studentService;
 
-    public function __construct(TeacherServiceInterface $teacherService)
+    public function __construct(TeacherServiceInterface $teacherService,
+                                StudentServiceInterface $studentService)
     {
         $this->teacherService = $teacherService;
+        $this->studentService = $studentService;
     }
 
     public function index(){

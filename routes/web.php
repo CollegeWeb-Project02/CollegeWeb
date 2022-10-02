@@ -75,7 +75,7 @@ Route::prefix('admin')->group(function() {
 
     Route::get('mail/contact', [\App\Http\Controllers\Admin\ContactController::class, 'getContactMail']);
 
-    Route::get('register/{id}', [\App\Http\Controllers\Admin\RegisterController::class, 'updateStatus']);
+    Route::post('register/{id}', [\App\Http\Controllers\Admin\RegisterController::class, 'updateStatus']);
 
 });
 

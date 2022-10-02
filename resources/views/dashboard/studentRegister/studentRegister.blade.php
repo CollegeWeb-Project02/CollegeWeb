@@ -57,7 +57,7 @@
                                             <form action="admin/register/{{ $register->id }}" method="post" data-toggle="tooltip" title="Update"
                                                   data-placement="bottom" class="btn border-0 btn-sm">
                                                 @csrf
-                                                @method('PUT')
+{{--                                                @method('PUT')--}}
 
                                                 <input type="email" name="email" hidden value="{{ $register->email }}">
                                                 <input class="btn-icon-wrapper opacity-8" name="status" type="number" hidden value="1">
