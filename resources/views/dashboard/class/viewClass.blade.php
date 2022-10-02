@@ -101,10 +101,10 @@
                                         <td>{{ $student->phone }}</td>
                                         <td>{{ $student->point }}</td>
                                         <td class="text-center">
-                                            <a href="/admin/student/point/{{ $student->id }}">
+                                            <a href="/admin/point/{{ $student->id }}/edit">
                                                 <i class="fa fa-pen-alt"></i>
                                             </a>
-                                            <form class="d-inline" action="./admin/student/{{$student->id}}" method="post">
+                                            <form class="d-inline" action="./admin/point/{{$student->id}}" method="post">
                                                 @csrf
                                                 @method('DELETE')
 

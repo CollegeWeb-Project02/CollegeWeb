@@ -1,6 +1,6 @@
 @extends('dashboard.layout.master')
 
-@section('title', 'Update point')
+@section('title', 'Update student')
 
 @section('body')
     <!-- Begin Page Content -->
@@ -8,12 +8,12 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h2>Update student's point</h2>
+                <h2>Update student</h2>
             </div>
         </div>
 
         <div class="row">
-            <form action="./admin/student/{{ $student->id }}" method="post" enctype="multipart/form-data" class="col-lg-12">
+            <form action="./admin/point/{{ $student->id }}" method="post" enctype="multipart/form-data" class="col-lg-12">
                 @csrf
                 @method('PUT')
                 <div class="row">
@@ -44,12 +44,12 @@
                     </div>
                     <div class="col-lg-12">
                         <div class="form-group" id="point">
-                            <input name="point" type="text" class="form-control" placeholder="Test point">
+                            <input name="point" type="text" class="form-control" placeholder="Point">
                         </div>
                     </div>
                     <div class="col-lg-12" style="margin-top: 20px;">
                         <button type="submit" class="btn btn-raised waves-effect btn-round btn-primary">Submit</button>
-                        <a href="./admin/class/{{ $class->id }}" class="border-0 btn btn-outline-danger mr-1">
+                        <a href="./admin/point/" class="border-0 btn btn-outline-danger mr-1">
                                     <span class="btn-icon-wrapper pr-1 opacity-8">
                                                         <i class="fa fa-times fa-w-20"></i>
                                                     </span>

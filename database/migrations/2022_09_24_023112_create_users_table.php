@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('dob');
             $table->string('address');
-            $table->string('achieve');
-            $table->string('description');
+            $table->string('achieve')->nullable();
+            $table->string('description')->nullable();
             $table->string('phone');
             $table->string('email');
             $table->string('avatar')->nullable();
@@ -29,7 +29,7 @@ return new class extends Migration
             $table->integer('status')->nullable();
             $table->integer('class_id')->nullable();
             $table->integer('course_id')->nullable();
-            $table->double('point')->nullable();
+            $table->string('point')->nullable();
             $table->string('social_link')->nullable();
 
             $table->timestamps();

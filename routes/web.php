@@ -70,6 +70,7 @@ Route::prefix('admin')->group(function() {
     Route::resource('class', \App\Http\Controllers\Admin\ClassController::class);
     Route::resource('discountmail', \App\Http\Controllers\Admin\AboutController::class);
     Route::resource('contactmail', \App\Http\Controllers\Admin\ContactController::class);
+    Route::resource('point', \App\Http\Controllers\Admin\PointController::class);
 
     Route::resource('feedback', \App\Http\Controllers\Admin\FeedbackController::class);
 
@@ -82,9 +83,7 @@ Route::prefix('admin')->group(function() {
 // Teacher's Class
 Route::get('myclass', [\App\Http\Controllers\Admin\TeacherController::class, 'myClass']);
 Route::get('/myclass', [\App\Http\Controllers\Admin\StudentController::class, 'myClass']);
-// point
-Route::get('/admin/student/point/{id}', [\App\Http\Controllers\Admin\TeacherController::class, 'showStudent']);
-Route::post('/admin/student/point/{id}', [\App\Http\Controllers\Admin\TeacherController::class, 'point']);
+
 
 //Route::resource('register/check', \App\Http\Controllers\Admin\RegisterController::class);
 Route::get('register/filter1', [\App\Http\Controllers\Admin\RegisterController::class, 'checkRegister']);

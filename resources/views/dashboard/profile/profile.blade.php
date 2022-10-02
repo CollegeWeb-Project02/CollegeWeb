@@ -19,7 +19,7 @@
                             <!-- Card Body -->
                             <div class="card-body">
                                 <div class="course-img-wrapper">
-                                    <img src="front/img/{{ $user->avatar ?? "default-avatar.png"}}" alt="" class="img-fluid">
+                                    <img src="dashboard/img/{{ $user->avatar ?? "default-avatar.png"}}" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
@@ -50,6 +50,12 @@
                                     <div class="col-lg-12">
                                         <h5>Description: {{ $user->description }}</h5>
                                     </div>
+                                    <a href="admin/teacher/{{ $user->id }}/edit" data-toggle="tooltip" title="Update"
+                                       data-placement="bottom" class="btn btn-outline-warning border-0 btn-sm">
+                                                        <span class="btn-icon-wrapper opacity-8">
+                                                            <i class="fa fa-edit fa-w-20"></i>
+                                                        </span>
+                                    </a>
                                 </div>
                             </div>
                         </div>

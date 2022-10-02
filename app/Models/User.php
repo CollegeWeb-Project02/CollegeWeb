@@ -26,6 +26,7 @@ class User extends Authenticatable
         'achieve',
         'dob',
         'phone',
+        'point',
 
         'avatar',
         'level',

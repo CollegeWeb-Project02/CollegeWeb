@@ -7,7 +7,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Profile</h2>
+                        <h2>View Teacher</h2>
                     </div>
                 </div>
 
@@ -20,7 +20,7 @@
                             <!-- Card Body -->
                             <div class="card-body">
                                 <div class="course-img-wrapper">
-                                    <img src="front/img/{{ $teacher->avatar ?? 'default-avatar.png' }}" alt="" class="img-fluid">
+                                    <img src="dashboard/img/{{ $teacher->avatar ?? 'default-avatar.png' }}" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>
