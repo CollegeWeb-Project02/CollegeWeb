@@ -71,8 +71,8 @@
                                     <th class="text-center">ID</th>
                                     <th class="text-center">Name</th>
                                     <th class="text-center">Email</th>
-                                    <th class="text-center">Phone</th>
                                     <th class="text-center">Address</th>
+                                    <th class="text-center">Phone</th>
                                     <th class="text-center">Actions</th>
                                 </tr>
                                 </thead>
@@ -81,8 +81,8 @@
                                     <th class="text-center">ID</th>
                                     <th  class="text-center">Name</th>
                                     <th class="text-center">Email</th>
-                                    <th class="text-center">Phone</th>
                                     <th class="text-center">Address</th>
+                                    <th class="text-center">Phone</th>
                                     <th class="text-center">Actions</th>
                                 </tr>
                                 </tfoot>
@@ -95,8 +95,8 @@
                                             <span>{{ $student->name }}</span>
                                         </td>
                                         <td class="">{{ $student->email }}</td>
-                                        <td class="text-center">{{ $student->address }}</td>
-                                        <td class="text-center">{{ $student->phone }}</td>
+                                        <td>{{ $student->address }}</td>
+                                        <td>{{ $student->phone }}</td>
                                         <td class="text-center">
                                             <form class="d-inline" action="./admin/student/{{$student->id}}" method="post">
                                                 @csrf
