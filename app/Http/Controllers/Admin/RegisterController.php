@@ -107,13 +107,14 @@ class RegisterController extends Controller
     }
 
     public function updateStatus($id, Request $request){
+
         $data = $request->all();
 
         $data['status'] = $request->get('status');
 
-        $this->registerService->update($data['status'], $id);
+        $this->registerService->find($id)->update($data);
 
-        $register = $this->registerService->create($request->all());
+        $register = $this->registerService->find($id);
 
         $this->sendNoticeEmail($register);
 
