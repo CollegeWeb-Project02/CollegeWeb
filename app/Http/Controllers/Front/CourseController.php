@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Models\Subject;
 use App\Services\Course\CourseServiceInterface;
+use App\Services\Feedback\FeedbackServiceInterface;
 use App\Services\Register\RegisterServiceInterface;
 use App\Services\Subject\SubjectServiceInterface;
 use Illuminate\Http\Request;
@@ -15,14 +16,17 @@ class CourseController extends Controller
     private $subjectService;
     private $courseService;
     private $registerService;
+    private $feedbackService;
 
     public function __construct(SubjectServiceInterface $subjectService,
                                 CourseServiceInterface  $courseService,
-                                RegisterServiceInterface $registerService)
+                                RegisterServiceInterface $registerService,
+                                FeedbackServiceInterface $feedbackService)
     {
         $this->registerService = $registerService;
         $this->subjectService = $subjectService;
         $this->courseService = $courseService;
+        $this->feedbackService = $feedbackService;
     }
 
     public function show($id){
@@ -32,8 +36,9 @@ class CourseController extends Controller
         $relatedCourse = $this->courseService->getRelatedCourse($course);
         $limitCourse = $this->courseService->getLimitCourse(4);
         $notification = session('notification');
+        $feedbacks = $this->feedbackService->getFeedbacks($id);
 
-        return view('front.menu.course-details', compact('subject', 'relatedCourse', 'course', 'limitCourse', 'notification'));
+        return view('front.menu.course-details', compact('subject', 'relatedCourse', 'course', 'limitCourse', 'notification', 'feedbacks'));
     }
 
     public function index(){

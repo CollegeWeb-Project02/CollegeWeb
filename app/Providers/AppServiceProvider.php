@@ -16,6 +16,8 @@ use App\Repositories\Contact\ContactRepository;
 use App\Repositories\Contact\ContactRepositoryInterface;
 use App\Repositories\Course\CourseRepository;
 use App\Repositories\Course\CourseRepositoryInterface;
+use App\Repositories\Feedback\FeedbackRepository;
+use App\Repositories\Feedback\FeedbackRepositoryInterface;
 use App\Repositories\Register\RegisterRepository;
 use App\Repositories\Register\RegisterRepositoryInterface;
 use App\Repositories\Student\StudentRepository;
@@ -40,6 +42,8 @@ use App\Services\Contact\ContactService;
 use App\Services\Contact\ContactServiceInterface;
 use App\Services\Course\CourseService;
 use App\Services\Course\CourseServiceInterface;
+use App\Services\Feedback\FeedbackService;
+use App\Services\Feedback\FeedbackServiceInterface;
 use App\Services\Register\RegisterService;
 use App\Services\Register\RegisterServiceInterface;
 use App\Services\Student\StudentService;
@@ -192,6 +196,17 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(
             StudentServiceInterface::class,
             StudentService::class
+        );
+
+        //Feedback
+        $this->app->singleton(
+            FeedbackRepositoryInterface::class,
+            FeedbackRepository::class
+        );
+
+        $this->app->singleton(
+            FeedbackServiceInterface::class,
+            FeedbackService::class
         );
     }
 
