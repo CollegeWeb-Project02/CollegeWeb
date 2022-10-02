@@ -81,12 +81,9 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
-                'course_id' => 2,
-=======
                 'course_id' => 1,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
+
                 'social_link' => '',
             ],
             [
@@ -102,12 +99,9 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
-                'course_id' => 3,
-=======
                 'course_id' => 1,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
+
                 'social_link' => '',
             ],
             [
@@ -123,12 +117,9 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
-                'course_id' => 4,
-=======
                 'course_id' => 1,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
+
                 'social_link' => '',
             ],
             [
@@ -144,12 +135,10 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 5,
-<<<<<<< HEAD
+
                 'course_id' => 1,
-=======
-                'course_id' => null,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
+
                 'social_link' => '',
             ],
             [
@@ -165,12 +154,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 6,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],
             [
@@ -186,12 +171,10 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 7,
-<<<<<<< HEAD
+
                 'course_id' => 5,
-=======
-                'course_id' => null,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
+
                 'social_link' => '',
             ],
             [
@@ -207,12 +190,12 @@ class DatabaseSeeder extends Seeder
                 'level' => 3,
                 'status' => null,
                 'class_id' => null,
-<<<<<<< HEAD
+
                 'course_id' => 4,
-=======
-                'course_id' => null,
+
+
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
+
                 'social_link' => '',
             ],
             [
@@ -228,12 +211,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 3,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 1,
-=======
-                'course_id' => null,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],
             [
@@ -249,12 +228,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 3,
                 'status' => null,
                 'class_id' => null,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],
 
@@ -289,12 +264,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],
             [
@@ -310,12 +281,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],
             [
@@ -331,12 +298,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 2,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                 'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Luong Viet Hoang',
@@ -351,12 +314,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 5,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Hoang Viet Luong',
@@ -371,12 +330,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 6,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Hoang Thi Luong',
@@ -391,12 +346,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Hoang Thi Mong',
@@ -411,12 +362,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Mong Thi Giang',
@@ -431,12 +378,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Dinh Cong Bang',
@@ -451,12 +394,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Dinh Quang Anh',
@@ -471,12 +410,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Dinh Viet Tung',
@@ -491,12 +426,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Ly Thai To',
@@ -511,12 +442,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 5,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Nguyen Mai Ly',
@@ -531,12 +458,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 6,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Tran Minh Thu',
@@ -551,12 +474,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 6,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Ly Minh Ha',
@@ -571,12 +490,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Ly Minh Anh',
@@ -591,12 +506,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Tran A Lua',
@@ -611,12 +522,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Nguyen Thi Vu Bao',
@@ -631,12 +538,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 1,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Sinh Van Le',
@@ -651,12 +554,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Luon Van Phong',
@@ -671,12 +570,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 1,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Mac A Trac',
@@ -691,12 +586,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Le Thi Hoai',
@@ -711,12 +602,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 5,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Le Van Dien',
@@ -731,12 +618,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Diep A Van',
@@ -751,12 +634,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vo Van Phong',
@@ -771,12 +650,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Le Thi Trang',
@@ -791,12 +666,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 7,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vo Van A',
@@ -811,12 +682,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Mai Van Linh',
@@ -831,12 +698,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 1,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Nguyen Dieu Linh',
@@ -851,12 +714,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 8,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vu Ngoc Quyen',
@@ -871,12 +730,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Dinh Van Ha',
@@ -891,12 +746,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 8,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vo Mai Linh',
@@ -911,12 +762,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 9,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Nguyen Vu Bao Ngoc',
@@ -931,12 +778,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 2,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Tran Thu Sinh',
@@ -951,12 +794,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Van Van Tai',
@@ -971,12 +810,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Ong Thi Thuy Chi',
@@ -991,12 +826,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Le Thi Hoai Bao',
@@ -1011,12 +842,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Le Van Dien Vien',
@@ -1031,12 +858,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Diep A Nhu',
@@ -1051,12 +874,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vo Thi Phong',
@@ -1071,12 +890,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Phan Thi Trang',
@@ -1091,12 +906,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
-                'course_id' => 7,
-=======
-                'course_id' => null,
+                'course_id' => 1,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vo Van Xoai',
@@ -1111,12 +922,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
-                'course_id' => 8,
-=======
-                'course_id' => null,
+                'course_id' => 4,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Mai Diep Linh',
@@ -1131,12 +938,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 5,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Nguyen Bao Linh',
@@ -1151,12 +954,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 6,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vu Ngoc Linh',
@@ -1171,12 +970,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 7,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Dinh Viet Ha',
@@ -1191,12 +986,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vu Viet Quy',
@@ -1211,12 +1002,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 7,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Nguyen Vu Bao Giong',
@@ -1231,12 +1018,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 3,
-<<<<<<< HEAD
                 'course_id' => 8,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Tran Minh Sinh',
@@ -1251,12 +1034,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Van Van Tam',
@@ -1271,12 +1050,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 2,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Dinh Thi Thuy Chi',
@@ -1291,12 +1066,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 1,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Le Thi Thuy',
@@ -1311,12 +1082,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 5,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Le Van Hoc',
@@ -1331,12 +1098,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Luong Viet Bai',
@@ -1351,12 +1114,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 1,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Ngo Ba Kha',
@@ -1371,12 +1130,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 5,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Phan Thi Quyet',
@@ -1391,12 +1146,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 6,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vo Le Xoai',
@@ -1411,12 +1162,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 7,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Mai Dinh Linh',
@@ -1431,12 +1178,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 8,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Nguyen Bao Dieu',
@@ -1451,12 +1194,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 9,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vu Ngoc Mong',
@@ -1471,12 +1210,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 3,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Dinh Viet Thi',
@@ -1491,12 +1226,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 4,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Vu Van Quy',
@@ -1511,12 +1242,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 5,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],[
                 'name' => 'Nguyen Vu Bao To',
@@ -1531,12 +1258,8 @@ class DatabaseSeeder extends Seeder
                 'level' => 1,
                 'status' => null,
                 'class_id' => 4,
-<<<<<<< HEAD
                 'course_id' => 1,
-=======
-                'course_id' => null,
                     'point' => null,
->>>>>>> f710f7d78f02dddcf20b936002e40e4c4dfb3bfd
                 'social_link' => '',
             ],
 
