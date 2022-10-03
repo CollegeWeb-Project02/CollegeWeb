@@ -14,4 +14,13 @@ class StudentRepository extends BaseRepository implements StudentRepositoryInter
     public function getStudentInDashboard($level = 1){
         return $this->model->where('level', $level)->orderBy('id', 'desc')->get();
     }
+
+    public function searchStudent($level = 1, $searchBy, $keyword, $perPage=12) {
+        return $this->model
+            ->where($searchBy,'like','%'. $keyword .'%')
+            ->where('level', $level)
+            ->orderBy('id','desc')
+            ->paginate($perPage)
+            ->appends(['search' => $keyword]);
+    }
 }

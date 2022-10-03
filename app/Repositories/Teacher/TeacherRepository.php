@@ -22,4 +22,13 @@ class TeacherRepository extends BaseRepository implements TeacherRepositoryInter
     public function getTeacherInDashboard($level = 2){
         return $this->model->where('level', $level)->get();
     }
+
+    public function searchTeachers($level = 2, $searchBy, $keyword, $perPage=12) {
+        return $this->model
+            ->where($searchBy,'like','%'. $keyword .'%')
+            ->where('level', $level)
+            ->orderBy('id','desc')
+            ->paginate($perPage)
+            ->appends(['search' => $keyword]);
+    }
 }

@@ -24,8 +24,8 @@ class TeacherController extends Controller
         $this->studentService = $studentService;
     }
 
-    public function index(){
-        $teachers = $this->teacherService->getTeacherInDashboard();
+    public function index(Request $request){
+        $teachers = $this->teacherService->searchTeachers(2, 'name', $request->get('search'));
 
         return view('dashboard.teacher.allTeacher', compact('teachers'));
     }

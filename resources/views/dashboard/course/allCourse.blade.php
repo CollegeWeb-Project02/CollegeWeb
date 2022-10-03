@@ -9,7 +9,7 @@
                         <div class="col-lg-12">
                             <h2>All Course</h2>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-12">
                             <form>
                                 <div class="input-group">
                                     <input type="search" name="search" id="search"
@@ -49,7 +49,9 @@
 
                         @endforeach
                     </div>
-                    {{ $courses->links() }}
+                    <div class="paginate">
+                        {{ $courses->links() }}
+                    </div>
 
                 </div>
                 <!-- /.container-fluid -->

@@ -19,8 +19,8 @@ class StudentController extends Controller
         $this->studentService = $studentService;
     }
 
-    public function index(){
-        $students = $this->studentService->getStudentInDashboard();
+    public function index(Request $request){
+        $students = $this->studentService->searchStudent(1, 'name', $request->get('search'));
 
         return view('dashboard.student.allStudent', compact('students'));
     }
