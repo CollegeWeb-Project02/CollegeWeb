@@ -49,6 +49,7 @@
 
                         @endforeach
                     </div>
+                    {{ $courses->links() }}
 
                 </div>
                 <!-- /.container-fluid -->
