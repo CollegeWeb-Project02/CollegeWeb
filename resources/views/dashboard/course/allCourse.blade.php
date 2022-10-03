@@ -30,11 +30,11 @@
 
                         <div class="col-lg-4 col-md-6 mb-4 course-item">
                             <div class="rounded overflow-hidden mb-2">
-                                <a href="/admin/course/{{ $course->id }}"><img class="img-fluid" src="front/img/{{ $course->image }}" alt=""></a>
+                                <a href="/admin/course/{{ $course->id }}"><img width="100%" class="img-fluid" src="front/img/{{ $course->image }}" alt=""></a>
                                 <div class="bg-secondary p-4" style="background-color: #F2F1F8 !important; color: black" >
                                     <div class="d-flex justify-content-between mb-3">
                                         <small class="m-0"><i class="fa fa-users mr-2"></i>{{ count(\Illuminate\Support\Facades\DB::table('users')->where('level', 1)->where('course_id', $course->id)->get()) }} Students</small>
-                                        <small class="m-0"><i class="far fa-clock mr-2"></i>{{ $course->time }} days</small>
+                                        <small class="m-0"><i class="far fa-clock mr-2"></i>{{ $course->time }} months</small>
                                     </div>
                                     <a class="h5" style="text-decoration: none; color: black;" href="/admin/course/{{ $course->id }}">{{ $course->name }}</a>
                                     <div class="border-top mt-4 pt-4">
