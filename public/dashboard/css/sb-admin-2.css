@@ -11286,3 +11286,13 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+
+/*
+sua style paginate cho dashboard */
+div.paginate nav div.hidden svg {
+    max-width: 20px !important;
+}
+div.paginate div.hidden{
+    margin-top: 20px;
+}

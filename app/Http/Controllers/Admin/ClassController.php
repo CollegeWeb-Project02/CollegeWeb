@@ -31,8 +31,8 @@ class ClassController extends Controller
         $this->studentService = $studentService;
     }
 
-    public function index(){
-        $classes = $this->classesService->getClass();
+    public function index(Request $request){
+        $classes = $this->classesService->search('classes_name', $request->get('search'));
 
         return view('dashboard.class.allClass', compact('classes'));
     }

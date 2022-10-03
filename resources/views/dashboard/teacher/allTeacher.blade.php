@@ -9,6 +9,21 @@
                 <!-- Page Heading -->
                 <h2 class="h3 mb-2 text-gray-800">Teachers</h2>
 
+                <div class="search-classes">
+                    <form>
+                        <div class="input-group">
+                            <input type="search" name="search" id="search"
+                                   placeholder="Search teacher..." class="form-control">
+                            <span class="input-group-append">
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="fa fa-search"></i>&nbsp;
+                                                    Search
+                                                </button>
+                                            </span>
+                        </div>
+                    </form>
+                </div>
+
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
@@ -77,6 +92,9 @@
                                 @endforeach
                                 </tbody>
                             </table>
+                            <div class="paginate">
+                                {{ $teachers->links() }}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -17,8 +17,6 @@
         rel="stylesheet">
     <LINK REL="SHORTCUT ICON" HREF="front/img/logo-collegeweb.png"/>
 
-    {{--taiwind--}}
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="dashboard/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="dashboard/css/sb-admin-2.css" rel="stylesheet">

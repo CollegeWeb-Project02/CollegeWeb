@@ -10,4 +10,7 @@ interface TeacherRepositoryInterface extends RepositoryInterface
     public function getTeacherInDashboard();
 
     public function update(array $data, $id);
+
+    public function searchTeachers($level=2, $searchBy, $keyword, $perPage=12);
+
 }
