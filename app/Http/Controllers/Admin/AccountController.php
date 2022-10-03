@@ -45,7 +45,7 @@ class AccountController extends Controller
         // xu ly upload anh
         if ($request->hasFile('image')) {
             //Thêm file mới:
-            $data['avatar'] = Common::uploadFile($request->file('image'),'front/img');
+            $data['avatar'] = Common::uploadFile($request->file('image'),'dashboard/img');
 
             // Xóa file cũ:
             $file_name_old = $request->get('image_old');
@@ -71,8 +71,8 @@ class AccountController extends Controller
         /*var_dump($data);*/
 
         // Xử lý file:
-        if ($request->hasFile('img')) {
-            $data['avatar'] = Common::uploadFile($request->file('img'),'dashboard/img');
+        if ($request->hasFile('image')) {
+            $data['avatar'] = Common::uploadFile($request->file('image'),'front/img');
         }
 
         $account = $this->accountService->create($data);

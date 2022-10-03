@@ -68,15 +68,7 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group" id="image" style="max-width: 50%">
-                                    <img style="width: 98%; cursor: pointer;"
-                                         class="thumbnail"
-                                         data-toggle="tooltip" title="Click to add image" data-placement="bottom"
-                                         src="dashboard/img/img-new.png" alt="Add Image">
-
-                                    <input name="image" type="file" onchange="changeImg(this);"
-                                           accept="image/x-png,image/gif,image/jpeg"
-                                           class="image form-control-file" style="display: none;">
-                                    <input type="hidden" name="image_old" value="">
+                                    <input hidden name="avatar" value="default-avatar.png">
                                 </div>
                             </div>
                             <div class="col-lg-12">
