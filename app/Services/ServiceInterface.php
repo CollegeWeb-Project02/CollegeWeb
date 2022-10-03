@@ -12,4 +12,6 @@ interface ServiceInterface
 
     public function update(array $data, $id);
 
+    public function search($searchBy, $keyword, $perPage=12);
+
 }

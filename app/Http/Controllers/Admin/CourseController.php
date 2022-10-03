@@ -19,8 +19,8 @@ class CourseController extends Controller
         $this->courseService = $courseService;
     }
 
-    public function index(){
-        $courses = DB::table('course')->get();
+    public function index(Request $request){
+        $courses = $this->courseService->search('name',$request->get('search'));
 
         return view('dashboard.course.allCourse', compact('courses'));
     }

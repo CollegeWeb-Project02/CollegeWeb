@@ -5,9 +5,23 @@
 @section('body')
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 30px;">
                         <div class="col-lg-12">
                             <h2>All Course</h2>
+                        </div>
+                        <div class="col-lg-4">
+                            <form>
+                                <div class="input-group">
+                                    <input type="search" name="search" id="search"
+                                           placeholder="Search course..." class="form-control">
+                                    <span class="input-group-append">
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="fa fa-search"></i>&nbsp;
+                                                    Search
+                                                </button>
+                                            </span>
+                                </div>
+                            </form>
                         </div>
                     </div>
 

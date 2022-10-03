@@ -32,5 +32,7 @@ class BaseService implements ServiceInterface
         return $this->repository->delete($id);
     }
 
-
+    public function search($searchBy, $keyword, $perPage = 12) {
+        return $this->repository->search($searchBy, $keyword, $perPage);
+    }
 }

@@ -12,4 +12,5 @@ interface RepositoryInterface
 
     public function update(array $data, $id);
 
+    public function search($searchBy, $keyword, $perPage = 12);
 }
