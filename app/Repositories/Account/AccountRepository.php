@@ -2,13 +2,13 @@
 
 namespace App\Repositories\Account;
 
-use App\Models\Account;
+use App\Models\User;
 use App\Repositories\BaseRepository;
 
 class AccountRepository extends BaseRepository implements AccountRepositoryInterface
 {
     public function getModel(){
-        return Account::class;
+        return User::class;
     }
 
     public function getAccountInDashboard(){

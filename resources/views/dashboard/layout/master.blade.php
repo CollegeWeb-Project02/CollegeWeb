@@ -309,9 +309,9 @@
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="/">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                    Back to front
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/admin/logout" data-toggle="modal" data-target="#logoutModal">
@@ -331,16 +331,6 @@
 
             </div>
             <!-- End of Main Content -->
-            <!-- Footer -->
-            <footer class="sticky-footer ">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-
         </div>
         <!-- End of Content Wrapper -->
 
@@ -418,7 +408,7 @@
             <div id="collapseAccount" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class=" py-2 collapse-inner rounded">
                     <a class="collapse-item" href="./admin/user">All Account</a>
-                    <a class="collapse-item" href="./admin/teacher/create">Add Account</a>
+                    <a class="collapse-item" href="./admin/account/create">Add Account</a>
                 </div>
             </div>
         </li>
@@ -741,15 +731,6 @@
 
         </div>
         <!-- End of Main Content -->
-            <!-- Footer -->
-            <footer class="sticky-footer ">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->
@@ -1089,9 +1070,9 @@
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="/">
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Activity Log
+                                    Back to front
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="/admin/logout" data-toggle="modal" data-target="#logoutModal">
@@ -1111,15 +1092,6 @@
 
             </div>
             <!-- End of Main Content -->
-            <!-- Footer -->
-            <footer class="sticky-footer ">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
 
         </div>
         <!-- End of Content Wrapper -->

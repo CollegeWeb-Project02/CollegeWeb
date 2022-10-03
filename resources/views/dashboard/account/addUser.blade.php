@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="row">
-                    <form method="post" action="admin/teacher/" class="col-lg-12">
+                    <form method="post" action="admin/account/" class="col-lg-12">
                         @csrf
                         <div class="row">
                             <div class="col-lg-12">
@@ -76,11 +76,12 @@
                                     <input name="image" type="file" onchange="changeImg(this);"
                                            accept="image/x-png,image/gif,image/jpeg"
                                            class="image form-control-file" style="display: none;">
+                                    <input type="hidden" name="image_old" value="">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <button type="submit" class="btn btn-raised waves-effect btn-round btn-primary">Submit</button>
-                                <a href="./admin/teacher" class="border-0 btn btn-outline-danger mr-1">
+                                <a href="./admin/account" class="border-0 btn btn-outline-danger mr-1">
                                                     <span class="btn-icon-wrapper pr-1 opacity-8">
                                                         <i class="fa fa-times fa-w-20"></i>
                                                     </span>

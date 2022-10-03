@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Services\Course\CourseServiceInterface;
 use App\Services\Feedback\FeedbackServiceInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,9 +18,12 @@ class FeedbackController extends Controller
      */
 
     private $feedbackService;
+    private $courseService;
 
-    public function __construct(FeedbackServiceInterface $feedbackService)
+    public function __construct(FeedbackServiceInterface $feedbackService,
+                                CourseServiceInterface $courseService)
     {
+        $this->courseService = $courseService;
         $this->feedbackService = $feedbackService;
     }
 
@@ -39,7 +43,10 @@ class FeedbackController extends Controller
     {
 
          $user = Auth::user();
-        return view('dashboard.feedback.addFeedback', compact('user'));
+
+        $course = DB::table('course')->find(Auth::user()->course_id);
+
+        return view('dashboard.feedback.addFeedback', compact('user', 'course'));
     }
 
     /**

@@ -22,9 +22,67 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="course-feedback">
-                            <h2>Feedback From Students ({{ count($feedbacks) }})</h2>
+                        <div style="margin-bottom: 3em" class="course-feedback">
+                            <h2 style="margin-bottom: 1.4em">Feedback From Students ({{ count($feedbacks) }})</h2>
+                            <style>
+                                .rate {
+                                    float: left;
+                                    height: 36px;
+                                    padding: 0 10px;
+                                }
+
+                                .rate:not(:checked) > input {
+                                    display: none;
+                                }
+
+                                .rate:not(:checked) > label {
+                                    float:right;
+                                    width: 1em;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    cursor: pointer;
+                                    font-size: 30px;
+                                    color: #ccc;
+                                }
+
+                                label{
+                                    margin-bottom: -0.5rem; !important;
+                                }
+
+                                .rate:not(:checked) > label:before {
+                                    content: '★ ';
+                                }
+
+                                .rate > input:checked ~ label {
+                                    color: #ffc700;
+                                }
+
+                                .rate:not(:checked) > label:hover,
+                                .rate:not(:checked) > label:hover ~ label {
+                                    color: #deb217;
+                                }
+
+                                .rate > input:checked + label:hover,
+                                .rate > input:checked + label:hover ~ label,
+                                .rate > input:checked ~ label:hover,
+                                .rate > input:checked ~ label:hover ~ label,
+                                .rate > label:hover ~ input:checked ~ label {
+                                    color: #c59b08;
+                                }
+                            </style>
                             @foreach($feedbacks as $feedback)
+                                <div class="personal-rating">
+                                    <h6>Your Rating</h6>
+                                    <div class="rating">
+                                        @for($i = 1; $i<=5; $i++)
+                                            @if($i<=$feedback->rating)
+                                                <i style="color: #ffc700" class="fa fa-star"></i>
+                                            @else
+                                                <i class="fa fa-star-o"></i>
+                                            @endif
+                                        @endfor
+                                    </div>
+                                </div>
                                 <div class="media mb-4">
                                     <img src="dashboard/img/default-avatar.png" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
                                          style="width: 45px;">

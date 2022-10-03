@@ -64,6 +64,7 @@ Route::prefix('admin')->group(function() {
     Route::get('user', [\App\Http\Controllers\Admin\UserController::class, 'getUser']);
 
     Route::resource('teacher', \App\Http\Controllers\Admin\TeacherController::class);
+    Route::resource('account', \App\Http\Controllers\Admin\AccountController::class);
     Route::resource('student', \App\Http\Controllers\Admin\StudentController::class);
     Route::resource('course', \App\Http\Controllers\Admin\CourseController::class);
     Route::resource('register', \App\Http\Controllers\Admin\RegisterController::class);
