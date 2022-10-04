@@ -28,7 +28,7 @@
                         <h3 class="text-uppercase mb-4" style="letter-spacing: 5px;">{{ count($comments) }} Comments</h3>
                         @foreach($comments as $comment)
                         <div class="media mb-4">
-                            <img src="front/img/user.jpg" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
+                            <img src="dashboard/img/default-avatar.png" alt="Image" class="img-fluid rounded-circle mr-3 mt-1"
                                 style="width: 45px;">
                             <div class="media-body">
                                 <h6>{{ $comment->name }}<small><i>

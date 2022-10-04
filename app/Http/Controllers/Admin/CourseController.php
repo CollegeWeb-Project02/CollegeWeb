@@ -47,12 +47,12 @@ class CourseController extends Controller
         //Xử lý file ảnh
         if ($request->hasFile('image')) {
             //Thêm file mới:
-            $data['image'] = Common::uploadFile($request->file('image'),'front/img');
+            $data['image'] = Common::uploadFile($request->file('image'),'dashboard/img');
 
             // Xóa file cũ:
             $file_name_old = $request->get('image_old');
             if ($file_name_old != '') {
-                unlink('front/img' . $file_name_old);
+                unlink('dashboard/img' . $file_name_old);
             }
         }
 
@@ -93,7 +93,7 @@ class CourseController extends Controller
         // Xóa file
         $file_name = $course->image;
         if ($file_name != '') {
-            unlink('front/img/' . $file_name);
+            unlink('dashboard/img/' . $file_name);
         }
         return redirect('/admin/course');
     }

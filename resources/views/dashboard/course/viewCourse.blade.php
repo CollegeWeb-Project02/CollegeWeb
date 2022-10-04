@@ -20,7 +20,7 @@
                             <!-- Card Body -->
                             <div class="card-body">
                                 <div class="course-img-wrapper">
-                                    <img src="front/img/{{ $course->image }}" alt="" class="img-fluid">
+                                    <img src="dashboard/img/{{ $course->image }}" alt="" class="img-fluid">
                                 </div>
                             </div>
                         </div>

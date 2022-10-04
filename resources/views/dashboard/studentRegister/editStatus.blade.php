@@ -1,6 +1,6 @@
 @extends('dashboard.layout.master')
 
-@section('title', 'Add Teacher')
+@section('title', 'Edit Register')
 
 @section('body')
 
@@ -14,7 +14,7 @@
         </div>
 
         <div class="row">
-            <form method="post" action="admin/teacher/" class="col-lg-12">
+            <form method="post" action="admin/student/" class="col-lg-12">
                 @csrf
                 <div class="row">
                     <div class="col-lg-12">
@@ -82,20 +82,13 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <div class="form-group" id="image" style="max-width: 50%">
-                            <img style="width: 98%; cursor: pointer;"
-                                 class="thumbnail"
-                                 data-toggle="tooltip" title="Click to add image" data-placement="bottom"
-                                 src="dashboard/img/img-new.png" alt="Add Image">
-
-                            <input name="image" type="file" onchange="changeImg(this);"
-                                   accept="image/x-png,image/gif,image/jpeg"
-                                   class="image form-control-file" style="display: none;">
+                        <div class="form-group" style="max-width: 50%">
+                            <input name="avatar" value="default-avatar.png" hidden>
                         </div>
                     </div>
                     <div class="col-lg-12">
                         <button type="submit" class="btn btn-raised waves-effect btn-round btn-primary">Submit</button>
-                        <a href="./admin/teacher" class="border-0 btn btn-outline-danger mr-1">
+                        <a href="./admin/student" class="border-0 btn btn-outline-danger mr-1">
                                                     <span class="btn-icon-wrapper pr-1 opacity-8">
                                                         <i class="fa fa-times fa-w-20"></i>
                                                     </span>

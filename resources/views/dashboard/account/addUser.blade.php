@@ -1,6 +1,6 @@
 @extends('dashboard.layout.master')
 
-@section('title', 'Add Teacher')
+@section('title', 'Add User')
 
 @section('body')
 

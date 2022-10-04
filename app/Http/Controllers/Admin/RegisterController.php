@@ -103,7 +103,7 @@ class RegisterController extends Controller
 //            unlink('dashboard/img/' . $file_name);
 //        }
 
-        return redirect('register/filter1');
+        return redirect('admin/register');
     }
 
     public function updateStatus($id, Request $request){
